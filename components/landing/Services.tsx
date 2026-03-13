@@ -36,7 +36,7 @@ const Services = () => {
       scrollTrigger: {
         trigger: "#services",
         start: "top 90%",
-        end: "top 30%",
+        end: "top 50%",
         scrub: 1,
         once: true,
       },
@@ -85,7 +85,7 @@ const Services = () => {
           Väx din klientbas med datadriven och innovativ strategi
         </h2>
         <a
-          href="#contact"
+          href="/kontakt"
           className="bg-black/90 px-6 py-2 rounded-full text-base lg:text-lg text-white font-extralight flex items-center justify-center gap-2 hover:scale-105 duration-300 ease-in-out"
         >
           <p>Börja nu</p>

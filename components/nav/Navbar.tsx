@@ -134,7 +134,7 @@ const Navbar = () => {
         }`}
         style={{ paddingTop: "5.5rem" }}
       >
-        <nav className="flex flex-col gap-6 px-8 py-6 text-xl font-light">
+        <nav className="flex flex-col gap-6 px-8 py-2 text-xl font-light">
           <button
             className="absolute top-5 right-5"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -188,7 +188,7 @@ const Navbar = () => {
             className="text-slate-700 font-bold hover:text-black py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
-            Kontakta Oss
+            Boka
           </Link>
         </nav>
       </div>

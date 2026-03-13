@@ -5,7 +5,7 @@ import { useState } from "react";
 type Tab = "form" | "booking";
 
 export default function KontaktPage() {
-  const [activeTab, setActiveTab] = useState<Tab>("form");
+  const [activeTab, setActiveTab] = useState<Tab>("booking");
 
   return (
     <div className="overflow-hidden min-h-screen bg-linear-to-b from-primary/20 via-transparent to-transparent pt-24 md:pt-32 pb-20 px-4 sm:px-6">

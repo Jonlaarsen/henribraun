@@ -14,7 +14,7 @@ const Intro = () => {
       scrollTrigger: {
         trigger: ".intro-container",
         start: "top 90%",
-        end: "top 30%", // behövs för att definiera scrollområdet
+        end: "top 50%", // behövs för att definiera scrollområdet
         scrub: 1,
         once: true,
       },

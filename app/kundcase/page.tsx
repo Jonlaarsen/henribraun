@@ -18,7 +18,7 @@ export default function KundcasePage() {
             <Link
               key={caseStudy.slug}
               href={`/kundcase/${caseStudy.slug}`}
-              className="block p-6 rounded-2xl border border-black/10 bg-white relative hover:border-cyan-300 hover:shadow-lg hover:scale-[1.02] transition-all duration-300 group"
+              className="block p-6 rounded-2xl border border-black/10 bg-white relative hover:border-primary hover:shadow-lg hover:scale-[1.02] transition-all duration-300 group"
             >
               <img
                 src={caseStudy.logo}
