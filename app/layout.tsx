@@ -23,8 +23,8 @@ const dmSerif = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
-  title: "HENRIBRAUN",
-  description: "HENRIBRAUN | Digital marketing",
+  title: "HENRI BRAUN",
+  description: "HENRI BRAUN | Digital marketing",
 };
 
 export default function RootLayout({
