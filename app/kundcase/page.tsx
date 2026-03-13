@@ -5,7 +5,7 @@ export default function KundcasePage() {
   return (
     <div className="min-h-screen pt-24 bg-linear-to-b from-primary/20 via-transparent to-transparent  md:pt-32 pb-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-5xl md:text-7xl font-black mb-6 text-cyan-900">
+        <h1 className="text-5xl md:text-7xl font-black mb-6 pt-10 text-secondary">
           Kundcase
         </h1>
         <p className="text-xl text-black/70 mb-16">
@@ -31,17 +31,17 @@ export default function KundcasePage() {
                 className="h-20 opacity-20 w-auto absolute top-2 right-2 group-hover:opacity-80 ease-in-out duration-300"
                 alt=""
               />
-              <p className="text-sm font-semibold uppercase tracking-widest text-cyan-700 mb-2">
+              <p className="text-sm font-semibold uppercase tracking-widest text-secondary/80 mb-2">
                 {caseStudy.tagline}
               </p>
-              <h2 className="text-2xl font-bold mb-3 text-cyan-900 group-hover:text-cyan-800">
+              <h2 className="text-2xl font-bold mb-3 text-secondary group-hover:text-secondary/90">
                 {caseStudy.client}
               </h2>
               <p className="text-black/70 mb-4 line-clamp-2">
                 {caseStudy.description}
               </p>
               <p className="text-sm text-black/60 mb-6">{caseStudy.summary}</p>
-              <span className="inline-flex items-center gap-2 text-cyan-800 font-semibold group-hover:gap-3 transition-all">
+              <span className="inline-flex items-center gap-2 text-secondary/90 font-semibold group-hover:gap-3 transition-all">
                 Läs mer om {caseStudy.client}
                 <span className="group-hover:translate-x-1 transition-transform">
                   →
@@ -54,7 +54,7 @@ export default function KundcasePage() {
         <div className="mt-16 pt-12 border-t border-black/10">
           <Link
             href="/#contact"
-            className="inline-block px-8 py-4 bg-cyan-900 text-white font-semibold rounded-lg hover:bg-cyan-800 transition-colors"
+            className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-secondary transition-colors"
           >
             Vill du också nå resultat? Kontakta oss
           </Link>

@@ -8,9 +8,9 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-16">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-10 md:gap-12">
           <div className="space-y-4">
-            <h2 className="text-3xl text-[#cacaca] font-logo font-semibold sm:text-4xl md:text-5xl lg:text-8xl  tracking-tight flex items-center">
+            <h2 className=" text-[#cacaca] font-logo font-semibold text-6xl lg:text-8xl  tracking-tight flex items-center">
               HENRI{" "}
-              <span className="h-4 w-4 mb-4 rounded-full bg-primary mx-2" />{" "}
+              <span className="lg:h-4 lg:w-4 h-3 w-3 mb-4 rounded-full bg-primary mx-2" />{" "}
               BRAUN
             </h2>
             <p className="text-white/60 text-sm max-w-sm">

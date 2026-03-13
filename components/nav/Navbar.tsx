@@ -98,14 +98,14 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="z-100 navbar fixed top-3 left-3 right-3 md:top-5 md:left-10 md:right-10 border rounded-full py-3 px-4 md:py-2 md:px-10 bg-white/40 backdrop-blur-md border-secondary/60 flex justify-between items-center">
+      <div className="z-100 navbar fixed top-3 left-3 right-3 md:top-5 md:left-10 md:right-10 border rounded-full py-2 px-4 md:py-2 md:px-10 bg-white/40 backdrop-blur-md border-secondary/60 flex justify-between items-center">
         <Link
           href="/"
           className="text-black hover:opacity-80 transition-opacity shrink-0"
         >
-          <h1 className="text-2xl mt-2 text-[#333333] font-logo sm:text-4xl md:text-5xl font-semibold flex items-center justify-center">
+          <h1 className=" mt-2 text-[#333333] font-logo text-3xl md:text-5xl font-semibold flex items-center justify-center">
             HENRI{" "}
-            <span className="h-2 w-2 md:h-2.5 md:w-2.5 bg-primary rounded-full -mt-2   mx-1 inline-block" />{" "}
+            <span className="h-1.5 w-1.5 md:h-2.5 md:w-2.5 bg-primary rounded-full -mt-2 mx-1 inline-block" />{" "}
             BRAUN
           </h1>
         </Link>

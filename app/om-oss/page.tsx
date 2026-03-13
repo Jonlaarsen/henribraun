@@ -5,7 +5,7 @@ export default function OmOssPage() {
   return (
     <div className="min-h-screen bg-linear-to-b from-primary/20 via-transparent to-transparent  pt-24 md:pt-32 pb-20 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl md:text-7xl font-black mb-6 text-cyan-900">
+        <h1 className="text-5xl md:text-7xl font-black mb-6 text-secondary">
           Om oss
         </h1>
         <p className="text-xl text-black/70 mb-12">
@@ -14,19 +14,21 @@ export default function OmOssPage() {
           online.
         </p>
 
-        <div className="relative w-full aspect-[21/9] rounded-2xl overflow-hidden mb-16">
-          <Image
+        <div className="relative w-full aspect-20/10  overflow-hidden mb-16">
+          <img
             src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80"
             alt="Modernt kontorslandskap"
-            fill
             className="object-cover"
-            sizes="(max-width: 768px) 100vw, 896px"
-            priority
           />
+          <h1 className="text-[13.2rem] w-full font-semibold absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 font-logo z-100">
+            HENRI BRAUN
+          </h1>
         </div>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-4 text-cyan-800">Vår vision</h2>
+          <h2 className="text-2xl font-bold mb-4 text-secondary/90">
+            Vår vision
+          </h2>
           <p className="text-lg text-black/80 leading-relaxed">
             Vi vill vara den självklara partnern för företag som vill ta nästa
             steg digitalt. Hos oss får du inte bara en byrå, du får en
@@ -35,7 +37,7 @@ export default function OmOssPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-6 text-cyan-800">
+          <h2 className="text-2xl font-bold mb-6 text-secondary/90">
             Vår filosofi
           </h2>
           <div className="flex flex-col lg:flex-row gap-8 items-start">
@@ -58,7 +60,7 @@ export default function OmOssPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-6 text-cyan-800">
+          <h2 className="text-2xl font-bold mb-6 text-secondary/90">
             Våra tjänster
           </h2>
           <p className="text-black/80 mb-6">
@@ -122,14 +124,14 @@ export default function OmOssPage() {
           </ul>
           <Link
             href="/tjanster"
-            className="inline-block mt-6 text-cyan-800 font-semibold hover:text-cyan-900 underline underline-offset-4"
+            className="inline-block mt-6 text-secondary/90 font-semibold hover:text-secondary underline underline-offset-4"
           >
             Se alla våra tjänster →
           </Link>
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-6 text-cyan-800">
+          <h2 className="text-2xl font-bold mb-6 text-secondary/90">
             Varför välja Henri Braun?
           </h2>
           <ul className="space-y-4">
@@ -176,7 +178,7 @@ export default function OmOssPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-6 text-cyan-800">Malmö</h2>
+          <h2 className="text-2xl font-bold mb-6 text-secondary/90">Malmö</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="relative aspect-[16/10] rounded-xl overflow-hidden">
               <Image
@@ -202,7 +204,7 @@ export default function OmOssPage() {
         <div className="pt-8 border-t border-black/10">
           <Link
             href="/#contact"
-            className="inline-block px-8 py-4 bg-cyan-900 text-white font-semibold rounded-lg hover:bg-cyan-800 transition-colors"
+            className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-secondary transition-colors"
           >
             Kontakta oss
           </Link>

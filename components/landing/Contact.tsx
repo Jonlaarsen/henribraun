@@ -4,11 +4,11 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="flex flex-col min-h-screen size-full items-center justify-center py-10 px-4 sm:px-6  bg-linear-to-t from-primary/30 via-primary/10 to-transparent text-black overflow-hidden"
+      className="flex flex-col min-h-screen size-full items-center justify-center py-10 px-5 sm:px-6  bg-linear-to-t from-primary/30 via-primary/10 to-transparent text-black overflow-hidden"
     >
       <div className="flex flex-col-reverse lg:flex-row gap-8 lg:gap-10 size-full max-w-6xl w-full">
         <div className="flex flex-col space-y-4 size-full order-2 lg:order-1">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-cyan-950 font-stretch-150% pb-5">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-slate-900 font-stretch-150% pb-5 text-center md:text-start">
             Låt oss hjälpa dig att växa digitalt idag!
           </h1>
           <div className="h-auto  rounded-full text-zinc-800 bg-primary/70 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white duration-300 ease-in-out cursor-pointer">

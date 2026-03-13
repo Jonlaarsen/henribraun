@@ -8,9 +8,9 @@ export default function KontaktPage() {
   const [activeTab, setActiveTab] = useState<Tab>("form");
 
   return (
-    <div className="min-h-screen bg-linear-to-b from-primary/20 via-transparent to-transparent pt-24 md:pt-32 pb-20 px-4 sm:px-6">
+    <div className="overflow-hidden min-h-screen bg-linear-to-b from-primary/20 via-transparent to-transparent pt-24 md:pt-32 pb-20 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl md:text-7xl font-black mb-6 text-cyan-900">
+        <h1 className="text-5xl md:text-7xl font-black mb-6 text-secondary">
           Kontakta oss
         </h1>
         <p className="text-xl text-black/70 mb-12">
@@ -24,7 +24,7 @@ export default function KontaktPage() {
             onClick={() => setActiveTab("form")}
             className={`px-6 py-3 font-semibold rounded-t-lg transition-colors ${
               activeTab === "form"
-                ? "bg-cyan-100 text-cyan-900 border-b-2 border-cyan-800 -mb-[1px]"
+                ? "bg-secondary text-white border-b-2 border-cyan-800 -mb-[1px]"
                 : "text-black/60 hover:text-black hover:bg-black/5"
             }`}
           >
@@ -34,7 +34,7 @@ export default function KontaktPage() {
             onClick={() => setActiveTab("booking")}
             className={`px-6 py-3 font-semibold rounded-t-lg transition-colors ${
               activeTab === "booking"
-                ? "bg-cyan-100 text-cyan-900 border-b-2 border-cyan-800 -mb-[1px]"
+                ? "bg-secondary text-white border-b-2 border-cyan-800 -mb-[1px]"
                 : "text-black/60 hover:text-black hover:bg-black/5"
             }`}
           >
@@ -45,8 +45,8 @@ export default function KontaktPage() {
         {/* Tab content */}
         {activeTab === "form" && (
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
-            <div className="lg:max-w-sm shrink-0 order-2 lg:order-1">
-              <h3 className="text-2xl font-bold text-cyan-900 mb-4">
+            <div className="lg:max-w-xs shrink-0 order-2 lg:order-1">
+              <h3 className="text-2xl font-bold text-secondary mb-4">
                 Vi svarar inom 24 timmar
               </h3>
               <p className="text-black/80 leading-relaxed mb-4">
@@ -61,23 +61,9 @@ export default function KontaktPage() {
               </p>
             </div>
             <form
-              className="flex flex-col border-black text-black relative flex-1 min-w-0 space-y-4 p-6 sm:p-8 md:p-10 rounded-2xl lg:rounded-4xl border order-1 lg:order-2"
+              className="flex flex-col border-black bg-primary/10 text-black relative flex-1 min-w-0 space-y-4 p-6 sm:p-8 md:p-10 rounded-2xl lg:rounded-4xl border order-1 lg:order-2"
               action=""
             >
-              <div
-                className="absolute inset-0 pointer-events-none rotate-12"
-                style={{
-                  backgroundImage: `
-            linear-gradient(rgba(0,0,0,0.08) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(0,0,0,0.08) 1px, transparent 1px)
-          `,
-                  backgroundSize: "50px 50px",
-                  maskImage:
-                    "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 70%)",
-                  WebkitMaskImage:
-                    "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 70%)",
-                }}
-              />
               <h2 className="font-black text-zinc-800 text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center z-10">
                 Kontakta oss
               </h2>
@@ -159,7 +145,7 @@ export default function KontaktPage() {
               ></iframe>
             </div>
             <div className="pt-6 border-t border-black/10 space-y-4">
-              <h3 className="text-xl font-bold text-cyan-900">
+              <h3 className="text-xl font-bold text-secondary">
                 Vad händer efter att du bokat?
               </h3>
               <p className="text-black/80 leading-relaxed">

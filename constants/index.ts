@@ -5,7 +5,6 @@ export {
   type TjansterListing,
   type TjansterDetail,
   type TjansterSection,
-  type TjansterBackground,
 } from "./tjanster";
 
 export {

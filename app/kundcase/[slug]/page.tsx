@@ -23,10 +23,10 @@ export default async function KundcaseDetailPage({
         </Link>
 
         <div className="border-b relative border-black/10 pb-8 mb-8">
-          <p className="text-sm font-semibold uppercase tracking-widest text-cyan-700 mb-2">
+          <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">
             {caseStudy.tagline}
           </p>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-cyan-900">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-secondary">
             {caseStudy.client}
           </h1>
           <p className="text-lg text-black/80 max-w-2xl mb-6">
@@ -39,7 +39,7 @@ export default async function KundcaseDetailPage({
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-cyan-800 font-medium hover:text-cyan-900 underline underline-offset-4"
+                className="text-secondary/80 font-medium hover:text-secondary underline underline-offset-4"
               >
                 {link.label} →
               </a>
@@ -48,12 +48,14 @@ export default async function KundcaseDetailPage({
           <img
             src={caseStudy.logo}
             alt={caseStudy.client}
-            className="w-auto h-30 top-4 right-4 absolute opacity-80"
+            className="w-auto h-14 md:h-30 top-4 right-4 absolute opacity-80"
           />
         </div>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-cyan-800">Uppdraget</h2>
+          <h2 className="text-2xl font-bold mb-6 text-secondary/80">
+            Uppdraget
+          </h2>
           <div className="space-y-4">
             {caseStudy.assignment.map((paragraph, i) => (
               <p key={i} className="text-black/80 leading-relaxed">
@@ -64,7 +66,7 @@ export default async function KundcaseDetailPage({
         </section>
 
         {caseStudy.quote && (
-          <blockquote className="bg-cyan-50/50 border-l-4 border-cyan-800 pl-6 py-6 rounded-r-lg">
+          <blockquote className="bg-cyan-50/50 border-l-4 border-secondary/80 pl-6 py-6 rounded-r-lg">
             <p className="text-black/80 leading-relaxed mb-4 italic">
               &ldquo;{caseStudy.quote.text}&rdquo;
             </p>
@@ -86,7 +88,7 @@ export default async function KundcaseDetailPage({
           </Link>
           <Link
             href="/#contact"
-            className="inline-block px-8 py-4 bg-cyan-900 text-white font-semibold rounded-lg hover:bg-cyan-800 transition-colors text-center"
+            className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-secondary transition-colors text-center"
           >
             Kontakta oss
           </Link>

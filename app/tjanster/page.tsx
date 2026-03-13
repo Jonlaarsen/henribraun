@@ -22,23 +22,23 @@ const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
 
 export default function TjansterPage() {
   return (
-    <div className="min-h-screen bg-linear-to-b from-primary/20 via-transparent to-transparent relative pt-24 md:pt-32 pb-20 px-4 sm:px-6">
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-5xl md:text-7xl font-black mb-6 text-cyan-900">
+    <div className="min-h-screen bg-linear-to-b from-primary/20 via-transparent to-transparent relative pt-24 md:pt-32 pb-20 px-4 sm:px-6 overflow-hidden">
+      <div className="max-w-6xl px-5  mx-auto">
+        <h1 className="text-5xl md:text-7xl pt-10 font-black mb-6 text-secondary">
           Våra tjänster
         </h1>
         <p className="text-xl text-black/70 mb-16">
           Vi hjälper företag att växa online med datadriven strategi och
           effektiv digital marknadsföring.
         </p>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {TJANSTER_LIST.map((service) => {
             const Icon = ICON_MAP[service.iconKey];
             return (
               <Link
                 key={service.slug}
                 href={`/tjanster/${service.slug}`}
-                className="block z-10 p-6 rounded-2xl border bg-linear-to-br from-white/30 via-gray-200/30 to-white/30 backdrop-blur-xs border-black/10 hover:border-black/20 hover:scale-105 hover:bg-black/[0.02] hover:shadow-xl transition-all duration-300"
+                className="block z-10 p-6 rounded-2xl border bg-linear-to-br from-white/30 via-gray-200/30 to-white/30 backdrop-blur-xs border-primary/30 hover:border-primary/60 hover:scale-105 hover:bg-black/2 hover:shadow-xl transition-all duration-300"
               >
                 <div className="w-full flex justify-between items-center">
                   <h2 className="text-2xl font-bold mb-2 text-cyan-700">

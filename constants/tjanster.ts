@@ -12,29 +12,17 @@ export type TjansterDetail = {
   process?: string[];
 };
 
-export type TjansterBackground = {
-  gridColor: string;
-  maskPosition: string;
-  gridSize: string;
-};
-
 export type TjansterListing = TjansterDetail & {
   slug: string;
-  background: TjansterBackground;
   iconKey: string;
 };
 
-const tjänsterData: (TjansterDetail & { slug: string; background: TjansterBackground; iconKey: string })[] = [
+const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
   {
     slug: "digital-analys",
     title: "Digital Analys",
     description: "Här börjar allt. Vi granskar din data och hittar insikter som hjälper dig ta smarta beslut.",
     iconKey: "BarChart2",
-    background: {
-      gridColor: "rgba(6,182,212,0.15)",
-      maskPosition: "30% 30%",
-      gridSize: "28px",
-    },
     fullText:
       "Vi kartlägger era målgrupper och affärsmål i detalj så att varje insats bygger på tydliga insikter. Genom att analysera din nuvarande digitala närvaro, webbtrafik och konverteringsdata identifierar vi möjligheter och utmaningar som formar grunden för din strategi.",
     sections: [
@@ -62,11 +50,6 @@ const tjänsterData: (TjansterDetail & { slug: string; background: TjansterBackg
     title: "Digital Strategi",
     description: "Vi tar fram en tydlig strategi baserat på datadrivna insikter för att du ska lyckas online.",
     iconKey: "Cpu",
-    background: {
-      gridColor: "rgba(245,158,11,0.15)",
-      maskPosition: "70% 70%",
-      gridSize: "24px",
-    },
     fullText:
       "Vi hjälper dig att sätta upp en långsiktig plan med målet att bygga ett starkt varumärke och öka din lönsamhet. Strategin bygger på insikter från analysen och är skräddarsydd för era affärsmål och budget.",
     sections: [
@@ -90,47 +73,10 @@ const tjänsterData: (TjansterDetail & { slug: string; background: TjansterBackg
     process: ["Målsättning & workshops", "Strategiutveckling", "Presentation & validering", "Implementeringsplan"],
   },
   {
-    slug: "web-design",
-    title: "Web Design & Produktion",
-    description: "Vi hjälper dig bygga och förbättra din hemsida",
-    iconKey: "Code2",
-    background: {
-      gridColor: "rgba(234,88,12,0.15)",
-      maskPosition: "50% 20%",
-      gridSize: "20px",
-    },
-    fullText:
-      "En bra webbplats är mer än snygg design – den ska konvertera besökare till kunder. Vi skapar moderna, snabba och användarvänliga webbplatser som bygger på tydlig struktur och bästa praxis för SEO och UX.",
-    sections: [
-      {
-        title: "Design som konverterar",
-        content:
-          "Vi designar med fokus på användarupplevelse och konvertering. Varje layout, val av färger och call-to-action är genomtänkt för att leda besökare mot målet – oavsett om det är ett köp, en kontaktförfrågan eller en nyhetsbrevsprenumeration.",
-      },
-      {
-        title: "Teknik och utveckling",
-        content:
-          "Vi bygger på moderna webbtekniker som säkerställer snabb laddning, mobilvänlighet och god sökmotoroptimering. Din webbplats ska vara stabil, säker och enkel att underhålla.",
-      },
-    ],
-    benefits: [
-      "Användarvänlig design med fokus på konvertering",
-      "Responsiv och mobiloptimerad",
-      "SEO-vänlig struktur från start",
-      "Snabb laddning och god prestanda",
-    ],
-    process: ["Krav & wireframes", "Design & prototyp", "Utveckling", "Test & lansering"],
-  },
-  {
     slug: "konverterings-optimering",
     title: "Konverterings-optimering",
     description: "Fler konverteringar genom att förbättra varje steg i kundresan.",
     iconKey: "CircleFadingArrowUp",
-    background: {
-      gridColor: "rgba(239,68,68,0.15)",
-      maskPosition: "80% 30%",
-      gridSize: "32px",
-    },
     fullText:
       "Varje steg i kundresan är avgörande. Vi skapar en smidig och användarvänlig köpupplevelse där design, struktur och optimering skapar tillit från kunder och genererar fler konverteringar.",
     sections: [
@@ -154,15 +100,38 @@ const tjänsterData: (TjansterDetail & { slug: string; background: TjansterBackg
     process: ["Kartläggning & analys", "Hypoteser & testplan", "Implementering", "Mätning & iteration"],
   },
   {
-    slug: "paid search",
-    title: "Paid Search",
+    slug: "web-design",
+    title: "Web Design & Produktion",
+    description: "Vi hjälper dig bygga och förbättra din hemsida",
+    iconKey: "Code2",
+    fullText:
+      "En bra webbplats är mer än snygg design – den ska konvertera besökare till kunder. Vi skapar moderna, snabba och användarvänliga webbplatser som bygger på tydlig struktur och bästa praxis för SEO och UX.",
+    sections: [
+      {
+        title: "Design som konverterar",
+        content:
+          "Vi designar med fokus på användarupplevelse och konvertering. Varje layout, val av färger och call-to-action är genomtänkt för att leda besökare mot målet – oavsett om det är ett köp, en kontaktförfrågan eller en nyhetsbrevsprenumeration.",
+      },
+      {
+        title: "Teknik och utveckling",
+        content:
+          "Vi bygger på moderna webbtekniker som säkerställer snabb laddning, mobilvänlighet och god sökmotoroptimering. Din webbplats ska vara stabil, säker och enkel att underhålla.",
+      },
+    ],
+    benefits: [
+      "Användarvänlig design med fokus på konvertering",
+      "Responsiv och mobiloptimerad",
+      "SEO-vänlig struktur från start",
+      "Snabb laddning och god prestanda",
+    ],
+    process: ["Krav & wireframes", "Design & prototyp", "Utveckling", "Test & lansering"],
+  },
+  
+  {
+    slug: "google-ads",
+    title: "Google Ads",
     description: "Var med i kundens köpresa från första klicket.",
     iconKey: "Megaphone",
-    background: {
-      gridColor: "rgba(34,197,94,0.15)",
-      maskPosition: "20% 80%",
-      gridSize: "26px",
-    },
     fullText:
       "Vi skapar kampanjer som fångar upp köpklara kunder och ser till att varje investerad krona ger maximal avkastning. Google Ads är kraftfullt när det används rätt – med rätt målgrupper, budskap och budgivning.",
     sections: [
@@ -186,15 +155,10 @@ const tjänsterData: (TjansterDetail & { slug: string; background: TjansterBackg
     process: ["Kickoff & målsättning", "Kampanjsetup & strategi", "Lansering", "Optimering & skalning"],
   },
   {
-    slug: "paid social",
-    title: "Paid Social",
+    slug: "meta-ads",
+    title: "Meta Ads",
     description: "Annonser som engagerar och konverterar på Facebook och Instagram.",
     iconKey: "Share2",
-    background: {
-      gridColor: "rgba(139,92,246,0.15)",
-      maskPosition: "50% 80%",
-      gridSize: "22px",
-    },
     fullText:
       "Vi hjälper dig nå rätt personer på Facebook och Instagram med annonser som engagerar och konverterar. Genom datadriven målgruppsstyrning och kreativ annonsering ser vi till att dina budskap träffar kunderna i rätt ögonblick.",
     sections: [
@@ -222,11 +186,6 @@ const tjänsterData: (TjansterDetail & { slug: string; background: TjansterBackg
     title: "Microsoft Ads",
     description: "Syns när kunderna letar efter dina produkter eller tjänster.",
     iconKey: "Monitor",
-    background: {
-      gridColor: "rgba(59,130,246,0.15)",
-      maskPosition: "70% 20%",
-      gridSize: "30px",
-    },
     fullText:
       "Vi hjälper dig nå rätt personer via Microsofts söknätverk med annonser som syns när kunderna aktivt letar efter dina produkter eller tjänster. Microsoft Ads når en unik målgrupp – ofta B2B-köpbeslutsfattare och professionella användare som söker via Bing och Microsoft 365.",
     sections: [
@@ -254,7 +213,7 @@ const tjänsterData: (TjansterDetail & { slug: string; background: TjansterBackg
 export const TJANSTER_LIST = tjänsterData;
 
 export const TJANSTER_BY_SLUG: Record<string, TjansterDetail> = Object.fromEntries(
-  tjänsterData.map(({ iconKey, background, slug, ...detail }) => [slug, detail])
+  tjänsterData.map(({ iconKey, slug, ...detail }) => [slug, detail])
 );
 
 export const TJANSTER_NAV_LINKS = [

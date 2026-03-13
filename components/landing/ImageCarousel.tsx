@@ -23,7 +23,7 @@ export default function ImageCarousel({
   const duplicatedImages = [...images, ...images];
 
   return (
-    <div className="w-full h-50 relative overflow-hidden bg-white py-4">
+    <div className="w-full h-20 md:h-50 relative overflow-hidden bg-white py-4">
       <div
         className="flex animate-scroll items-center justify-center gap-6"
         style={{
@@ -32,11 +32,11 @@ export default function ImageCarousel({
         }}
       >
         {duplicatedImages.map((src, i) => (
-          <div key={i} className="flex h-50 w-fit items-center justify-center">
+          <div key={i} className="flex h-10 md:h-50 w-fit items-center justify-center">
             <img
               src={src}
               alt={`Carousel image ${i + 1}`}
-              className="object-cover object-center w-70 "
+              className="object-cover object-center w-40 md:w-70 "
             />
           </div>
         ))}
