@@ -38,7 +38,7 @@ export default function TjansterPage() {
               <Link
                 key={service.slug}
                 href={`/tjanster/${service.slug}`}
-                className="block z-10 p-6 rounded-2xl border bg-linear-to-br from-white/30 via-gray-200/30 to-white/30 backdrop-blur-xs border-primary/30 hover:border-primary/60 hover:scale-105 hover:bg-black/2 hover:shadow-xl transition-all duration-300"
+                className="block z-10 p-6 rounded-2xl border bg-linear-to-bl from-white via-white via-85% to-primary/10 backdrop-blur-xs border-primary/30 hover:border-primary/60 hover:scale-105 hover:bg-black/2 hover:shadow-xl transition-all duration-300"
               >
                 <div className="w-full flex justify-between items-center">
                   <h2 className="text-2xl font-bold mb-2 text-cyan-700">

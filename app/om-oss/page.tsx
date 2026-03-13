@@ -188,7 +188,7 @@ export default function OmOssPage() {
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
-            <div className="relative aspect-square overflow-hidden">
+            <div className="relative hidden md:block aspect-square overflow-hidden">
               <Image
                 src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80"
                 alt="Möte och samarbete"
@@ -197,7 +197,7 @@ export default function OmOssPage() {
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
-            <div className="relative aspect-square  overflow-hidden">
+            <div className="relative hidden md:block aspect-square overflow-hidden">
               <Image
                 src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&q=80"
                 alt="Möte och samarbete"
