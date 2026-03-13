@@ -2,7 +2,6 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import React from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,7 +21,7 @@ const Intro = () => {
     });
   }, []);
   return (
-    <div className="intro-container min-h-[80vh]  py-12 md:py-20 px-4 md:px-20 relative overflow-hidden bg-secondary/10 mb-14 size-full flex flex-col-reverse space-y-4 md:space-y-0 md:flex-row items-center justify-center text-slate-800 ">
+    <div className="intro-container min-h-[80vh]  py-12 md:py-20 px-4 md:px-20 relative overflow-hidden   size-full flex flex-col-reverse space-y-4 md:space-y-0 md:flex-row items-center justify-center text-slate-800 ">
       <div className=" z-50 flex flex-col items-center text-center justify-center px-6 lg:pl-10 space-y-4 size-full order-2 lg:order-1">
         <h1 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl z-50">
           En superb digital marknadsföringsbyrå <br />{" "}

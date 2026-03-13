@@ -1,6 +1,11 @@
+"use client";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowBigRightDash } from "lucide-react";
-import React from "react";
 import { BiHappyHeartEyes } from "react-icons/bi";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const services = [
   {
@@ -37,25 +42,34 @@ const services = [
 ];
 
 const Services = () => {
+  useGSAP(() => {
+    gsap.from("#services", {
+      opacity: 0,
+      duration: 0.5,
+      y: 200,
+      scrollTrigger: {
+        trigger: "#services",
+        start: "top 90%",
+        end: "top 30%", // behövs för att definiera scrollområdet
+        scrub: 1,
+        once: true,
+      },
+    });
+  }, []);
   return (
     <div
       id="services"
       className="min-h-screen py-20 relative flex flex-col items-center justify-center text-slate-800"
     >
-      <div
-        className="absolute inset-0 pointer-events-none"
+      {/* <div
+        className="absolute inset-0 bg-primary/30 pointer-events-none"
         style={{
-          backgroundImage: `
-            linear-gradient(rgba(0,0,0,0.08) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(0,0,0,0.08) 1px, transparent 1px)
-          `,
-          backgroundSize: "50px 50px",
           maskImage:
             "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 70%)",
           WebkitMaskImage:
             "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 70%)",
         }}
-      />
+      /> */}
       <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black px-4">
         Hur funkar det?
       </h1>
@@ -65,7 +79,7 @@ const Services = () => {
             className={`${service.color} w-full text-white max-w-md mx-auto lg:max-w-none lg:w-85 relative min-h-[280px] lg:h-100 py-8 md:py-10 px-4 rounded-2xl lg:rounded-4xl backdrop-blur-xs`}
             key={index}
           >
-            <h2 className="text-xl md:text-2xl  lg:text-3xl min-h-[3rem] lg:h-24 font-stretch-200% translate-y-2 font-bold">
+            <h2 className="text-xl md:text-2xl  lg:text-3xl min-h-[3rem] lg:h-24 font-stretch-125% translate-y-2 font-bold">
               {service.title}
             </h2>
             <p className="line-clamp-3 px-2 text-sm md:text-base">

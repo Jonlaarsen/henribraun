@@ -154,8 +154,8 @@ const tjänsterData: (TjansterDetail & { slug: string; background: TjansterBackg
     process: ["Kartläggning & analys", "Hypoteser & testplan", "Implementering", "Mätning & iteration"],
   },
   {
-    slug: "google-ads",
-    title: "Google Ads",
+    slug: "paid search",
+    title: "Paid Search",
     description: "Var med i kundens köpresa från första klicket.",
     iconKey: "Megaphone",
     background: {
@@ -186,8 +186,8 @@ const tjänsterData: (TjansterDetail & { slug: string; background: TjansterBackg
     process: ["Kickoff & målsättning", "Kampanjsetup & strategi", "Lansering", "Optimering & skalning"],
   },
   {
-    slug: "meta-ads",
-    title: "Meta Ads",
+    slug: "paid social",
+    title: "Paid Social",
     description: "Annonser som engagerar och konverterar på Facebook och Instagram.",
     iconKey: "Share2",
     background: {

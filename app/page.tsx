@@ -8,7 +8,7 @@ import Services from "@/components/landing/Services";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="relative">
       <Hero />
       {/* <ImageCarousel /> */}
       <GridPhotos />

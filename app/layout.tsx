@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Fira_Sans, DM_Serif_Display, Noto_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/nav/Navbar";
-import { Variable } from "lucide-react";
 
 const firaSans = Fira_Sans({
   variable: "--font-sans-stack",

@@ -14,7 +14,7 @@ const Navbar = () => {
   useGSAP(() => {
     gsap.from(".navbar", {
       opacity: 0,
-      delay: 2,
+      delay: 0.5,
       y: -100,
       duration: 0.5,
       ease: "sine.in",
@@ -50,11 +50,11 @@ const Navbar = () => {
       <div className=" relative hidden md:block" ref={dropdownRef}>
         <button
           onClick={() => setDropdownOpen(!dropdownOpen)}
-          className="text-slate-600 hover:text-black flex items-center gap-1"
+          className="text-slate-600 font-bold hover:text-black flex items-center gap-1"
         >
           Tjänster{" "}
           <ChevronDown
-            className={`h-4 w-4 transition-transform ${dropdownOpen ? "rotate-180" : ""}`}
+            className={`h-4 w-4  transition-transform ${dropdownOpen ? "rotate-180" : ""}`}
           />
         </button>
         {dropdownOpen && (
@@ -63,7 +63,7 @@ const Navbar = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block px-4 py-2.5 text-slate-600 hover:text-black hover:bg-black/5 transition-colors first:rounded-t-2xl last:rounded-b-2xl"
+                className="block px-4 py-2.5  text-slate-600 hover:text-black hover:bg-black/5 transition-colors first:rounded-t-2xl last:rounded-b-2xl"
                 onClick={() => setDropdownOpen(false)}
               >
                 {link.label}
@@ -74,21 +74,21 @@ const Navbar = () => {
       </div>
       <Link
         href="/kundcase"
-        className="text-slate-600 hover:text-black"
+        className="text-slate-600 font-bold hover:text-black"
         onClick={() => setMobileMenuOpen(false)}
       >
         Kundcase
       </Link>
       <Link
         href="/om-oss"
-        className="text-slate-600 hover:text-black"
+        className="text-slate-600 font-bold hover:text-black"
         onClick={() => setMobileMenuOpen(false)}
       >
         Om oss
       </Link>
       <Link
         href="/kontakt"
-        className="text-slate-600 hover:text-black"
+        className="text-slate-600 font-bold hover:text-black"
         onClick={() => setMobileMenuOpen(false)}
       >
         Boka
@@ -98,14 +98,14 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="z-100 navbar fixed top-3 left-3 right-3 md:top-5 md:left-5 md:right-5 border rounded-full py-3 px-4 md:py-4 md:px-10 bg-white/10 backdrop-blur-md border-black/60 flex justify-between items-center">
+      <div className="z-100 navbar fixed top-3 left-3 right-3 md:top-5 md:left-10 md:right-10 border rounded-full py-3 px-4 md:py-2 md:px-10 bg-white/40 backdrop-blur-md border-secondary/60 flex justify-between items-center">
         <Link
           href="/"
           className="text-black hover:opacity-80 transition-opacity shrink-0"
         >
           <h1 className="text-2xl mt-2 text-[#333333] font-logo sm:text-4xl md:text-5xl font-semibold flex items-center justify-center">
             HENRI{" "}
-            <span className="h-2 w-2 md:h-2.5 md:w-2.5 bg-primary rounded-full -mt-2  mx-1 inline-block" />{" "}
+            <span className="h-2 w-2 md:h-2.5 md:w-2.5 bg-primary rounded-full -mt-2   mx-1 inline-block" />{" "}
             BRAUN
           </h1>
         </Link>
@@ -154,21 +154,21 @@ const Navbar = () => {
           </div>
           <Link
             href="/kundcase"
-            className="text-slate-700 hover:text-black py-2"
+            className="text-slate-700 font-bold hover:text-black py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
             Kundcase
           </Link>
           <Link
             href="/om-oss"
-            className="text-slate-700 hover:text-black py-2"
+            className="text-slate-700 font-bold hover:text-black py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
             Om oss
           </Link>
           <Link
             href="/kontakt"
-            className="text-slate-700 hover:text-black py-2"
+            className="text-slate-700  hover:text-black py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
             Kontakta Oss

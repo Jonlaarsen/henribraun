@@ -22,21 +22,7 @@ const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
 
 export default function TjansterPage() {
   return (
-    <div className="min-h-screen relative pt-24 md:pt-32 pb-20 px-4 sm:px-6">
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          backgroundImage: `
-            linear-gradient(rgba(0,0,0,0.08) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(0,0,0,0.08) 1px, transparent 1px)
-          `,
-          backgroundSize: "50px 50px",
-          maskImage:
-            "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 70%)",
-          WebkitMaskImage:
-            "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 70%)",
-        }}
-      />
+    <div className="min-h-screen bg-linear-to-b from-primary/20 via-transparent to-transparent relative pt-24 md:pt-32 pb-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-black mb-6 text-cyan-900">
           Våra tjänster
@@ -45,7 +31,7 @@ export default function TjansterPage() {
           Vi hjälper företag att växa online med datadriven strategi och
           effektiv digital marknadsföring.
         </p>
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-3 gap-6">
           {TJANSTER_LIST.map((service) => {
             const Icon = ICON_MAP[service.iconKey];
             return (
@@ -62,18 +48,6 @@ export default function TjansterPage() {
                 </div>
 
                 <div className="w-full relative text-cyan-800 flex items-center justify-center h-40">
-                  <div
-                    className="absolute inset-0 pointer-events-none rounded-xl overflow-hidden"
-                    style={{
-                      backgroundImage: `
-                        linear-gradient(${service.background.gridColor} 1px, transparent 1px),
-                        linear-gradient(90deg, ${service.background.gridColor} 1px, transparent 1px)
-                      `,
-                      backgroundSize: `${service.background.gridSize} ${service.background.gridSize}`,
-                      maskImage: `radial-gradient(ellipse 80% 80% at ${service.background.maskPosition}, black 40%, transparent 70%)`,
-                      WebkitMaskImage: `radial-gradient(ellipse 80% 80% at ${service.background.maskPosition}, black 40%, transparent 70%)`,
-                    }}
-                  />
                   <div className="z-20">
                     <p className="text-black/70 line-clamp-3">
                       {service.description} Lorem ipsum dolor sit, amet

@@ -8,7 +8,7 @@ export default function KontaktPage() {
   const [activeTab, setActiveTab] = useState<Tab>("form");
 
   return (
-    <div className="min-h-screen pt-24 md:pt-32 pb-20 px-4 sm:px-6">
+    <div className="min-h-screen bg-linear-to-b from-primary/20 via-transparent to-transparent pt-24 md:pt-32 pb-20 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-black mb-6 text-cyan-900">
           Kontakta oss
@@ -50,10 +50,14 @@ export default function KontaktPage() {
                 Vi svarar inom 24 timmar
               </h3>
               <p className="text-black/80 leading-relaxed mb-4">
-                Har du frågor om våra tjänster eller vill du veta mer om hur vi kan hjälpa ditt företag att växa? Skicka ett meddelande så återkommer vi så snart vi kan.
+                Har du frågor om våra tjänster eller vill du veta mer om hur vi
+                kan hjälpa ditt företag att växa? Skicka ett meddelande så
+                återkommer vi så snart vi kan.
               </p>
               <p className="text-black/70 text-sm leading-relaxed">
-                Oavsett om det gäller digital strategi, annonsering eller konverteringsoptimering – vi är här för att hjälpa dig ta nästa steg.
+                Oavsett om det gäller digital strategi, annonsering eller
+                konverteringsoptimering – vi är här för att hjälpa dig ta nästa
+                steg.
               </p>
             </div>
             <form
@@ -148,24 +152,25 @@ export default function KontaktPage() {
               Boka ett kostnadsfritt samtal med oss. Välj ett tillgängligt
               tidspunkt nedan.
             </p>
-            <div className="min-h-[400px] rounded-2xl border border-black/10 bg-cyan-50/20 p-8 flex items-center justify-center">
-              {/* TODO: Add your Google Meet / Calendly / booking embed code here */}
-              <div className="text-center text-black/50 max-w-md">
-                <p className="font-semibold">Kommande: Google Meet-bokning</p>
-                <p className="text-sm mt-2">
-                  Lägg till din Google Meet- eller Calendly-embed här.
-                </p>
-              </div>
+            <div className="size  rounded-2xl border border-black/10 bg-cyan-50/20 p-8 flex items-center justify-center">
+              <iframe
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2_YB-G1TxxmzpB9Rzo6esAf7CwpTO8GuBq9QWV5ZJouwwLIsoQSJPUmd4qBJWtRMZHqQ8-XKI8?gv=true"
+                className="min-h-235 size-full"
+              ></iframe>
             </div>
             <div className="pt-6 border-t border-black/10 space-y-4">
               <h3 className="text-xl font-bold text-cyan-900">
                 Vad händer efter att du bokat?
               </h3>
               <p className="text-black/80 leading-relaxed">
-                Ett 30-minuters samtal där vi går igenom din situation, era mål och hur vi kan hjälpa. Inga förpliktelser – vi vill bara lära känna dig och se om vi är rätt match. Du får en bekräftelse per e-post med länk till mötet.
+                Ett 30-minuters samtal där vi går igenom din situation, era mål
+                och hur vi kan hjälpa. Inga förpliktelser – vi vill bara lära
+                känna dig och se om vi är rätt match. Du får en bekräftelse per
+                e-post med länk till mötet.
               </p>
               <p className="text-black/70 text-sm">
-                Mötet hålls via Google Meet. Du behöver ingen särskild programvara – länken fungerar i webbläsaren.
+                Mötet hålls via Google Meet. Du behöver ingen särskild
+                programvara – länken fungerar i webbläsaren.
               </p>
             </div>
           </div>
