@@ -29,7 +29,7 @@ const tjänsterData: (TjansterDetail & { slug: string; background: TjansterBackg
     slug: "digital-analys",
     title: "Digital Analys",
     description: "Här börjar allt. Vi granskar din data och hittar insikter som hjälper dig ta smarta beslut.",
-    iconKey: "BiAnalyse",
+    iconKey: "BarChart2",
     background: {
       gridColor: "rgba(6,182,212,0.15)",
       maskPosition: "30% 30%",
@@ -93,7 +93,7 @@ const tjänsterData: (TjansterDetail & { slug: string; background: TjansterBackg
     slug: "web-design",
     title: "Web Design & Produktion",
     description: "Vi hjälper dig bygga och förbättra din hemsida",
-    iconKey: "FaHtml5",
+    iconKey: "Code2",
     background: {
       gridColor: "rgba(234,88,12,0.15)",
       maskPosition: "50% 20%",
@@ -157,7 +157,7 @@ const tjänsterData: (TjansterDetail & { slug: string; background: TjansterBackg
     slug: "google-ads",
     title: "Google Ads",
     description: "Var med i kundens köpresa från första klicket.",
-    iconKey: "SiGoogleads",
+    iconKey: "Megaphone",
     background: {
       gridColor: "rgba(34,197,94,0.15)",
       maskPosition: "20% 80%",
@@ -189,7 +189,7 @@ const tjänsterData: (TjansterDetail & { slug: string; background: TjansterBackg
     slug: "meta-ads",
     title: "Meta Ads",
     description: "Annonser som engagerar och konverterar på Facebook och Instagram.",
-    iconKey: "SiMeta",
+    iconKey: "Share2",
     background: {
       gridColor: "rgba(139,92,246,0.15)",
       maskPosition: "50% 80%",
@@ -221,7 +221,7 @@ const tjänsterData: (TjansterDetail & { slug: string; background: TjansterBackg
     slug: "microsoft-ads",
     title: "Microsoft Ads",
     description: "Syns när kunderna letar efter dina produkter eller tjänster.",
-    iconKey: "BsMicrosoft",
+    iconKey: "Monitor",
     background: {
       gridColor: "rgba(59,130,246,0.15)",
       maskPosition: "70% 20%",

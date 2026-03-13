@@ -1,19 +1,23 @@
-import { CircleFadingArrowUp, Cpu } from "lucide-react";
+import {
+  BarChart2,
+  CircleFadingArrowUp,
+  Code2,
+  Cpu,
+  Megaphone,
+  Monitor,
+  Share2,
+} from "lucide-react";
 import Link from "next/link";
-import { BiAnalyse } from "react-icons/bi";
-import { BsMicrosoft } from "react-icons/bs";
-import { FaHtml5 } from "react-icons/fa";
-import { SiGoogleads, SiMeta } from "react-icons/si";
 import { TJANSTER_LIST } from "@/constants";
 
 const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
-  BiAnalyse,
+  BarChart2,
   Cpu,
-  FaHtml5,
+  Code2,
   CircleFadingArrowUp,
-  SiGoogleads,
-  SiMeta,
-  BsMicrosoft,
+  Megaphone,
+  Share2,
+  Monitor,
 };
 
 export default function TjansterPage() {
