@@ -1,37 +1,38 @@
 import { ArrowBigRightDash } from "lucide-react";
 import React from "react";
+import { BiHappyHeartEyes } from "react-icons/bi";
 
 const services = [
   {
     title: "Digital Analys",
     text: "Här börjar allt. Vi granskar din data och hittar insikter som hjälper dig ta smarta beslut. Vi kartlägger era målgrupper och affärsmål i detalj så att varje insats bygger på tydliga insikter.",
-    color: "bg-cyan-200/30",
+    color: "bg-[#4682b4]",
   },
   {
     title: "Digital Strategi",
     text: "Vi tar fram en tydlig strategi baserat på datadrivna insikter för att du ska lyckas online. Vi hjälper dig att sätta upp en långsiktig plan med målet att bygga ett starkt varumärke och öka din lönsamhet.",
-    color: "bg-amber-200/30",
+    color: "bg-[#4682b4]/90",
   },
 
   {
     title: "Konverterings-optimering",
     text: "Varje steg i kundresan är avgörande. Vi skapar en smidig och användarvänlig köpupplevelse där design, struktur och optimering skapar tillit från kunder och genererar fler konverteringar.",
-    color: "bg-red-200/30",
+    color: "bg-[#4682b4]/80",
   },
   {
     title: "Google Ads",
     text: "Var med i kundens köpresa från första klicket. Vi skapar kampanjer som fångar upp köpklara kunder och ser till att varje investerad krona ger maximal avkastning.",
-    color: "bg-orange-200/30",
+    color: "bg-[#4682b4]/70",
   },
   {
     title: "Meta Ads",
     text: "Vi hjälper dig nå rätt personer på Facebook och Instagram med annonser som engagerar och konverterar. Genom datadriven målgruppsstyrning och kreativ annonsering ser vi till att dina budskap träffar kunderna i rätt ögonblick",
-    color: "bg-emerald-200/30",
+    color: "bg-[#4682b4]/60",
   },
   {
     title: "Microsoft Ads",
     text: "Vi hjälper dig nå rätt personer via Microsofts söknätverk med annonser som syns när kunderna aktivt letar efter dina produkter eller tjänster. ",
-    color: "bg-blue-200/30",
+    color: "bg-[#4682b4]/50",
   },
 ];
 
@@ -61,18 +62,21 @@ const Services = () => {
       <div className="px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 py-10 md:py-20">
         {services.map((service, index) => (
           <div
-            className={`${service.color} w-full max-w-md mx-auto lg:max-w-none lg:w-85 relative min-h-[280px] lg:h-100 py-8 md:py-10 px-4 rounded-2xl lg:rounded-4xl backdrop-blur-xs`}
+            className={`${service.color} w-full text-white max-w-md mx-auto lg:max-w-none lg:w-85 relative min-h-[280px] lg:h-100 py-8 md:py-10 px-4 rounded-2xl lg:rounded-4xl backdrop-blur-xs`}
             key={index}
           >
-            <h2 className="text-xl md:text-2xl text-zinc-900 lg:text-3xl min-h-[3rem] lg:h-24 font-stretch-200% translate-y-2 font-bold">
+            <h2 className="text-xl md:text-2xl  lg:text-3xl min-h-[3rem] lg:h-24 font-stretch-200% translate-y-2 font-bold">
               {service.title}
             </h2>
             <p className="line-clamp-3 px-2 text-sm md:text-base">
               {service.text}
             </p>
+            <div>
+              <BiHappyHeartEyes className="h-30 w-30 text-secondary absolute bottom-2 right-4 opacity-80" />
+            </div>
             <a
               href="/tjanster"
-              className="underline underline-offset-2 font-semibold absolute bottom-6 left-4 hover:scale-y-110 duration-300 ease-in-out"
+              className="underline underline-offset-2 font-semibold absolute bottom-6 left-4 hover:scale-y-120 duration-300 ease-in-out"
             >
               Learn more
             </a>

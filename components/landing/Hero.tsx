@@ -28,7 +28,7 @@ const Hero = () => {
     });
   }, []);
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center bg-white text-black overflow-hidden pt-16 md:pt-0">
+    <section className="relative min-h-screen flex flex-col items-center justify-center bg- text-black overflow-hidden pt-16 md:pt-0">
       {/* Grid with corner fade - visible in center, fades to transparent in corners */}
       <div
         className="absolute inset-0 pointer-events-none"
@@ -56,12 +56,12 @@ const Hero = () => {
           className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-black/70 mb-6 md:mb-10"
         >
           Välkommen till{" "}
-          <span className="font-black text-primary">Henri Braun.</span>
+          <span className="font-black text-secondary">Henri Braun.</span>
         </p>
         <Link
           id="contact-button"
           href="#contact"
-          className="inline-block px-6 py-3 md:px-8 md:py-4 text-sm md:text-base bg-zinc-900/80 text-white font-semibold rounded-lg font-stretch-150% hover:bg-black/90 transition-colors"
+          className="inline-block px-6 py-3 md:px-8 md:py-4 text-sm md:text-base bg-secondary/80 text-white font-semibold rounded-lg font-stretch-150% hover:bg-secondary transition-colors"
         >
           Kontakta oss
         </Link>

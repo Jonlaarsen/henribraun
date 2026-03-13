@@ -14,6 +14,7 @@ const Navbar = () => {
   useGSAP(() => {
     gsap.from(".navbar", {
       opacity: 0,
+      delay: 2,
       y: -100,
       duration: 0.5,
       ease: "sine.in",
@@ -57,7 +58,7 @@ const Navbar = () => {
           />
         </button>
         {dropdownOpen && (
-          <div className="absolute top-full left-0 mt-2 py-2 min-w-[220px] bg-white/95 backdrop-blur-md rounded-2xl border border-black/10 shadow-lg">
+          <div className="absolute top-full left-0 mt-2 py-2 min-w-55 bg-white/95 backdrop-blur-md rounded-2xl border border-black/10 shadow-lg">
             {TJANSTER_NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
@@ -90,25 +91,25 @@ const Navbar = () => {
         className="text-slate-600 hover:text-black"
         onClick={() => setMobileMenuOpen(false)}
       >
-        Kontakta Oss
+        Boka
       </Link>
     </>
   );
 
   return (
     <>
-      <div className="z-[100] navbar fixed top-3 left-3 right-3 md:top-5 md:left-5 md:right-5 border rounded-full py-3 px-4 md:py-4 md:px-10 bg-black/10 backdrop-blur-md border-black/60 flex justify-between items-center">
+      <div className="z-100 navbar fixed top-3 left-3 right-3 md:top-5 md:left-5 md:right-5 border rounded-full py-3 px-4 md:py-4 md:px-10 bg-white/10 backdrop-blur-md border-black/60 flex justify-between items-center">
         <Link
           href="/"
           className="text-black hover:opacity-80 transition-opacity shrink-0"
         >
-          <h1 className="text-2xl text-[#333333] font-logo sm:text-4xl md:text-5xl font-semibold flex items-center justify-center">
+          <h1 className="text-2xl mt-2 text-[#333333] font-logo sm:text-4xl md:text-5xl font-semibold flex items-center justify-center">
             HENRI{" "}
-            <span className="h-2 w-2 md:h-2.5 md:w-2.5 bg-primary rounded-full mb-2 mx-1 inline-block" />{" "}
+            <span className="h-2 w-2 md:h-2.5 md:w-2.5 bg-primary rounded-full -mt-2  mx-1 inline-block" />{" "}
             BRAUN
           </h1>
         </Link>
-        <div className="hidden md:flex items-center space-x-5 text-lg z-[100] font-light">
+        <div className="hidden md:flex items-center space-x-5 text-lg z-100 font-light">
           <NavLinks />
         </div>
         <button
@@ -126,7 +127,7 @@ const Navbar = () => {
 
       {/* Mobile menu overlay */}
       <div
-        className={`fixed inset-0 z-[90] bg-white/95 backdrop-blur-lg md:hidden transition-opacity duration-300 ${
+        className={`fixed inset-0 z-90 bg-white/95 backdrop-blur-lg md:hidden transition-opacity duration-300 ${
           mobileMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
