@@ -1,3 +1,4 @@
+"use client";
 import {
   BarChart2,
   CircleFadingArrowUp,
@@ -9,6 +10,8 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { TJANSTER_LIST } from "@/constants";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
   BarChart2,
@@ -21,8 +24,13 @@ const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
 };
 
 export default function TjansterPage() {
+  useGSAP(() => {
+    gsap.from(".section", {
+      opacity: 0,
+    });
+  }, []);
   return (
-    <div className="min-h-screen bg-linear-to-b from-primary/20 via-transparent to-transparent relative pt-24 md:pt-32 pb-20 px-4 sm:px-6 overflow-hidden">
+    <div className="section min-h-screen bg-linear-to-b from-primary/20 via-transparent to-transparent relative pt-24 md:pt-32 pb-20 px-4 sm:px-6 overflow-hidden">
       <div className="max-w-6xl px-5  mx-auto">
         <h1 className="text-5xl md:text-7xl pt-10 font-black mb-6 text-secondary">
           Våra tjänster

@@ -1,5 +1,7 @@
 "use client";
 
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import { useState } from "react";
 
 type Tab = "form" | "booking";
@@ -7,10 +9,16 @@ type Tab = "form" | "booking";
 export default function KontaktPage() {
   const [activeTab, setActiveTab] = useState<Tab>("booking");
 
+  useGSAP(() => {
+    gsap.from(".section", {
+      opacity: 0,
+    });
+  }, []);
+
   return (
-    <div className="overflow-hidden min-h-screen bg-linear-to-b from-primary/20 via-transparent to-transparent pt-24 md:pt-32 pb-20 px-4 sm:px-6">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl md:text-7xl font-black mb-6 text-secondary">
+    <div className="section overflow-hidden min-h-screen bg-linear-to-b from-primary/20 via-transparent to-transparent pt-24 md:pt-32 pb-20 px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto">
+        <h1 className="text-5xl md:text-7xl font-black mb-6 pt-10 text-secondary">
           Kontakta oss
         </h1>
         <p className="text-xl text-black/70 mb-12">

@@ -1,17 +1,25 @@
+"use client";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function OmOssPage() {
+  useGSAP(() => {
+    gsap.from(".section", {
+      opacity: 0,
+    });
+  }, []);
   return (
     <div className="min-h-screen bg-linear-to-b from-primary/20 via-transparent to-transparent  pt-24 md:pt-32 pb-20 px-4 sm:px-6">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl md:text-7xl font-black mb-6 text-secondary">
+      <div className="max-w-6xl mx-auto">
+        <h1 className="text-5xl md:text-7xl font-black mb-6 pt-10 text-secondary">
           Om oss
         </h1>
-        <p className="text-xl text-black/70 mb-12">
-          Henri Braun är din partner inom digital marknadsföring. Vi kombinerar
-          datadriven strategi med kreativ execution för att hjälpa företag växa
-          online.
+        <p className="text-xl text-black/70 mb-12 max-w-4xl">
+          Henri Braun är din partner inom digital marknadsföring. <br /> Vi
+          kombinerar datadriven strategi med kreativ execution för att hjälpa
+          företag växa online.
         </p>
 
         <div className="relative w-full aspect-20/10  overflow-hidden mb-16">

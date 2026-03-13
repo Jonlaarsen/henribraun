@@ -1,9 +1,17 @@
+"use client";
 import Link from "next/link";
 import { KUNDCASE_LIST } from "@/constants/kundcase";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 export default function KundcasePage() {
+  useGSAP(() => {
+    gsap.from(".section", {
+      opacity: 0,
+    });
+  }, []);
   return (
-    <div className="min-h-screen pt-24 bg-linear-to-b from-primary/20 via-transparent to-transparent  md:pt-32 pb-20 px-4 sm:px-6">
+    <div className="section min-h-screen pt-24 bg-linear-to-b from-primary/20 via-transparent to-transparent  md:pt-32 pb-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-black mb-6 pt-10 text-secondary">
           Kundcase

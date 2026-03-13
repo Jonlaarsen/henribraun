@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="sv">
       <body
         className={`${firaSans.variable} ${dmSerif.variable} ${notoSans.variable} antialiased`}
       >
