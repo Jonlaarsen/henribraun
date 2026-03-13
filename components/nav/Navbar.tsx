@@ -142,7 +142,11 @@ const Navbar = () => {
             <X className="h-6 w-6 text-secondary" />
           </button>
           <div className="border-b border-black/10 pb-4">
-            <Link href="/" className="text-black  transition-opacity shrink-0">
+            <Link
+              href="/"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-black  transition-opacity shrink-0"
+            >
               <h1 className=" pb-10 text-[#333333] font-logo text-5xl font-semibold flex items-center justify-center">
                 HENRI{" "}
                 <span className="h-2.5 w-2.5 bg-primary rounded-full -mt-2 mx-1 inline-block" />{" "}
