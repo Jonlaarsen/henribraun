@@ -3,7 +3,6 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowBigRightDash } from "lucide-react";
-import { BiHappyHeartEyes } from "react-icons/bi";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -86,7 +85,7 @@ const Services = () => {
               {service.text}
             </p>
             <div>
-              <BiHappyHeartEyes className="h-30 w-30 text-secondary absolute bottom-2 right-4 opacity-80" />
+              <div className="h-30 w-30 text-secondary absolute bottom-2 right-4 opacity-80" />
             </div>
             <a
               href="/tjanster"
