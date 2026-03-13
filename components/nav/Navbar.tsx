@@ -127,7 +127,7 @@ const Navbar = () => {
 
       {/* Mobile menu overlay */}
       <div
-        className={`fixed inset-0 z-90 bg-white/95 backdrop-blur-lg md:hidden transition-opacity duration-300 ${
+        className={`fixed inset-0 z-100 bg-white/95 backdrop-blur-lg md:hidden transition-opacity overflow-scroll duration-300 ${
           mobileMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -135,11 +135,24 @@ const Navbar = () => {
         style={{ paddingTop: "5.5rem" }}
       >
         <nav className="flex flex-col gap-6 px-8 py-6 text-xl font-light">
+          <button
+            className="absolute top-5 right-5"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            <X className="h-6 w-6 text-secondary" />
+          </button>
           <div className="border-b border-black/10 pb-4">
+            <Link href="/" className="text-black  transition-opacity shrink-0">
+              <h1 className=" pb-10 text-[#333333] font-logo text-5xl font-semibold flex items-center justify-center">
+                HENRI{" "}
+                <span className="h-2.5 w-2.5 bg-primary rounded-full -mt-2 mx-1 inline-block" />{" "}
+                BRAUN
+              </h1>
+            </Link>
             <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-3">
               Tjänster
             </p>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col text-base gap-2">
               {TJANSTER_NAV_LINKS.map((link) => (
                 <Link
                   key={link.href}
@@ -168,7 +181,7 @@ const Navbar = () => {
           </Link>
           <Link
             href="/kontakt"
-            className="text-slate-700  hover:text-black py-2"
+            className="text-slate-700 font-bold hover:text-black py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
             Kontakta Oss
