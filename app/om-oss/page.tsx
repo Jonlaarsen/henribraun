@@ -20,7 +20,7 @@ export default function OmOssPage() {
             alt="Modernt kontorslandskap"
             className="object-cover"
           />
-          <h1 className="text-[13.2rem] w-full font-semibold absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 font-logo z-20">
+          <h1 className="text-[5.5rem] sm:text-[11rem] md:text-[11rem] xl:text-[13.2rem] font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-logo z-20 whitespace-nowrap">
             HENRI BRAUN
           </h1>
         </div>
@@ -41,9 +41,9 @@ export default function OmOssPage() {
             Vår filosofi
           </h2>
           <div className="flex flex-col lg:flex-row gap-8 items-start">
-            <div className="relative w-full lg:w-80 shrink-0 aspect-[4/3] rounded-xl overflow-hidden">
+            <div className="relative w-full lg:w-80 shrink-0 aspect-[4/3] rounded-sm overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80"
+                src="/coffee.webp"
                 alt="Samarbete och teamwork"
                 fill
                 className="object-cover"
@@ -178,9 +178,8 @@ export default function OmOssPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-6 text-secondary/90">Malmö</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="relative aspect-[16/10] rounded-xl overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
+            <div className="relative aspect-square  overflow-hidden">
               <Image
                 src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&q=80"
                 alt="Malmö stad"
@@ -189,9 +188,18 @@ export default function OmOssPage() {
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
-            <div className="relative aspect-[16/10] rounded-xl overflow-hidden">
+            <div className="relative aspect-square overflow-hidden">
               <Image
                 src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80"
+                alt="Möte och samarbete"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+            <div className="relative aspect-square  overflow-hidden">
+              <Image
+                src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=800&q=80"
                 alt="Möte och samarbete"
                 fill
                 className="object-cover"

@@ -23,7 +23,7 @@ const dmSerif = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
-  title: "HENRI BRAUN",
+  title: "HENRI BRAUN | Digital marketing",
   description: "HENRI BRAUN | Digital marketing",
 };
 
