@@ -11,7 +11,7 @@ export default function OmOssPage() {
     });
   }, []);
   return (
-    <div className="min-h-screen bg-linear-to-b from-primary/20 via-transparent to-transparent  pt-24 md:pt-32 pb-20 px-4 sm:px-6">
+    <div className="section min-h-screen bg-linear-to-b from-primary/20 via-transparent to-transparent  pt-24 md:pt-32 pb-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-black mb-6 pt-10 text-secondary">
           Om oss
