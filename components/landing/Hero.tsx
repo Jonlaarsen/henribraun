@@ -28,7 +28,7 @@ const Hero = () => {
     });
   }, []);
   return (
-    <section className="relative min-h-[85vh] md:min-h-screen bg-linear-to-b from-primary/30 via-transparent to-transparent flex flex-col items-center justify-center bg- text-black overflow-hidden pt-16 md:pt-0">
+    <section className="relative min-h-screen bg-linear-to-b from-primary/30 via-transparent to-transparent flex flex-col items-center justify-center bg- text-black overflow-hidden ">
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-5xl">
         <h1
           id="title"

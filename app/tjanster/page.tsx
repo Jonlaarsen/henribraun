@@ -58,11 +58,7 @@ export default function TjansterPage() {
                 <div className="w-full relative text-cyan-800 flex items-center justify-center h-40">
                   <div className="z-20">
                     <p className="text-black/70 line-clamp-3">
-                      {service.description} Lorem ipsum dolor sit, amet
-                      consectetur adipisicing elit. Ab commodi laboriosam
-                      dignissimos quod quidem molestias, repellat nisi quia
-                      itaque exercitationem cum soluta id nobis voluptates et
-                      delectus sed inventore provident.
+                      {service.description}
                     </p>
                   </div>
                 </div>

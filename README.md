@@ -1,5 +1,21 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Contact Form (Resend)
+
+The contact form sends emails via [Resend](https://resend.com). Add to `.env.local`:
+
+```
+RESEND_API_KEY=re_your_api_key_here
+```
+
+All submissions are sent to **kontakt@henribraun.se**.
+
+Optional: To send from your own domain (e.g. `noreply@henribraun.se`), verify henribraun.se in Resend and add:
+
+```
+RESEND_FROM_EMAIL=Henri Braun <noreply@henribraun.se>
+```
+
 ## Getting Started
 
 First, run the development server:

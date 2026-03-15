@@ -9,6 +9,14 @@ export type KundcaseQuote = {
   role: string;
 };
 
+export type kundcaseResult = {
+  impressions?: string;
+  click?: string;
+  addToCart?: string;
+  beginCheckout?: string;
+  buy?: string;
+}
+
 export type Kundcase = {
   slug: string;
   client: string;
@@ -19,6 +27,7 @@ export type Kundcase = {
   links: KundcaseLink[];
   assignment: string[];
   quote: KundcaseQuote | null;
+  result?: kundcaseResult | null;
 };
 
 export const KUNDCASE_LIST: Kundcase[] = [
@@ -64,6 +73,13 @@ export const KUNDCASE_LIST: Kundcase[] = [
       "Arbetet bedrevs med hög kostnadsmedvetenhet och strikt prioritering av effektivitet. Fokus låg på att skapa maximal effekt genom strategi, struktur och datadrivna beslut snarare än volym. Insatsen omfattade strukturering av sök-, shopping- och Performance Max-kampanjer, målgrupps- och söktermsanalys samt kontinuerlig optimering av annonser, budskap och tillgångar.",
     ],
     quote: null,
+    result: {
+      impressions:"828 101",
+      click:"12 842",
+      addToCart:"255",
+      beginCheckout:"327",
+      buy:"154"
+    }
   },
 ];
 

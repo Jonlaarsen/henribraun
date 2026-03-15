@@ -2,12 +2,26 @@
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { useState } from "react";
+import { useSearchParams } from "next/navigation";
+import { useEffect, useState } from "react";
 
 type Tab = "form" | "booking";
 
 export default function KontaktPage() {
-  const [activeTab, setActiveTab] = useState<Tab>("booking");
+  const searchParams = useSearchParams();
+  const tabParam = searchParams.get("tab");
+  const [activeTab, setActiveTab] = useState<Tab>(() => {
+    if (tabParam === "form" || tabParam === "booking") return tabParam;
+    return "booking";
+  });
+
+  useEffect(() => {
+    const tab = searchParams.get("tab");
+    if (tab === "form" || tab === "booking") setActiveTab(tab);
+  }, [searchParams]);
+
+  const formSent = searchParams.get("sent") === "1";
+  const formError = searchParams.get("error");
 
   useGSAP(() => {
     gsap.from(".section", {
@@ -29,16 +43,6 @@ export default function KontaktPage() {
         {/* Tabs */}
         <div className="flex gap-2 mb-12 border-b border-black/10">
           <button
-            onClick={() => setActiveTab("form")}
-            className={`px-6 py-3 font-semibold rounded-t-lg transition-colors ${
-              activeTab === "form"
-                ? "bg-secondary text-white border-b-2 border-cyan-800 -mb-[1px]"
-                : "text-black/60 hover:text-black hover:bg-black/5"
-            }`}
-          >
-            Frågor / Kontaktformulär
-          </button>
-          <button
             onClick={() => setActiveTab("booking")}
             className={`px-6 py-3 font-semibold rounded-t-lg transition-colors ${
               activeTab === "booking"
@@ -48,11 +52,34 @@ export default function KontaktPage() {
           >
             Boka möte
           </button>
+          <button
+            onClick={() => setActiveTab("form")}
+            className={`px-6 py-3 font-semibold rounded-t-lg transition-colors ${
+              activeTab === "form"
+                ? "bg-secondary text-white border-b-2 border-cyan-800 -mb-[1px]"
+                : "text-black/60 hover:text-black hover:bg-black/5"
+            }`}
+          >
+            Frågor / Kontaktformulär
+          </button>
         </div>
 
         {/* Tab content */}
         {activeTab === "form" && (
-          <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
+          <div className="flex flex-col gap-6">
+            {formSent && (
+              <div className="p-4 rounded-lg bg-green-100 text-green-800 border border-green-200">
+                Tack! Ditt meddelande har skickats. Vi återkommer så snart vi kan.
+              </div>
+            )}
+            {formError && (
+              <div className="p-4 rounded-lg bg-red-100 text-red-800 border border-red-200">
+                {formError === "validation"
+                  ? "Fyll i e-post och meddelande."
+                  : "Något gick fel. Försök igen eller kontakta oss direkt på kontakt@henribraun.se."}
+              </div>
+            )}
+            <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
             <div className="lg:max-w-xs shrink-0 order-2 lg:order-1">
               <h3 className="text-2xl font-bold text-secondary mb-4">
                 Vi svarar inom 24 timmar
@@ -69,32 +96,35 @@ export default function KontaktPage() {
               </p>
             </div>
             <form
-              className="flex flex-col border-black bg-primary/10 text-black relative flex-1 min-w-0 space-y-4 p-6 sm:p-8 md:p-10 rounded-2xl lg:rounded-4xl border order-1 lg:order-2"
-              action=""
+              className="flex flex-col max-w-2xl border-black bg-primary/10 text-black relative flex-1 min-w-0 space-y-4 p-6 sm:p-8 md:p-10 rounded-2xl lg:rounded-4xl border order-1 lg:order-2"
+              action="/api/contact"
+              method="POST"
             >
               <h2 className="font-black text-zinc-800 text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center z-10">
                 Kontakta oss
               </h2>
               <div className="flex w-full gap-4">
                 <div className="w-full z-10">
-                  <label className="text-sm" htmlFor="name">
+                  <label className="text-sm" htmlFor="firstName">
                     Förnamn
                   </label>
                   <input
                     required
-                    id="name"
+                    id="firstName"
+                    name="firstName"
                     className="h-10 w-full rounded-lg pl-2 bg-white border-black border"
                     type="text"
                   />
                 </div>
 
                 <div className="w-full z-10">
-                  <label className="text-sm" htmlFor="lastname">
+                  <label className="text-sm" htmlFor="lastName">
                     Efternamn
                   </label>
                   <input
                     required
-                    id="name"
+                    id="lastName"
+                    name="lastName"
                     className="h-10 w-full rounded-lg pl-2 bg-white border-black border"
                     type="text"
                   />
@@ -108,28 +138,30 @@ export default function KontaktPage() {
                 <input
                   required
                   id="email"
+                  name="email"
                   className="h-10 w-full rounded-lg pl-2 bg-white border-black border"
                   type="email"
                 />
               </div>
               <div className="w-full z-10">
-                <label className="text-sm" htmlFor="name">
+                <label className="text-sm" htmlFor="company">
                   Företag/Organisation{" "}
                 </label>
                 <input
-                  required
-                  id="name"
+                  id="company"
+                  name="company"
                   className="h-10 w-full rounded-lg pl-2 bg-white border-black border"
                   type="text"
                 />
               </div>
               <div className="w-full z-10">
-                <label className="text-sm" htmlFor="name">
+                <label className="text-sm" htmlFor="message">
                   Meddelande
                 </label>
                 <textarea
                   required
-                  id="name"
+                  id="message"
+                  name="message"
                   className="min-h-[120px] md:h-40 w-full pl-2 pt-2 bg-white border-black border rounded-2xl"
                 />
               </div>
@@ -137,6 +169,7 @@ export default function KontaktPage() {
                 skicka
               </button>
             </form>
+            </div>
           </div>
         )}
 

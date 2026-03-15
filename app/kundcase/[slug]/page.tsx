@@ -14,7 +14,7 @@ export default async function KundcaseDetailPage({
 
   return (
     <div className="min-h-screen pt-24 md:pt-32 pb-20 px-4 sm:px-6">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <Link
           href="/kundcase"
           className="text-black/60 hover:text-black mb-8 inline-block"
@@ -26,7 +26,7 @@ export default async function KundcaseDetailPage({
           <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">
             {caseStudy.tagline}
           </p>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-secondary">
+          <h1 className="text-4xl md:text-6xl max-w-60 md:max-w-150  font-bold mb-4 text-secondary">
             {caseStudy.client}
           </h1>
           <p className="text-lg text-black/80 max-w-2xl mb-6">
@@ -77,6 +77,45 @@ export default async function KundcaseDetailPage({
               <span className="text-black/60"> — {caseStudy.quote.role}</span>
             </footer>
           </blockquote>
+        )}
+        {caseStudy.result && (
+          <div className="bg-secondary text-zinc-50 size-full  py-10 gap-10 flex flex-wrap justify-evenly items-center">
+            <h1 className="text-4xl md:text-5xl font-black text-white">
+              Resultat:
+            </h1>
+            <div className="flex items-center justify-center gap-2">
+              <h2 className="text-2xl md:text-3xl font-light">Impressions:</h2>
+              <p className="text-3xl md:text-4xl font-black">
+                {caseStudy.result.impressions}
+              </p>
+            </div>
+            <div className="flex items-center justify-center gap-2">
+              <h2 className="text-2xl md:text-3xl font-light">Clicks:</h2>
+              <p className="text-3xl md:text-4xl font-black">
+                {caseStudy.result.click}
+              </p>
+            </div>
+            <div className="flex items-center justify-center gap-2">
+              <h2 className="text-2xl md:text-3xl font-light">Add to cart:</h2>
+              <p className="text-3xl md:text-4xl font-black">
+                {caseStudy.result.addToCart}
+              </p>
+            </div>
+            <div className="flex items-center justify-center gap-2">
+              <h2 className="text-2xl md:text-3xl font-light">
+                Begin to checkout:
+              </h2>
+              <p className="text-3xl md:text-4xl font-black">
+                {caseStudy.result.beginCheckout}
+              </p>
+            </div>
+            <div className="flex items-center justify-center gap-2">
+              <h2 className="text-2xl md:text-3xl font-light">Purchaces:</h2>
+              <p className="text-3xl md:text-4xl font-black">
+                {caseStudy.result.buy}
+              </p>
+            </div>
+          </div>
         )}
 
         <div className="mt-16 pt-8 border-t border-black/10 flex flex-col sm:flex-row gap-4">

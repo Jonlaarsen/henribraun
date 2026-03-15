@@ -10,6 +10,7 @@ import gsap from "gsap";
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileTjansterOpen, setMobileTjansterOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   useGSAP(() => {
     gsap.from(".navbar", {
@@ -39,6 +40,7 @@ const Navbar = () => {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
+      setMobileTjansterOpen(false);
     }
     return () => {
       document.body.style.overflow = "";
@@ -91,7 +93,7 @@ const Navbar = () => {
         className="text-slate-600 font-bold hover:text-black"
         onClick={() => setMobileMenuOpen(false)}
       >
-        Boka
+        Boka / kontakt
       </Link>
     </>
   );
@@ -153,21 +155,29 @@ const Navbar = () => {
                 BRAUN
               </h1>
             </Link>
-            <p className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-3">
+            <button
+              onClick={() => setMobileTjansterOpen(!mobileTjansterOpen)}
+              className="flex items-center justify-between w-full text-left text-sm font-semibold uppercase tracking-widest text-slate-600 mb-3 py-2 hover:text-slate-700"
+            >
               Tjänster
-            </p>
-            <div className="flex flex-col text-base gap-2">
-              {TJANSTER_NAV_LINKS.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-slate-700 hover:text-black py-2"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
+              <ChevronDown
+                className={`h-4 w-4 transition-transform ${mobileTjansterOpen ? "rotate-180" : ""}`}
+              />
+            </button>
+            {mobileTjansterOpen && (
+              <div className="flex flex-col text-base gap-2">
+                {TJANSTER_NAV_LINKS.map((link, index) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={`${index === 0 ? "font-bold" : ""} text-slate-700 hover:text-black py-2`}
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            )}
           </div>
           <Link
             href="/kundcase"
@@ -188,7 +198,7 @@ const Navbar = () => {
             className="text-slate-700 font-bold hover:text-black py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
-            Boka
+            Boka / Kontakt
           </Link>
         </nav>
       </div>

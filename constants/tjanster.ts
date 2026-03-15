@@ -21,7 +21,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
   {
     slug: "digital-analys",
     title: "Digital Analys",
-    description: "Här börjar allt. Vi granskar din data och hittar insikter som hjälper dig ta smarta beslut.",
+    description: "Här börjar allt. Vi granskar din data grundligt – webbanalys, beteendemönster, konverteringsflöden och konkurrenter – och hittar insikter som hjälper dig ta smarta, databaserade beslut. Du får en tydlig rapport med konkreta rekommendationer, inte bara siffror.",
     iconKey: "BarChart2",
     fullText:
       "Vi kartlägger era målgrupper och affärsmål i detalj så att varje insats bygger på tydliga insikter. Genom att analysera din nuvarande digitala närvaro, webbtrafik och konverteringsdata identifierar vi möjligheter och utmaningar som formar grunden för din strategi.",
@@ -48,7 +48,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
   {
     slug: "digital-strategi",
     title: "Digital Strategi",
-    description: "Vi tar fram en tydlig strategi baserat på datadrivna insikter för att du ska lyckas online.",
+    description: "Vi tar fram en tydlig, genomförbar strategi baserat på datadrivna insikter. Vi definierar mål, KPI:er och en roadmap som guidar dig från nu till där du vill vara – med fokus på långsiktig tillväxt och lönsamhet online.",
     iconKey: "Cpu",
     fullText:
       "Vi hjälper dig att sätta upp en långsiktig plan med målet att bygga ett starkt varumärke och öka din lönsamhet. Strategin bygger på insikter från analysen och är skräddarsydd för era affärsmål och budget.",
@@ -75,7 +75,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
   {
     slug: "konverterings-optimering",
     title: "Konverterings-optimering",
-    description: "Fler konverteringar genom att förbättra varje steg i kundresan.",
+    description: "Fler konverteringar genom att förbättra varje steg i kundresan. Vi använder A/B-testning, heatmaps och användartester för att hitta var besökare tappas bort – och optimerar sedan landningssidor, formulär och checkoutflöden så att fler blir kunder.",
     iconKey: "CircleFadingArrowUp",
     fullText:
       "Varje steg i kundresan är avgörande. Vi skapar en smidig och användarvänlig köpupplevelse där design, struktur och optimering skapar tillit från kunder och genererar fler konverteringar.",
@@ -100,9 +100,9 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
     process: ["Kartläggning & analys", "Hypoteser & testplan", "Implementering", "Mätning & iteration"],
   },
   {
-    slug: "web-design",
-    title: "Web Design & Produktion",
-    description: "Vi hjälper dig bygga och förbättra din hemsida",
+    slug: "webb-design",
+    title: "Webbproduktion",
+    description: "Vi hjälper dig bygga och förbättra din hemsida med fokus på användarupplevelse och konvertering. Vi skapar moderna, snabba och mobilvänliga webbplatser som är SEO-vänliga från start och bygger på bästa praxis för design och teknik.",
     iconKey: "Code2",
     fullText:
       "En bra webbplats är mer än snygg design – den ska konvertera besökare till kunder. Vi skapar moderna, snabba och användarvänliga webbplatser som bygger på tydlig struktur och bästa praxis för SEO och UX.",
@@ -130,7 +130,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
   {
     slug: "google-ads",
     title: "Google Ads",
-    description: "Var med i kundens köpresa från första klicket.",
+    description: "Var med i kundens köpresa från första klicket. Vi skapar kampanjer som fångar upp köpklara kunder via sökannonser, Display och YouTube – med rätt målgrupper, budskap och budgivning så att varje investerad krona ger maximal avkastning.",
     iconKey: "Megaphone",
     fullText:
       "Vi skapar kampanjer som fångar upp köpklara kunder och ser till att varje investerad krona ger maximal avkastning. Google Ads är kraftfullt när det används rätt – med rätt målgrupper, budskap och budgivning.",
@@ -157,7 +157,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
   {
     slug: "meta-ads",
     title: "Meta Ads",
-    description: "Annonser som engagerar och konverterar på Facebook och Instagram.",
+    description: "Annonser som engagerar och konverterar på Facebook och Instagram. Vi når rätt personer genom datadriven målgruppsstyrning, lookalike-publiker och retargeting – och skapar kreativ som sticker ut i flödet och driver mätbara resultat.",
     iconKey: "Share2",
     fullText:
       "Vi hjälper dig nå rätt personer på Facebook och Instagram med annonser som engagerar och konverterar. Genom datadriven målgruppsstyrning och kreativ annonsering ser vi till att dina budskap träffar kunderna i rätt ögonblick.",
@@ -184,7 +184,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
   {
     slug: "microsoft-ads",
     title: "Microsoft Ads",
-    description: "Syns när kunderna letar efter dina produkter eller tjänster.",
+    description: "Syns när kunderna letar efter dina produkter eller tjänster via Bing och Microsofts söknätverk. Vi når en unik målgrupp – ofta B2B-köpbeslutsfattare och professionella användare – med lägre konkurrens och potentiellt lägre kostnad per klick än på Google.",
     iconKey: "Monitor",
     fullText:
       "Vi hjälper dig nå rätt personer via Microsofts söknätverk med annonser som syns när kunderna aktivt letar efter dina produkter eller tjänster. Microsoft Ads når en unik målgrupp – ofta B2B-köpbeslutsfattare och professionella användare som söker via Bing och Microsoft 365.",
