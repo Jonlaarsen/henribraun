@@ -23,7 +23,7 @@ const dmSerif = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
-  title: "HENRI BRAUN | Digital marketing",
+  title: "HENRI BRAUN | Din Partner Inom Digital Marknadsföring",
   description:
     "Henri Braun erbjuder skräddarsydda lösningar inom digital marknadsföring, optimering och webbproduktion som driver din verksamhet framåt. Spetskompetens inom digital handel och marknadsföring. Kontakta oss för professionell rådgivning och support.",
 };
