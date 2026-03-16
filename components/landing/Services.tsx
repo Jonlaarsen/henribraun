@@ -47,7 +47,7 @@ const Services = () => {
       id="services"
       className="min-h-screen py-10 md:py-20 px-4 relative flex flex-col items-center justify-center text-slate-800"
     >
-      <h1 className="text-3xl text-center sm:text-5xl md:text-6xl lg:text-7xl pb-4 font-black px-4">
+      <h1 className="text-3xl text-center sm:text-5xl md:text-6xl  pb-4 font-black px-4">
         Hur kan vi hjälpa dig?
       </h1>
       <h2 className="text-xl md:text-3xl text-center font-light px-5">

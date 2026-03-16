@@ -100,16 +100,17 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="z-100 navbar fixed top-3 left-3 right-3 md:top-5 md:left-10 md:right-10 border rounded-full py-2 px-4 md:py-2 md:px-10 bg-white/40 backdrop-blur-md border-secondary/60 flex justify-between items-center">
+      <div className="z-100 navbar h-18 fixed top-3 left-3 right-3 md:top-5 md:left-10 md:right-10 border py-2 rounded-full  px-4 md:py-2 md:px-10 bg-white/40 backdrop-blur-md border-secondary/60 flex justify-between items-center">
         <Link
           href="/"
           className="text-black hover:opacity-80 transition-opacity shrink-0"
         >
-          <h1 className=" mt-2 text-[#333333] font-logo text-3xl md:text-5xl font-semibold flex items-center justify-center">
+          {/* <h1 className=" mt-2 text-[#333333] font-logo text-3xl md:text-5xl font-semibold flex items-center justify-center">
             HENRI{" "}
             <span className="h-1.5 w-1.5 md:h-2.5 md:w-2.5 bg-primary rounded-full -mt-2 mx-1 inline-block" />{" "}
             BRAUN
-          </h1>
+          </h1> */}
+          <img src="/HENRIBRAUN1_line.svg" className="h-5 md:h-8 " />
         </Link>
         <div className="hidden md:flex items-center space-x-5 text-lg z-100 font-light">
           <NavLinks />
@@ -147,13 +148,14 @@ const Navbar = () => {
             <Link
               href="/"
               onClick={() => setMobileMenuOpen(false)}
-              className="text-black  transition-opacity shrink-0"
+              className="text-black flex items-center justify-center mb-20 transition-opacity shrink-0"
             >
-              <h1 className=" pb-10 text-[#333333] font-logo text-5xl font-semibold flex items-center justify-center">
+              {/* <h1 className=" pb-10 text-[#333333] font-logo text-5xl font-semibold flex items-center justify-center">
                 HENRI{" "}
                 <span className="h-2.5 w-2.5 bg-primary rounded-full -mt-2 mx-1 inline-block" />{" "}
                 BRAUN
-              </h1>
+              </h1> */}
+              <img src="/HENRIBRAUN1_line.svg" className="h-8 " />
             </Link>
             <button
               onClick={() => setMobileTjansterOpen(!mobileTjansterOpen)}

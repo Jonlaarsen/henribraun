@@ -28,9 +28,14 @@ export default function OmOssPage() {
             alt="Modernt kontorslandskap"
             className="object-cover"
           />
-          <h1 className="text-[5.5rem] sm:text-[10rem] md:text-[12rem] xl:text-[13rem] font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-logo z-20 whitespace-nowrap">
+          {/* <h1 className="text-[4rem] sm:text-[8rem] md:text-[11rem] xl:text-[12rem] font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tracking-tighter z-20 whitespace-nowrap">
             HENRI BRAUN
-          </h1>
+          </h1> */}
+          <img
+            src="/HENRIBRAUN1_line_black.svg"
+            className="invert h-42  px-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 "
+            alt=""
+          />
         </div>
 
         <section className="mb-16">

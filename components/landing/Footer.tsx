@@ -8,11 +8,26 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-16">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-10 md:gap-12">
           <div className="space-y-4">
-            <h2 className=" text-[#cacaca] font-logo font-semibold text-6xl lg:text-8xl  tracking-tight flex items-center">
+            {/* <h2 className=" text-[#cacaca] font-logo font-semibold tracking-wide text-6xl lg:text-8xl flex items-center">
               HENRI{" "}
               <span className="lg:h-4 lg:w-4 h-3 w-3 mb-4 rounded-full bg-primary mx-2" />{" "}
               BRAUN
-            </h2>
+            </h2> */}
+            <div
+              className="h-32 w-50"
+              style={{
+                backgroundColor: "#cacaca",
+                maskImage: "url(/HENRIBRAUN2row.svg)",
+                maskRepeat: "no-repeat",
+                maskPosition: "center",
+                maskSize: "contain",
+                WebkitMaskImage: "url(/HENRIBRAUN2row.svg)",
+                WebkitMaskRepeat: "no-repeat",
+                WebkitMaskPosition: "center",
+                WebkitMaskSize: "contain",
+              }}
+            />
+            {/* <img src="" className="h-30 invert" alt="" /> */}
             <p className="text-white/60 text-sm max-w-sm">
               Din partner inom digital marknadsföring. <br /> Vi hjälper företag
               att växa online.
@@ -27,7 +42,7 @@ const Footer = () => {
               <ul className="space-y-3">
                 <li>
                   <Link
-                    href="#services"
+                    href="/tjanster"
                     className="text-white/80 hover:text-white transition-colors"
                   >
                     Tjänster
@@ -35,7 +50,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/kundcase"
                     className="text-white/80 hover:text-white transition-colors"
                   >
                     Kundcase
@@ -43,7 +58,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/om-oss"
                     className="text-white/80 hover:text-white transition-colors"
                   >
                     Om oss
@@ -51,7 +66,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="#contact"
+                    href="/kontakt"
                     className="text-white/80 hover:text-white transition-colors"
                   >
                     Kontakta oss

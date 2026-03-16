@@ -110,7 +110,7 @@ export default async function KundcaseDetailPage({
               </p>
             </div>
             <div className="flex items-center justify-center gap-2">
-              <h2 className="text-2xl md:text-3xl font-light">Purchaces:</h2>
+              <h2 className="text-2xl md:text-3xl font-light">Purchases:</h2>
               <p className="text-3xl md:text-4xl font-black">
                 {caseStudy.result.buy}
               </p>

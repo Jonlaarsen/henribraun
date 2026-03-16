@@ -2,7 +2,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { TJANSTER_BY_SLUG } from "@/constants";
 
-export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function ServicePage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
   const service = TJANSTER_BY_SLUG[slug];
 
@@ -11,19 +15,30 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
   return (
     <div className="min-h-screen pt-24 md:pt-32 pb-20 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
-        <Link href="/tjanster" className="text-black/60 hover:text-black mb-8 inline-block">
+        <Link
+          href="/tjanster"
+          className="text-black/60 hover:text-black mb-8 inline-block"
+        >
           ← Tillbaka till tjänster
         </Link>
-        <h1 className="text-5xl md:text-7xl font-black mb-6 text-cyan-900">{service.title}</h1>
+        <h1 className="text-5xl md:text-7xl font-black mb-6 text-cyan-900">
+          {service.title}
+        </h1>
         <p className="text-xl text-black/70 mb-8">{service.description}</p>
-        <p className="text-lg text-black/80 leading-relaxed mb-16">{service.fullText}</p>
+        <p className="text-lg text-black/80 leading-relaxed mb-16">
+          {service.fullText}
+        </p>
 
         {service.sections && service.sections.length > 0 && (
           <div className="space-y-12 mb-16">
             {service.sections.map((section, i) => (
               <div key={i}>
-                <h2 className="text-2xl font-bold mb-4 text-cyan-800">{section.title}</h2>
-                <p className="text-black/80 leading-relaxed">{section.content}</p>
+                <h2 className="text-2xl font-bold mb-4 text-cyan-800">
+                  {section.title}
+                </h2>
+                <p className="text-black/80 leading-relaxed">
+                  {section.content}
+                </p>
               </div>
             ))}
           </div>
@@ -31,7 +46,9 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
         {service.benefits && service.benefits.length > 0 && (
           <div className="mb-16">
-            <h2 className="text-2xl font-bold mb-6 text-cyan-800">Vad du får</h2>
+            <h2 className="text-2xl font-bold mb-6 text-cyan-800">
+              Vad du får
+            </h2>
             <ul className="space-y-3">
               {service.benefits.map((benefit, i) => (
                 <li key={i} className="flex items-start gap-3">
@@ -45,11 +62,13 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
         {service.process && service.process.length > 0 && (
           <div>
-            <h2 className="text-2xl font-bold mb-6 text-cyan-800">Vår process</h2>
+            <h2 className="text-2xl font-bold mb-6 text-cyan-800">
+              Vår process
+            </h2>
             <ol className="space-y-4">
               {service.process.map((step, i) => (
                 <li key={i} className="flex items-start gap-4">
-                  <span className="flex shrink-0 w-8 h-8 rounded-full bg-cyan-100 text-cyan-800 font-semibold flex items-center justify-center text-sm">
+                  <span className="flex shrink-0 w-8 h-8 rounded-full bg-primary text-white font-semibold items-center justify-center text-sm">
                     {i + 1}
                   </span>
                   <span className="text-black/80 pt-0.5">{step}</span>

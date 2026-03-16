@@ -9,32 +9,38 @@ const Contact = () => {
     >
       <div className="flex flex-col lg:flex-row-reverse gap-8 lg:gap-10 size-full max-w-6xl lg:items-stretch">
         <div className="flex flex-col space-y-4 size-full order-2 lg:order-1 lg:flex-1 lg:min-h-0">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-slate-900 font-stretch-125% md:font-stretch-150% pb-5 text-center md:text-start">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-slate-900  md:font-stretch-150% pb-5 text-center md:text-start">
             Låt oss hjälpa dig att växa digitalt idag!
           </h1>
-          <div className="h-auto  rounded-full text-zinc-800 bg-primary/70 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white duration-300 ease-in-out cursor-pointer">
+          <a
+            href="mailto:kontakt@henribraun.se"
+            className="h-auto  rounded-full text-zinc-800 bg-primary/70 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white duration-300 ease-in-out cursor-pointer"
+          >
             <Mail className="h-10 w-10 sm:h-12 sm:w-12 p-2 rounded-full border-2 shrink-0" />
             <span className="text-sm sm:text-lg underline underline-offset-4 truncate">
               kontakt@henribraun.se
             </span>
-          </div>
-          <div className="h-auto  rounded-full text-zinc-800 bg-primary/50 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white duration-300 ease-in-out cursor-pointer">
+          </a>
+          <a
+            href="tel:0046760151881"
+            className="h-auto  rounded-full text-zinc-800 bg-primary/50 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white duration-300 ease-in-out cursor-pointer"
+          >
             <Phone className="h-10 w-10 sm:h-12 sm:w-12 p-2 rounded-full border-2 shrink-0" />
             <span className="text-sm sm:text-lg underline underline-offset-4">
-              +46-111-222-33
+              +46-76-0151-881
             </span>
-          </div>
+          </a>
           <div className="h-auto  rounded-full text-zinc-800 bg-primary/30 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white  duration-300 ease-in-out cursor-pointer">
             <Pin className="h-10 w-10 sm:h-12 sm:w-12 p-2 rounded-full border-2 shrink-0" />
-            <span className="text-sm sm:text-lg">blabla 12, malmo, sweden</span>
+            <span className="text-sm sm:text-lg">Malmö, Sweden</span>
           </div>
         </div>
         <div className="flex flex-col items-center justify-evenly gap-10 w-full lg:flex-1 lg:min-h-0 lg:self-stretch">
           <div className="text-center">
-            <h1 className="text-slate-900/80 font-black text-4xl md:text-5xl ">
+            <h1 className="text-slate-900/80 font-black text-4xl md:text-6xl ">
               <span className="italic">Vi finns</span> här för dig
             </h1>
-            <p className="text-2xl font-light md:pb-10">
+            <p className="text-xl md:text-3xl font-light md:pb-10">
               Endast ett knapptryck bort.
             </p>
           </div>
