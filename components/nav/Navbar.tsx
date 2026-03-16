@@ -159,7 +159,7 @@ const Navbar = () => {
             </Link>
             <button
               onClick={() => setMobileTjansterOpen(!mobileTjansterOpen)}
-              className="flex items-center justify-between w-full text-left text-sm font-semibold uppercase tracking-widest text-slate-600 mb-3 py-2 hover:text-slate-700"
+              className="flex items-center justify-between w-full text-left text-base font-bold uppercase tracking-widest text-slate-600 mb-3 py-2 hover:text-slate-700"
             >
               Tjänster
               <ChevronDown
