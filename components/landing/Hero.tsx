@@ -40,7 +40,7 @@ const Hero = () => {
           id="subtitle"
           className="font-extralight text-2xl lg:text-4xl text-black/70 mb-6 md:mb-10"
         >
-          Välkommen till <span className=" text-primary">Henri Braun.</span>
+          Välkommen till <span className=" text-primary">Henri Braun</span>
         </p>
         <Link
           id="contact-button"
