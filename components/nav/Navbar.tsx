@@ -93,7 +93,7 @@ const Navbar = () => {
         className="text-slate-600 font-bold hover:text-black"
         onClick={() => setMobileMenuOpen(false)}
       >
-        Boka / kontakt
+        Kontakta oss
       </Link>
     </>
   );
@@ -200,7 +200,7 @@ const Navbar = () => {
             className="text-slate-700 font-bold hover:text-black py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
-            Boka / Kontakt
+            Kontakta oss
           </Link>
         </nav>
       </div>
