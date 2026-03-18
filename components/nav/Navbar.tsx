@@ -76,7 +76,7 @@ const Navbar = () => {
       </div>
       <Link
         href="/kundcase"
-        className="text-slate-600 font-bold hover:text-black"
+        className="text-slate-600  font-bold hover:text-black"
         onClick={() => setMobileMenuOpen(false)}
       >
         Kundcase
