@@ -34,15 +34,15 @@ export default function KundcasePage() {
                   maskImage:
                     "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 70%)",
                   WebkitMaskImage:
-                    "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 70%)",
+                    "radial-gradient(ellipse 90% 90% at 50% 50%, black 40%, transparent 70%)",
                 }}
-                className="h-20 opacity-20 w-auto absolute top-2 right-2 group-hover:opacity-80 ease-in-out duration-300"
+                className="h-20 md:opacity-60 opacity-80 w-auto absolute top-2 right-2 group-hover:opacity-90 ease-in-out duration-300"
                 alt=""
               />
-              <p className="text-sm font-semibold uppercase tracking-widest text-secondary/80 mb-2">
+              <p className="text-sm font-semibold uppercase tracking-widest max-w-70 text-secondary/80 mb-2">
                 {caseStudy.tagline}
               </p>
-              <h2 className="text-2xl font-bold mb-3 text-secondary group-hover:text-secondary/90">
+              <h2 className="text-2xl font-bold mb-3 text-secondary max-w-70 group-hover:text-secondary/90">
                 {caseStudy.client}
               </h2>
               <p className="text-black/70 mb-4 line-clamp-2">

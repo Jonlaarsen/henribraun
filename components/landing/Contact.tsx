@@ -21,15 +21,7 @@ const Contact = () => {
               kontakt@henribraun.se
             </span>
           </a>
-          <a
-            href="tel:0046760151881"
-            className="h-auto  rounded-full text-zinc-800 bg-primary/50 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white duration-300 ease-in-out cursor-pointer"
-          >
-            <Phone className="h-10 w-10 sm:h-12 sm:w-12 p-2 rounded-full border-2 shrink-0" />
-            <span className="text-sm sm:text-lg underline underline-offset-4">
-              +46-76-0151-881
-            </span>
-          </a>
+          ´
           <div className="h-auto  rounded-full text-zinc-800 bg-primary/30 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white  duration-300 ease-in-out cursor-pointer">
             <Pin className="h-10 w-10 sm:h-12 sm:w-12 p-2 rounded-full border-2 shrink-0" />
             <span className="text-sm sm:text-lg">Malmö, Sweden</span>
@@ -72,76 +64,6 @@ const Contact = () => {
             </h1>
           </Link>
         </div>
-
-        {/* <form
-          className="flex flex-col bg-secondary/20 relative max-w-4xl w-full space-y-4 p-6 sm:p-8 md:p-10 size-full rounded-2xl lg:rounded-4xl border order-1 lg:order-2"
-          action=""
-        >
-          <h2 className="font-black text-zinc-800 text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center z-10">
-            Kontakta oss
-          </h2>
-          <div className="flex w-full gap-4">
-            <div className="w-full z-10">
-              <label className="text-sm" htmlFor="name">
-                Förnamn
-              </label>
-              <input
-                required
-                id="name"
-                className="h-10 w-full rounded-lg pl-2 bg-white border-black border"
-                type="text"
-              />
-            </div>
-
-            <div className="w-full z-10">
-              <label className="text-sm" htmlFor="lastname">
-                Efternamn
-              </label>
-              <input
-                required
-                id="name"
-                className="h-10 w-full rounded-lg pl-2 bg-white border-black border"
-                type="text"
-              />
-            </div>
-          </div>
-
-          <div className="w-full z-10">
-            <label className="text-sm" htmlFor="email">
-              Email
-            </label>
-            <input
-              required
-              id="email"
-              className="h-10 w-full rounded-lg pl-2 bg-white border-black border"
-              type="email"
-            />
-          </div>
-          <div className="w-full z-10">
-            <label className="text-sm" htmlFor="name">
-              Företag/Organisation{" "}
-            </label>
-            <input
-              required
-              id="name"
-              className="h-10 w-full rounded-lg pl-2 bg-white border-black border"
-              type="text"
-            />
-          </div>
-          <div className="w-full z-10">
-            <label className="text-sm" htmlFor="name">
-              Meddelande
-            </label>
-            <textarea
-              required
-              id="name"
-              className="min-h-[120px] md:h-40 w-full pl-2 pt-2 bg-white border-black border rounded-2xl"
-            />
-          </div>
-          <button className="w-full rounded-full text-white text-center py-2 bg-black/80 hover:bg-black font-stretch-125% hover:scale-105 duration-300 ease-in-out">
-            skicka
-          </button>
-        </form> */}
       </div>
     </div>
   );
