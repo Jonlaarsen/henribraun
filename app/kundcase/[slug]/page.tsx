@@ -48,7 +48,7 @@ export default async function KundcaseDetailPage({
           <img
             src={caseStudy.logo}
             alt={caseStudy.client}
-            className="w-auto h-14 md:h-30 top-4 right-4 absolute opacity-80"
+            className="w-auto h-14 md:h-30 top-4 right-4 absolute"
           />
         </div>
 
