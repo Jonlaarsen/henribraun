@@ -26,23 +26,17 @@ export default function KundcasePage() {
             <Link
               key={caseStudy.slug}
               href={`/kundcase/${caseStudy.slug}`}
-              className="block p-6 rounded-2xl border border-black/10 bg-white relative hover:border-primary hover:shadow-lg hover:scale-[1.02] transition-all duration-300 group"
+              className="block p-6 rounded-2xl border border-black/10 bg-linear-to-bl from-white via-white via-70% to-blue-500/10 relative hover:border-primary hover:shadow-lg hover:scale-[1.02] transition-all duration-300 group"
             >
               <img
                 src={caseStudy.logo}
-                style={{
-                  maskImage:
-                    "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 70%)",
-                  WebkitMaskImage:
-                    "radial-gradient(ellipse 90% 90% at 50% 50%, black 40%, transparent 70%)",
-                }}
-                className="h-20 md:opacity-60 opacity-80 w-auto absolute top-2 right-2 group-hover:opacity-90 ease-in-out duration-300"
+                className="h-20 w-auto absolute top-2 right-2  ease-in-out duration-300"
                 alt=""
               />
               <p className="text-sm font-semibold uppercase tracking-widest max-w-70 text-secondary/80 mb-2">
                 {caseStudy.tagline}
               </p>
-              <h2 className="text-2xl font-bold mb-3 text-secondary max-w-70 group-hover:text-secondary/90">
+              <h2 className="text-2xl font-bold mb-8 text-secondary max-w-70 group-hover:text-secondary/90">
                 {caseStudy.client}
               </h2>
               <p className="text-black/70 mb-4 line-clamp-2">

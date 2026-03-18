@@ -7,21 +7,22 @@ const Contact = () => {
       id="contact"
       className="flex flex-col  size-full items-center justify-center pb-40 px-6  bg-linear-to-t from-primary/30 via-primary/10 to-transparent text-black overflow-hidden"
     >
-      <div className="flex flex-col lg:flex-row-reverse gap-8 lg:gap-10 size-full max-w-6xl lg:items-stretch">
-        <div className="flex flex-col space-y-4 size-full order-2 lg:order-1 lg:flex-1 lg:min-h-0">
+      <div className="flex flex-col lg:flex-row-reverse gap-8 lg:gap-10 size-full  max-w-6xl lg:items-stretch">
+        <div className="flex relative flex-col min-h-80 md:min-h-screen  space-y-4 size-full order-2 lg:order-1 lg:flex-1 ">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-slate-900  md:font-stretch-150% pb-5 text-center md:text-start">
             Låt oss hjälpa dig att växa digitalt idag!
           </h1>
-          <a
-            href="mailto:kontakt@henribraun.se"
-            className="h-auto  rounded-full text-zinc-800 bg-primary/70 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white duration-300 ease-in-out cursor-pointer"
-          >
-            <Mail className="h-10 w-10 sm:h-12 sm:w-12 p-2 rounded-full border-2 shrink-0" />
-            <span className="text-sm sm:text-lg underline underline-offset-4 truncate">
-              kontakt@henribraun.se
-            </span>
-          </a>
-          {/* <a
+          <div className="flex flex-col gap-5 absolute bottom-10 left-0 right-0 ">
+            <a
+              href="mailto:kontakt@henribraun.se"
+              className="h-auto  rounded-full text-zinc-800 bg-primary/70 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white duration-300 ease-in-out cursor-pointer"
+            >
+              <Mail className="h-10 w-10 sm:h-12 sm:w-12 p-2 rounded-full border-2 shrink-0" />
+              <span className="text-sm sm:text-lg underline underline-offset-4 truncate">
+                kontakt@henribraun.se
+              </span>
+            </a>{" "}
+            {/* <a
             href="tel:0046760151881"
             className="h-auto  rounded-full text-zinc-800 bg-primary/50 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white duration-300 ease-in-out cursor-pointer"
           >
@@ -30,9 +31,10 @@ const Contact = () => {
               +46-76-0151-881
             </span>
           </a> */}
-          <div className="h-auto  rounded-full text-zinc-800 bg-primary/30 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white  duration-300 ease-in-out cursor-pointer">
-            <Pin className="h-10 w-10 sm:h-12 sm:w-12 p-2 rounded-full border-2 shrink-0" />
-            <span className="text-sm sm:text-lg">Malmö, Sweden</span>
+            <div className="h-auto  rounded-full text-zinc-800 bg-primary/30 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white  duration-300 ease-in-out cursor-pointer">
+              <Pin className="h-10 w-10 sm:h-12 sm:w-12 p-2 rounded-full border-2 shrink-0" />
+              <span className="text-sm sm:text-lg">Malmö, Sweden</span>
+            </div>
           </div>
         </div>
         <div className="flex flex-col items-center justify-evenly gap-10 w-full lg:flex-1 lg:min-h-0 lg:self-stretch">
