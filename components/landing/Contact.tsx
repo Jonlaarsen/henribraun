@@ -21,7 +21,15 @@ const Contact = () => {
               kontakt@henribraun.se
             </span>
           </a>
-          ´
+          {/* <a
+            href="tel:0046760151881"
+            className="h-auto  rounded-full text-zinc-800 bg-primary/50 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white duration-300 ease-in-out cursor-pointer"
+          >
+            <Phone className="h-10 w-10 sm:h-12 sm:w-12 p-2 rounded-full border-2 shrink-0" />
+            <span className="text-sm sm:text-lg underline underline-offset-4">
+              +46-76-0151-881
+            </span>
+          </a> */}
           <div className="h-auto  rounded-full text-zinc-800 bg-primary/30 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white  duration-300 ease-in-out cursor-pointer">
             <Pin className="h-10 w-10 sm:h-12 sm:w-12 p-2 rounded-full border-2 shrink-0" />
             <span className="text-sm sm:text-lg">Malmö, Sweden</span>
