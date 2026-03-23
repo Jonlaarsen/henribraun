@@ -3,7 +3,9 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
+  ArrowBigRight,
   ArrowBigRightDash,
+  ArrowRight,
   BarChart2,
   CircleFadingArrowUp,
   Code2,
@@ -45,7 +47,7 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="min-h-screen py-10 md:py-20 px-4 relative flex flex-col items-center justify-center text-slate-800"
+      className="min-h-screen py-10 md:py-20 px-4 relative flex flex-col items-center justify-center text-foreground"
     >
       <h1 className="text-3xl text-center sm:text-5xl md:text-6xl  pb-4 font-black px-4">
         Hur kan vi hjälpa dig?
@@ -91,7 +93,7 @@ const Services = () => {
           className="bg-black/90 px-6 py-2 rounded-full text-base lg:text-xl text-white font-extralight flex items-center justify-center gap-2 hover:scale-105 duration-300 ease-in-out"
         >
           <p>Börja nu</p>
-          <ArrowBigRightDash className="h-5 w-fit" />
+          <ArrowBigRight strokeWidth={1.3} className="h-5 w-fit" />
         </a>
       </div>
     </div>

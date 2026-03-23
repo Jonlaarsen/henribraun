@@ -17,7 +17,7 @@ export default async function KundcaseDetailPage({
       <div className="max-w-5xl mx-auto">
         <Link
           href="/kundcase"
-          className="text-black/60 hover:text-black mb-8 inline-block"
+          className="text-foreground/60 hover:text-foreground mb-8 inline-block"
         >
           ← Tillbaka till kundcase
         </Link>
@@ -29,7 +29,7 @@ export default async function KundcaseDetailPage({
           <h1 className="text-4xl md:text-6xl max-w-60 md:max-w-150  font-bold mb-4 text-secondary">
             {caseStudy.client}
           </h1>
-          <p className="text-lg text-black/80 max-w-2xl mb-6">
+          <p className="text-lg text-foreground/80 max-w-2xl mb-6">
             {caseStudy.description}
           </p>
           <div className="flex flex-wrap gap-4">
@@ -58,7 +58,7 @@ export default async function KundcaseDetailPage({
           </h2>
           <div className="space-y-4">
             {caseStudy.assignment.map((paragraph, i) => (
-              <p key={i} className="text-black/80 leading-relaxed">
+              <p key={i} className="text-foreground/80 leading-relaxed">
                 {paragraph}
               </p>
             ))}
@@ -67,14 +67,17 @@ export default async function KundcaseDetailPage({
 
         {caseStudy.quote && (
           <blockquote className="bg-cyan-50/50 border-l-4 border-secondary/80 pl-6 py-6 rounded-r-lg">
-            <p className="text-black/80 leading-relaxed mb-4 italic">
+            <p className="text-foreground/80 leading-relaxed mb-4 italic">
               &ldquo;{caseStudy.quote.text}&rdquo;
             </p>
             <footer>
-              <cite className="not-italic font-semibold text-black">
+              <cite className="not-italic font-semibold text-foreground">
                 {caseStudy.quote.author}
               </cite>
-              <span className="text-black/60"> — {caseStudy.quote.role}</span>
+              <span className="text-foreground/60">
+                {" "}
+                — {caseStudy.quote.role}
+              </span>
             </footer>
           </blockquote>
         )}

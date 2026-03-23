@@ -69,7 +69,8 @@ export default function KontaktContent() {
           <div className="flex flex-col gap-6">
             {formSent && (
               <div className="p-4 rounded-lg bg-green-100 text-green-800 border border-green-200">
-                Tack! Ditt meddelande har skickats. Vi återkommer så snart vi kan.
+                Tack! Ditt meddelande har skickats. Vi återkommer så snart vi
+                kan.
               </div>
             )}
             {formError && (
@@ -80,95 +81,95 @@ export default function KontaktContent() {
               </div>
             )}
             <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
-            <div className="lg:max-w-xs shrink-0 order-2 lg:order-1">
-              <h3 className="text-2xl font-bold text-secondary mb-4">
-                Vi svarar inom 24 timmar
-              </h3>
-              <p className="text-black/80 leading-relaxed mb-4">
-                Har du frågor om våra tjänster eller vill du veta mer om hur vi
-                kan hjälpa ditt företag att växa? Skicka ett meddelande så
-                återkommer vi så snart vi kan.
-              </p>
-              <p className="text-black/70 text-sm leading-relaxed">
-                Oavsett om det gäller digital strategi, annonsering eller
-                konverteringsoptimering – vi är här för att hjälpa dig ta nästa
-                steg.
-              </p>
-            </div>
-            <form
-              className="flex flex-col max-w-2xl border-black bg-primary/10 text-black relative flex-1 min-w-0 space-y-4 p-6 sm:p-8 md:p-10 rounded-2xl lg:rounded-4xl border order-1 lg:order-2"
-              action="/api/contact"
-              method="POST"
-            >
-              <h2 className="font-black text-zinc-800 text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center z-10">
-                Kontakta oss
-              </h2>
-              <div className="flex w-full gap-4">
+              <div className="lg:max-w-xs shrink-0 order-2 lg:order-1">
+                <h3 className="text-2xl font-bold text-secondary mb-4">
+                  Vi svarar inom 24 timmar
+                </h3>
+                <p className="text-black/80 leading-relaxed mb-4">
+                  Har du frågor om våra tjänster eller vill du veta mer om hur
+                  vi kan hjälpa ditt företag att växa? Skicka ett meddelande så
+                  återkommer vi så snart vi kan.
+                </p>
+                <p className="text-black/70 text-sm leading-relaxed">
+                  Oavsett om det gäller digital strategi, annonsering eller
+                  konverteringsoptimering – vi är här för att hjälpa dig ta
+                  nästa steg.
+                </p>
+              </div>
+              <form
+                className="flex flex-col max-w-2xl border-black bg-primary/10 text-black relative flex-1 min-w-0 space-y-4 p-6 sm:p-8 md:p-10 rounded-2xl lg:rounded-4xl border order-1 lg:order-2"
+                action="/api/contact"
+                method="POST"
+              >
+                <h2 className="font-black text-foreground text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center z-10">
+                  Kontakta oss
+                </h2>
+                <div className="flex w-full gap-4">
+                  <div className="w-full z-10">
+                    <label className="text-sm" htmlFor="firstName">
+                      Förnamn
+                    </label>
+                    <input
+                      required
+                      id="firstName"
+                      name="firstName"
+                      className="h-10 w-full rounded-lg pl-2 bg-white border-black border"
+                      type="text"
+                    />
+                  </div>
+
+                  <div className="w-full z-10">
+                    <label className="text-sm" htmlFor="lastName">
+                      Efternamn
+                    </label>
+                    <input
+                      required
+                      id="lastName"
+                      name="lastName"
+                      className="h-10 w-full rounded-lg pl-2 bg-white border-black border"
+                      type="text"
+                    />
+                  </div>
+                </div>
+
                 <div className="w-full z-10">
-                  <label className="text-sm" htmlFor="firstName">
-                    Förnamn
+                  <label className="text-sm" htmlFor="email">
+                    Email
                   </label>
                   <input
                     required
-                    id="firstName"
-                    name="firstName"
+                    id="email"
+                    name="email"
+                    className="h-10 w-full rounded-lg pl-2 bg-white border-black border"
+                    type="email"
+                  />
+                </div>
+                <div className="w-full z-10">
+                  <label className="text-sm" htmlFor="company">
+                    Företag/Organisation{" "}
+                  </label>
+                  <input
+                    id="company"
+                    name="company"
                     className="h-10 w-full rounded-lg pl-2 bg-white border-black border"
                     type="text"
                   />
                 </div>
-
                 <div className="w-full z-10">
-                  <label className="text-sm" htmlFor="lastName">
-                    Efternamn
+                  <label className="text-sm" htmlFor="message">
+                    Meddelande
                   </label>
-                  <input
+                  <textarea
                     required
-                    id="lastName"
-                    name="lastName"
-                    className="h-10 w-full rounded-lg pl-2 bg-white border-black border"
-                    type="text"
+                    id="message"
+                    name="message"
+                    className="min-h-30 md:h-40 w-full pl-2 pt-2 bg-white border-black border rounded-2xl"
                   />
                 </div>
-              </div>
-
-              <div className="w-full z-10">
-                <label className="text-sm" htmlFor="email">
-                  Email
-                </label>
-                <input
-                  required
-                  id="email"
-                  name="email"
-                  className="h-10 w-full rounded-lg pl-2 bg-white border-black border"
-                  type="email"
-                />
-              </div>
-              <div className="w-full z-10">
-                <label className="text-sm" htmlFor="company">
-                  Företag/Organisation{" "}
-                </label>
-                <input
-                  id="company"
-                  name="company"
-                  className="h-10 w-full rounded-lg pl-2 bg-white border-black border"
-                  type="text"
-                />
-              </div>
-              <div className="w-full z-10">
-                <label className="text-sm" htmlFor="message">
-                  Meddelande
-                </label>
-                <textarea
-                  required
-                  id="message"
-                  name="message"
-                  className="min-h-[120px] md:h-40 w-full pl-2 pt-2 bg-white border-black border rounded-2xl"
-                />
-              </div>
-              <button className="w-full rounded-full text-white text-center py-2 bg-black/80 hover:bg-black font-stretch-125% hover:scale-105 duration-300 ease-in-out">
-                skicka
-              </button>
-            </form>
+                <button className="w-full rounded-full text-white text-center py-2 bg-foreground hover:bg-black font-bold hover:scale-105 duration-300 ease-in-out">
+                  Skicka
+                </button>
+              </form>
             </div>
           </div>
         )}

@@ -11,12 +11,12 @@ export default function OmOssPage() {
     });
   }, []);
   return (
-    <div className="section min-h-screen bg-linear-to-b from-primary/20 via-transparent to-transparent  pt-24 md:pt-32 pb-20 px-4 sm:px-6">
+    <div className="section min-h-screen bg-linear-to-b from-primary/20 via-transparent to-transparent text-foreground pt-24 md:pt-32 pb-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-black mb-6 pt-10 text-secondary">
           Om oss
         </h1>
-        <p className="text-xl text-black/70 mb-12 max-w-4xl">
+        <p className="text-xl  mb-12 max-w-4xl">
           Henri Braun är din partner inom digital marknadsföring. <br /> Vi
           kombinerar datadriven strategi med kreativ execution för att hjälpa
           företag växa online.
@@ -42,7 +42,7 @@ export default function OmOssPage() {
           <h2 className="text-2xl font-bold mb-4 text-secondary/90">
             Vår vision
           </h2>
-          <p className="text-lg text-black/80 leading-relaxed">
+          <p className="text-lg leading-relaxed">
             Vi vill vara den självklara partnern för företag som vill ta nästa
             steg digitalt. Hos oss får du inte bara en byrå, du får en
             långsiktig samarbetspartner.
@@ -63,7 +63,7 @@ export default function OmOssPage() {
                 sizes="(max-width: 1024px) 100vw, 320px"
               />
             </div>
-            <p className="text-lg text-black/80 leading-relaxed">
+            <p className="text-lg leading-relaxed">
               Vi tror på ärlighet, enkelhet och resultat. Digital marknadsföring
               ska inte kännas krånglig eller oåtkomlig. Hos oss får du en
               partner som lyssnar, förstår din situation och arbetar långsiktigt
@@ -76,13 +76,13 @@ export default function OmOssPage() {
           <h2 className="text-2xl font-bold mb-6 text-secondary/90">
             Våra tjänster
           </h2>
-          <p className="text-black/80 mb-6">
+          <p className=" mb-6">
             Vi erbjuder anpassade tjänster för företag med fokus på tillväxt och
             lönsamhet:
           </p>
           <ul className="space-y-4">
             <li className="flex gap-3">
-              <span className="text-cyan-600 mt-1 shrink-0">•</span>
+              <span className="text-primary mt-1 shrink-0">•</span>
               <div>
                 <strong className="text-black">Digital Analys:</strong>{" "}
                 <span className="text-black/80">
@@ -92,7 +92,7 @@ export default function OmOssPage() {
               </div>
             </li>
             <li className="flex gap-3">
-              <span className="text-cyan-600 mt-1 shrink-0">•</span>
+              <span className="text-primary mt-1 shrink-0">•</span>
               <div>
                 <strong className="text-black">Digital strategi:</strong>{" "}
                 <span className="text-black/80">
@@ -102,7 +102,7 @@ export default function OmOssPage() {
               </div>
             </li>
             <li className="flex gap-3">
-              <span className="text-cyan-600 mt-1 shrink-0">•</span>
+              <span className="text-primary mt-1 shrink-0">•</span>
               <div>
                 <strong className="text-black">
                   SEO (sökmotoroptimering):
@@ -114,7 +114,7 @@ export default function OmOssPage() {
               </div>
             </li>
             <li className="flex gap-3">
-              <span className="text-cyan-600 mt-1 shrink-0">•</span>
+              <span className="text-primary mt-1 shrink-0">•</span>
               <div>
                 <strong className="text-black">E-handelsoptimering:</strong>{" "}
                 <span className="text-black/80">
@@ -124,7 +124,7 @@ export default function OmOssPage() {
               </div>
             </li>
             <li className="flex gap-3">
-              <span className="text-cyan-600 mt-1 shrink-0">•</span>
+              <span className="text-primary mt-1 shrink-0">•</span>
               <div>
                 <strong className="text-black">
                   Betald annonsering (Google Ads & Meta Ads):
@@ -149,7 +149,7 @@ export default function OmOssPage() {
           </h2>
           <ul className="space-y-4">
             <li className="flex gap-3">
-              <span className="text-cyan-600 mt-1 shrink-0">✓</span>
+              <span className="text-primary mt-1 shrink-0">✓</span>
               <div>
                 <strong className="text-black">Prisvärt:</strong>{" "}
                 <span className="text-black/80">
@@ -159,7 +159,7 @@ export default function OmOssPage() {
               </div>
             </li>
             <li className="flex gap-3">
-              <span className="text-cyan-600 mt-1 shrink-0">✓</span>
+              <span className="text-primary mt-1 shrink-0">✓</span>
               <div>
                 <strong className="text-black">Personligt:</strong>{" "}
                 <span className="text-black/80">
@@ -169,7 +169,7 @@ export default function OmOssPage() {
               </div>
             </li>
             <li className="flex gap-3">
-              <span className="text-cyan-600 mt-1 shrink-0">✓</span>
+              <span className="text-primary mt-1 shrink-0">✓</span>
               <div>
                 <strong className="text-black">Resultatdrivet:</strong>{" "}
                 <span className="text-black/80">
@@ -179,7 +179,7 @@ export default function OmOssPage() {
               </div>
             </li>
             <li className="flex gap-3">
-              <span className="text-cyan-600 mt-1 shrink-0">✓</span>
+              <span className="text-primary mt-1 shrink-0">✓</span>
               <div>
                 <strong className="text-black">Lokal närvaro:</strong>{" "}
                 <span className="text-black/80">

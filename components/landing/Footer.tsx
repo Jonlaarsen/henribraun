@@ -16,7 +16,7 @@ const Footer = () => {
             <div
               className="h-32 w-50"
               style={{
-                backgroundColor: "#cacaca",
+                backgroundColor: "white",
                 maskImage: "url(/HENRIBRAUN2row.svg)",
                 maskRepeat: "no-repeat",
                 maskPosition: "center",

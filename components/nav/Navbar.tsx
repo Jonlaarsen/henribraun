@@ -71,7 +71,7 @@ const Navbar = () => {
       <div className=" relative hidden md:block" ref={dropdownRef}>
         <button
           onClick={() => setDropdownOpen(!dropdownOpen)}
-          className="text-slate-600 font-bold hover:text-black flex items-center gap-1"
+          className="text-foreground font-semibold hover:text-black flex items-center gap-1"
         >
           Tjänster{" "}
           <ChevronDown
@@ -84,7 +84,7 @@ const Navbar = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block px-4 py-2.5  text-slate-600 hover:text-black hover:bg-black/5 transition-colors first:rounded-t-2xl last:rounded-b-2xl"
+                className="block px-4 py-2.5  text-foreground hover:text-black hover:bg-black/5 transition-colors first:rounded-t-2xl last:rounded-b-2xl"
                 onClick={() => setDropdownOpen(false)}
               >
                 {link.label}
@@ -95,21 +95,21 @@ const Navbar = () => {
       </div>
       <Link
         href="/kundcase"
-        className="text-slate-600  font-bold hover:text-black"
+        className="text-foreground font-semibold hover:text-black"
         onClick={() => setMobileMenuOpen(false)}
       >
         Kundcase
       </Link>
       <Link
         href="/om-oss"
-        className="text-slate-600 font-bold hover:text-black"
+        className="text-foreground font-semibold hover:text-black"
         onClick={() => setMobileMenuOpen(false)}
       >
         Om oss
       </Link>
       <Link
         href="/kontakt"
-        className="text-slate-600 font-bold hover:text-black"
+        className="text-foreground font-semibold hover:text-black"
         onClick={() => setMobileMenuOpen(false)}
       >
         Kontakta oss
@@ -121,7 +121,9 @@ const Navbar = () => {
     <>
       <div
         className="z-100 navbar fixed top-3 left-3 right-3 md:top-5 md:left-10 md:right-10 border py-2 rounded-3xl px-4 md:py-8 md:px-10 bg-white/40 backdrop-blur-md border-secondary/60 flex justify-between shadow-lg items-center transition-transform duration-300 ease-out"
-        style={{ transform: navbarVisible ? "translateY(0)" : "translateY(-150%)" }}
+        style={{
+          transform: navbarVisible ? "translateY(0)" : "translateY(-150%)",
+        }}
       >
         <Link
           href="/"
@@ -139,7 +141,7 @@ const Navbar = () => {
         </div>
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 text-slate-600 hover:text-black"
+          className="md:hidden p-2 text-foreground hover:text-black"
           aria-label="Toggle menu"
         >
           {mobileMenuOpen ? (
@@ -181,7 +183,7 @@ const Navbar = () => {
             </Link>
             <button
               onClick={() => setMobileTjansterOpen(!mobileTjansterOpen)}
-              className="flex items-center justify-between w-full text-left text-base font-bold uppercase tracking-widest text-slate-600 mb-3 py-2 hover:text-slate-700"
+              className="flex items-center justify-between w-full text-left text-base font-bold uppercase tracking-widest text-foreground mb-3 py-2 hover:text-foreground"
             >
               Tjänster
               <ChevronDown
@@ -194,7 +196,7 @@ const Navbar = () => {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`${index === 0 ? "font-bold" : ""} text-slate-700 hover:text-black py-2`}
+                    className={`${index === 0 ? "font-bold" : ""} text-foreground hover:text-black py-2`}
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {link.label}
@@ -205,21 +207,21 @@ const Navbar = () => {
           </div>
           <Link
             href="/kundcase"
-            className="text-slate-700 font-bold hover:text-black py-2"
+            className="text-foreground font-semibold hover:text-black py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
             Kundcase
           </Link>
           <Link
             href="/om-oss"
-            className="text-slate-700 font-bold hover:text-black py-2"
+            className="text-foreground font-semibold hover:text-black py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
             Om oss
           </Link>
           <Link
             href="/kontakt"
-            className="text-slate-700 font-bold hover:text-black py-2"
+            className="text-foreground font-semibold hover:text-black py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
             Kontakta oss

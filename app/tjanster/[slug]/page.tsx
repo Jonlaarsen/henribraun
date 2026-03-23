@@ -17,11 +17,11 @@ export default async function ServicePage({
       <div className="max-w-4xl mx-auto">
         <Link
           href="/tjanster"
-          className="text-black/60 hover:text-black mb-8 inline-block"
+          className="text-foreground hover:text-black mb-8 inline-block"
         >
           ← Tillbaka till tjänster
         </Link>
-        <h1 className="text-5xl md:text-7xl font-black mb-6 text-cyan-900">
+        <h1 className="text-5xl md:text-7xl font-black mb-6 text-secondary">
           {service.title}
         </h1>
         <p className="text-xl text-black/70 mb-8">{service.description}</p>
@@ -33,7 +33,7 @@ export default async function ServicePage({
           <div className="space-y-12 mb-16">
             {service.sections.map((section, i) => (
               <div key={i}>
-                <h2 className="text-2xl font-bold mb-4 text-cyan-800">
+                <h2 className="text-2xl font-bold mb-4 text-secondary">
                   {section.title}
                 </h2>
                 <p className="text-black/80 leading-relaxed">
@@ -46,7 +46,7 @@ export default async function ServicePage({
 
         {service.benefits && service.benefits.length > 0 && (
           <div className="mb-16">
-            <h2 className="text-2xl font-bold mb-6 text-cyan-800">
+            <h2 className="text-2xl font-bold mb-6 text-secondary">
               Vad du får
             </h2>
             <ul className="space-y-3">
@@ -62,7 +62,7 @@ export default async function ServicePage({
 
         {service.process && service.process.length > 0 && (
           <div>
-            <h2 className="text-2xl font-bold mb-6 text-cyan-800">
+            <h2 className="text-2xl font-bold mb-6 text-secondary">
               Vår process
             </h2>
             <ol className="space-y-4">

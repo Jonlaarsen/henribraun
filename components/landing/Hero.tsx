@@ -28,13 +28,13 @@ const Hero = () => {
     });
   }, []);
   return (
-    <section className=" min-h-screen bg-linear-to-b from-primary/40 via-45% via-white to-white flex flex-col items-center justify-center relative text-black overflow-hidden ">
-      <div className="relative  z-10 text-center px-4 sm:px-6 max-w-5xl">
+    <section className=" min-h-screen bg-linear-to-b from-primary/40 via-45% via-white to-white flex flex-col items-center justify-center relative text-foreground overflow-hidden ">
+      <div className="relative z-10 text-center px-4 sm:px-6 max-w-7xl">
         <h1
           id="title"
-          className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-4 md:mb-6"
+          className="text-5xl md:text-7xl lg:text-8xl font-black mb-4 md:mb-6"
         >
-          Din partner inom digital marknadsföring
+          Din partner inom <br /> digital marknadsföring
         </h1>
         <p
           id="subtitle"

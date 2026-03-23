@@ -10,7 +10,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #ffffff;
+  --foreground: #333333;
   --primary:#4682b4;
   --secondary:#325c80;
   
@@ -22,8 +22,8 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
-  --font-sans: var(--font-sans-stack), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-serif-stack), ui-serif, Georgia, serif;
+  --font-roboto: var(--font-sans-roboto), ui-sans-serif, system-ui, sans-serif;
+  /* --font-serif: var(--font-serif-stack), ui-serif, Georgia, serif; */
   --font-logo: "Myriad Pro Cond", sans-serif;
 }
 
@@ -37,7 +37,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans);
+  font-family: var(--font-roboto);
 }
 
 @keyframes scroll {

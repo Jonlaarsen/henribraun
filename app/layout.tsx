@@ -1,27 +1,25 @@
 import type { Metadata } from "next";
-import { Fira_Sans, DM_Serif_Display, Noto_Sans } from "next/font/google";
+import { Montserrat, Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/nav/Navbar";
 import Footer from "@/components/landing/Footer";
-import NavbarTwo from "@/components/nav/NavbarTwo";
 
-const firaSans = Fira_Sans({
-  variable: "--font-sans-stack",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+const roboto = Roboto({
+  variable: "--font-sans-roboto",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
-const notoSans = Noto_Sans({
-  variable: "--font-noto-sans",
-  subsets: ["latin"],
-  weight: ["400"],
-});
+// const notoSans = Noto_Sans({
+//   variable: "--font-noto-sans",
+//   subsets: ["latin"],
+//   weight: ["400"],
+// });
 
-const dmSerif = DM_Serif_Display({
-  variable: "--font-serif-stack",
-  subsets: ["latin"],
-  weight: ["400"],
-});
+// const dmSerif = DM_Serif_Display({
+//   variable: "--font-serif-stack",
+//   subsets: ["latin"],
+//   weight: ["400"],
+// });
 
 export const metadata: Metadata = {
   title: "HENRI BRAUN | Din Partner Inom Digital Marknadsföring",
@@ -36,9 +34,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="sv">
-      <body
-        className={`${firaSans.variable} ${dmSerif.variable} ${notoSans.variable} antialiased`}
-      >
+      <head>
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WKLL2GKM');`,
+          }}
+        />
+      </head>
+      <body className={`${roboto.variable} ${roboto.className} antialiased`}>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WKLL2GKM"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         {/* <NavbarTwo /> */}
         <Navbar />
         {children}

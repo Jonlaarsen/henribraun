@@ -30,12 +30,12 @@ export default function TjansterPage() {
     });
   }, []);
   return (
-    <div className="section min-h-screen bg-linear-to-b from-primary/20 via-transparent to-transparent relative pt-24 md:pt-32 pb-20 px-4 sm:px-6 overflow-hidden">
+    <div className="section min-h-screen text-foreground bg-linear-to-bfrom-primary/20 via-transparent to-transparent relative pt-24 md:pt-32 pb-20 px-4 sm:px-6 overflow-hidden">
       <div className="max-w-6xl px-5  mx-auto">
         <h1 className="text-5xl md:text-7xl pt-10 font-black mb-6 text-secondary">
           Våra tjänster
         </h1>
-        <p className="text-xl text-black/70 mb-16">
+        <p className="text-xl  mb-16">
           Vi hjälper företag att växa online med datadriven strategi och
           effektiv digital marknadsföring.
         </p>
@@ -49,15 +49,15 @@ export default function TjansterPage() {
                 className="block z-10 p-6 rounded-2xl border bg-linear-to-bl from-white via-white via-85% to-primary/10 backdrop-blur-xs border-primary/30 hover:border-primary/60 hover:scale-105 hover:bg-black/2 hover:shadow-xl transition-all duration-300"
               >
                 <div className="w-full flex justify-between items-center">
-                  <h2 className="text-2xl font-bold mb-2 text-cyan-700">
+                  <h2 className="text-2xl font-bold mb-2 text-primary">
                     {service.title}
                   </h2>{" "}
-                  {Icon && <Icon className="text-cyan-800 h-15 w-15" />}
+                  {Icon && <Icon className="text-secondary h-15 w-15" />}
                 </div>
 
-                <div className="w-full relative text-cyan-800 flex items-center justify-center h-40">
+                <div className="w-full relative text-secondary flex items-center justify-center h-40">
                   <div className="z-20">
-                    <p className="text-black/70 line-clamp-3">
+                    <p className="text-foreground line-clamp-3">
                       {service.description}
                     </p>
                   </div>

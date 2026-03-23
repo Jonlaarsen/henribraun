@@ -16,7 +16,7 @@ export default function KundcasePage() {
         <h1 className="text-5xl md:text-7xl font-black mb-6 pt-10 text-secondary">
           Kundcase
         </h1>
-        <p className="text-xl text-black/70 mb-16">
+        <p className="text-xl text-foreground/70 mb-16">
           Se hur vi har hjälpt företag att nå sina mål med digital
           marknadsföring.
         </p>
@@ -40,10 +40,12 @@ export default function KundcasePage() {
               <h2 className="text-2xl font-bold mb-8 text-secondary max-w-70 group-hover:text-secondary/90">
                 {caseStudy.client}
               </h2>
-              <p className="text-black/70 mb-4 line-clamp-2">
+              <p className="text-foreground/70 mb-4 line-clamp-2">
                 {caseStudy.description}
               </p>
-              <p className="text-sm text-black/60 mb-6">{caseStudy.summary}</p>
+              <p className="text-sm text-foreground/60 mb-6">
+                {caseStudy.summary}
+              </p>
               <span className="inline-flex items-center gap-2 text-secondary/90 font-semibold group-hover:gap-3 transition-all">
                 Läs mer om {caseStudy.client}
                 <span className="group-hover:translate-x-1 transition-transform">
