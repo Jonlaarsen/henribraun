@@ -52,7 +52,7 @@ const Services = () => {
       <h1 className="text-3xl text-center sm:text-5xl md:text-6xl  pb-4 font-black px-4">
         Hur kan vi hjälpa dig?
       </h1>
-      <h2 className="text-xl md:text-3xl text-center font-light px-5">
+      <h2 className=" md:text-3xl text-center font-light px-5">
         Vi erbjuder skräddarsydda tjänster inom digital marknadsföring, <br />
         från strategi och analys till annonsering och webbutveckling.
       </h2>

@@ -8,8 +8,8 @@ const Contact = () => {
       className="flex flex-col  size-full items-center justify-center pb-20 pt-10 px-6  bg-linear-to-t from-primary/30 via-primary/10 to-transparent text-foreground overflow-x-hidden"
     >
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 size-full  max-w-6xl lg:items-stretch">
-        <div className="flex relative flex-col min-h-80 md:min-h-160  space-y-10 size-full order-2 lg:order-1 lg:flex-1 ">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl h-80  font-black  items-end  inline-flex  pb-5 text-center md:text-start">
+        <div className="flex relative flex-col min-h-80 md:min-h-160  space-y-10 size-full order-1 lg:flex-1 ">
+          <h1 className="text-5xl lg:text-6xl xl:text-7xl h-full md:h-80 w-full font-black items-center justify-center md:items-end md:justify-start  inline-flex  pb-5 text-center md:text-start">
             Låt oss <br /> hjälpa dig <br /> att växa <br /> digitalt idag!
           </h1>
           <div className="flex flex-col h-50  gap-5  ">
@@ -37,14 +37,14 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="flex relative flex-col min-h-80 md:min-h-160  space-y-10 size-full order-1 lg:order-2 lg:flex-1 ">
+        <div className="flex relative flex-col min-h-80 md:min-h-160  space-y-10 size-full order-2 lg:flex-1 ">
           <Link
             href="/kontakt?tab=booking"
             className="group bg-linear-to-r -mt-4 h-80 from-slate-800 via-primary-20 to-secondary border-2 border-secondary/30  w-full overflow-hidden relative flex items-center justify-center rounded-3xl "
           >
             <img
               src="https://fullfocus.co/wp-content/uploads/2016/08/iStock_69554855_MEDIUM-1.jpg"
-              className="object-cover object-center opacity-40 group-hover:opacity-50 group-hover:scale-105 duration-300 ease-in-out "
+              className="object-cover h-full md:h-fit object-center opacity-40 group-hover:opacity-50 group-hover:scale-105 duration-300 ease-in-out "
               alt=""
             />
             <h1 className=" z-10 absolute  text-white text-4xl md:text-6xl font-black group-hover:scale-110 duration-300 ease-in-out">

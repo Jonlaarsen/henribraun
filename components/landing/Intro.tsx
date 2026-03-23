@@ -21,13 +21,13 @@ const Intro = () => {
     });
   }, []);
   return (
-    <div className="intro-container min-h-[60vh] md:min-h-[80vh]  py-2 md:py-20 px-4 md:px-20 relative overflow-hidden   size-full flex flex-col-reverse space-y-4 md:space-y-0 md:flex-row items-center justify-center  ">
+    <div className="intro-container min-h-[60vh] md:min-h-[80vh]  pt-10 md:pt-0 py-2 md:py-20 px-4 md:px-20 relative overflow-hidden   size-full flex flex-col-reverse space-y-4 md:space-y-0 md:flex-row items-center justify-center  ">
       <div className=" z-50 flex flex-col items-center text-center justify-center px-6 lg:pl-10 space-y-4 size-full order-2 lg:order-1">
         <h1 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl z-50">
           En digital marknadsföringsbyrå <br />{" "}
           <span className="text-primary">baserad i Malmö.</span>
         </h1>
-        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light">
+        <p className=" sm:text-xl md:text-2xl lg:text-3xl font-light">
           Genomtänkt marknadsföring med fokus på konverteringar, skräddarsydd
           efter era mål och resurser.
         </p>
