@@ -224,7 +224,7 @@ export default function OmOssPage() {
 
         <div className="pt-8 border-t border-black/10">
           <Link
-            href="/#contact"
+            href="/kontakt"
             className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-secondary transition-colors"
           >
             Kontakta oss

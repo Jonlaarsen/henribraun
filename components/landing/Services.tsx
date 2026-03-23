@@ -59,7 +59,7 @@ const Services = () => {
           const Icon = ICON_MAP[service.iconKey];
           return (
             <div
-              className="bg-primary/80 w-full text-white flex-1 max-w-md mx-auto lg:max-w-none lg:w-75 xl:w-85 relative min-h-[280px] lg:h-80 py-8 md:py-10 px-4 rounded-2xl lg:rounded-4xl shadow-primary hover:shadow-lg hover:scale-105 duration-300 ease-in-out translate-all cursor-pointer"
+              className="bg-primary/80 w-full text-white flex-1 max-w-md mx-auto lg:max-w-none lg:w-75 xl:w-85 relative min-h-70 lg:h-80 py-8 md:py-10 px-4 rounded-3xl shadow-primary hover:shadow-lg hover:scale-105 duration-300 ease-in-out translate-all cursor-pointer"
               key={service.slug}
             >
               <h2 className="text-2xl lg:text-3xl h-22 font-stretch-125% translate-y-2 font-bold">
@@ -81,7 +81,7 @@ const Services = () => {
           );
         })}
       </div>
-      <div className="flex flex-col justify-center items-center text-center space-y-6 max-w-4xl mx-4 sm:mx-6 md:mx-10 lg:mx-20 xl:mx-40 bg-slate-300/40 border-2 border-slate-400 backdrop-blur-xs rounded-2xl lg:rounded-4xl min-h-[200px] lg:h-100 size-full px-2 sm:px-10 md:px-20 lg:px-20 py-10 md:py-16  mb-20 lg:mb-30">
+      <div className="flex flex-col justify-center items-center text-center space-y-6 max-w-4xl mx-4 sm:mx-6 md:mx-10 lg:mx-20 xl:mx-40 bg-slate-300/40 border-2 border-slate-400 backdrop-blur-xs rounded-3xl min-h-50 lg:h-100 size-full px-2 sm:px-10 md:px-20 lg:px-20 py-10 md:py-16  mb-20 lg:mb-30">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extralight">
           Vi vill vara med dig när du växer <br /> och hjälper dig ta nästa steg
           på ett sätt som passar just dig

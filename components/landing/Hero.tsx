@@ -28,8 +28,8 @@ const Hero = () => {
     });
   }, []);
   return (
-    <section className="relative min-h-screen bg-linear-to-b from-primary/30 via-transparent to-transparent flex flex-col items-center justify-center bg- text-black overflow-hidden ">
-      <div className="relative z-10 text-center px-4 sm:px-6 max-w-5xl">
+    <section className=" min-h-screen bg-linear-to-b from-primary/40 via-45% via-white to-white flex flex-col items-center justify-center relative text-black overflow-hidden ">
+      <div className="relative  z-10 text-center px-4 sm:px-6 max-w-5xl">
         <h1
           id="title"
           className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-4 md:mb-6"

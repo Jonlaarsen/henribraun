@@ -2,34 +2,16 @@
 
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { ChevronDown, Mail, Menu, X } from "lucide-react";
 import { TJANSTER_NAV_LINKS } from "@/constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-const Navbar = () => {
+const NavbarTwo = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileTjansterOpen, setMobileTjansterOpen] = useState(false);
-  const [navbarVisible, setNavbarVisible] = useState(true);
-  const lastScrollY = useRef(0);
   const dropdownRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (mobileMenuOpen) return;
-      if (currentScrollY < lastScrollY.current) {
-        setNavbarVisible(true);
-      } else if (currentScrollY > lastScrollY.current && currentScrollY > 80) {
-        setNavbarVisible(false);
-      }
-      lastScrollY.current = currentScrollY;
-    };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [mobileMenuOpen]);
-
   useGSAP(() => {
     gsap.from(".navbar", {
       opacity: 0,
@@ -56,7 +38,6 @@ const Navbar = () => {
   useEffect(() => {
     if (mobileMenuOpen) {
       document.body.style.overflow = "hidden";
-      setNavbarVisible(true);
     } else {
       document.body.style.overflow = "";
       setMobileTjansterOpen(false);
@@ -119,10 +100,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div
-        className="z-100 navbar fixed top-3 left-3 right-3 md:top-5 md:left-10 md:right-10 border py-2 rounded-3xl px-4 md:py-8 md:px-10 bg-white/40 backdrop-blur-md border-secondary/60 flex justify-between shadow-lg items-center transition-transform duration-300 ease-out"
-        style={{ transform: navbarVisible ? "translateY(0)" : "translateY(-150%)" }}
-      >
+      <div className="z-100 navbar absolute top-0 left-0 right-0 py-2   px-4 md:py-8 md:px-20 backdrop-blur-md border-secondary/60 flex justify-between  items-center">
         <Link
           href="/"
           className="text-black hover:opacity-80 transition-opacity shrink-0"
@@ -137,6 +115,10 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-5 text-lg z-100 font-light">
           <NavLinks />
         </div>
+        <button className="flex bg-secondary text-white rounded-xl items-center text-lg font-bold justify-center gap-2 px-3 py-2">
+          <Mail className="h-8 w-8" />
+          kontakta oss
+        </button>
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className="md:hidden p-2 text-slate-600 hover:text-black"
@@ -149,6 +131,7 @@ const Navbar = () => {
           )}
         </button>
       </div>
+      <hr className="absolute top-22 left-15 right-15 text-blue-900  h-px bg-blue-800 z-100" />
 
       {/* Mobile menu overlay */}
       <div
@@ -230,4 +213,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarTwo;

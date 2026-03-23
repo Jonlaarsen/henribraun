@@ -30,12 +30,13 @@ export default function KundcasePage() {
             >
               <img
                 src={caseStudy.logo}
-                className="h-20 w-auto absolute top-2 right-2  ease-in-out duration-300"
+                className="max-h-16 md:max-h-20 max-w-32 w-auto absolute top-4 right-4  ease-in-out duration-300"
                 alt=""
               />
-              <p className="text-sm font-semibold uppercase tracking-widest max-w-70 text-secondary/80 mb-2">
+              <p className="text-sm font-semibold uppercase tracking-widest max-w-55 text-secondary/80 mb-2">
                 {caseStudy.tagline}
               </p>
+
               <h2 className="text-2xl font-bold mb-8 text-secondary max-w-70 group-hover:text-secondary/90">
                 {caseStudy.client}
               </h2>
@@ -55,7 +56,7 @@ export default function KundcasePage() {
 
         <div className="mt-16 pt-12 border-t border-black/10">
           <Link
-            href="/#contact"
+            href="/kontakt"
             className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-secondary transition-colors"
           >
             Vill du också nå resultat? Kontakta oss

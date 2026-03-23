@@ -30,6 +30,8 @@ export type Kundcase = {
   result?: kundcaseResult | null;
 };
 
+
+
 export const KUNDCASE_LIST: Kundcase[] = [
   {
     slug: "sproud",
@@ -81,6 +83,31 @@ export const KUNDCASE_LIST: Kundcase[] = [
       buy:"154"
     }
   },
+  {
+  slug: "posted-productions",
+  client: "Posted productions",
+  logo: "https://www.posted-productions.com/posted3.png",
+  tagline: "Where vision meets reality",
+  description:
+    "Posted-productions är baserat i Seoul, Sydkorea, och erbjuder kreativa helhetslösningar inom produktion. Från ljusdesign och ljuddesign till videografi och fullserviceproduktion. Med ett starkt fokus på storytelling och visuell identitet hjälper de varumärken att förverkliga sina visioner genom innovativ och högkvalitativ produktion.",
+  summary:
+    "Total redesign och utveckling av webbplats. med fokus på varumärkesidentitet, användarupplevelse och konvertering.",
+  links: [
+    { label: "Posted-productions.com", href: "https://posted-productions.com" },
+  ],
+  assignment: [
+    "Posted-productions behövde en helt ny digital närvaro som bättre speglade deras kreativa höjd, personlighet och breda tjänsteutbud. Målet var att skapa en webbplats som inte bara visar deras arbete, utan också förmedlar känslan av deras varumärke.",
+    "Vi designade och utvecklade en ny webbplats från grunden med fokus på storytelling, visuell identitet och användarupplevelse. Sidan strukturerades för att tydligt presentera deras tjänster, tidigare projekt och team. Samtidigt som den behåller en modern och dynamisk känsla.",
+    "Stor vikt lades vid att lyfta fram deras portfolio genom engagerande layout, video och interaktiva element som ger besökaren en tydlig bild av deras kompetens och kreativa bredd.",
+    "Vi implementerade även en skalbar struktur som gör det enkelt för teamet att uppdatera innehåll, lägga till nya case och fortsätta utveckla sin digitala närvaro i takt med verksamheten.",
+    "Resultatet blev en webbplats som tydligt kommunicerar Posted-productions identitet, stärker deras varumärke och fungerar som ett kraftfullt verktyg för att attrahera nya kunder och samarbeten.",
+  ],
+  quote: {
+  text: "The work on our new website exceeded our expectations. They truly managed to capture our identity and translate it into a digital experience that feels both modern and authentic. The result reflects not just what we do, but who we are as a team. We've already seen how it strengthens our brand and how we present ourselves to clients.",
+    author: "Keith Park",
+    role: "Founder, Posted productions",
+  },
+}
 ];
 
 export const KUNDCASE_BY_SLUG: Record<string, Kundcase> = Object.fromEntries(

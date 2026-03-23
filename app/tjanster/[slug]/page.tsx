@@ -80,8 +80,8 @@ export default async function ServicePage({
 
         <div className="mt-16 pt-8 border-t border-black/10">
           <Link
-            href="/#contact"
-            className="inline-block px-8 py-4 bg-cyan-900 text-white font-semibold rounded-lg hover:bg-cyan-800 transition-colors"
+            href="/kontakt"
+            className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-secondary transition-colors"
           >
             Kontakta oss för ett samtal
           </Link>

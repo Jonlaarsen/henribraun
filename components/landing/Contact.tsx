@@ -15,7 +15,7 @@ const Contact = () => {
           <div className="flex flex-col gap-5 absolute bottom-10 left-0 right-0 ">
             <a
               href="mailto:kontakt@henribraun.se"
-              className="h-auto  rounded-full text-zinc-800 bg-primary/70 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white duration-300 ease-in-out cursor-pointer"
+              className="h-auto rounded-3xl text-zinc-800 bg-primary/70 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white duration-300 ease-in-out cursor-pointer"
             >
               <Mail className="h-10 w-10 sm:h-12 sm:w-12 p-2 rounded-full border-2 shrink-0" />
               <span className="text-sm sm:text-lg underline underline-offset-4 truncate">
@@ -31,7 +31,7 @@ const Contact = () => {
               +46-76-0151-881
             </span>
           </a> */}
-            <div className="h-auto  rounded-full text-zinc-800 bg-primary/30 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white  duration-300 ease-in-out cursor-pointer">
+            <div className="h-auto  rounded-3xl text-zinc-800 bg-primary/30 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white  duration-300 ease-in-out cursor-pointer">
               <Pin className="h-10 w-10 sm:h-12 sm:w-12 p-2 rounded-full border-2 shrink-0" />
               <span className="text-sm sm:text-lg">Malmö, Sweden</span>
             </div>
@@ -49,7 +49,7 @@ const Contact = () => {
 
           <Link
             href="/kontakt?tab=booking"
-            className="group bg-linear-to-r from-slate-800 via-primary-20 to-secondary border-2 border-secondary/30 h-60 w-full overflow-hidden relative flex items-center justify-center rounded-2xl "
+            className="group bg-linear-to-r from-slate-800 via-primary-20 to-secondary border-2 border-secondary/30 h-60 w-full overflow-hidden relative flex items-center justify-center rounded-3xl "
           >
             <img
               src="https://fullfocus.co/wp-content/uploads/2016/08/iStock_69554855_MEDIUM-1.jpg"
@@ -62,7 +62,7 @@ const Contact = () => {
           </Link>
           <Link
             href="/kontakt?tab=form"
-            className="group bg-linear-to-l from-slate-800 via-primary-40 to-secondary border-2 border-secondary/30 h-60 w-full overflow-hidden relative flex items-center justify-center rounded-2xl "
+            className="group bg-linear-to-l from-slate-800 via-primary-40 to-secondary border-2 border-secondary/30 h-60 w-full overflow-hidden relative flex items-center justify-center rounded-3xl "
           >
             <img
               src="https://blog.slido.com/wp-content/uploads/2018/04/slido-blog-how-to-host-better-q-and-a-sessions-on-all-hands-meetings-header.jpg"
