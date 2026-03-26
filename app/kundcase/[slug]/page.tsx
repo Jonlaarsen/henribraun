@@ -23,10 +23,10 @@ export default async function KundcaseDetailPage({
         </Link>
 
         <div className="border-b relative border-black/10 pb-8 mb-8">
-          <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">
+          <p className="text-sm font-semibold uppercase max-w-59 tracking-widest text-primary mb-2">
             {caseStudy.tagline}
           </p>
-          <h1 className="text-4xl md:text-6xl max-w-60 md:max-w-150  font-bold mb-4 text-secondary">
+          <h1 className="text-4xl md:text-6xl max-w-59 md:max-w-150  font-bold mb-4 text-secondary">
             {caseStudy.client}
           </h1>
           <p className="text-lg text-foreground/80 max-w-2xl mb-6">
@@ -48,7 +48,7 @@ export default async function KundcaseDetailPage({
           <img
             src={caseStudy.logo}
             alt={caseStudy.client}
-            className="w-auto h-14 md:h-30 top-4 right-4 absolute"
+            className="w-auto h-10 md:h-30 top-4 right-4 absolute"
           />
         </div>
 
@@ -64,6 +64,23 @@ export default async function KundcaseDetailPage({
             ))}
           </div>
         </section>
+        {caseStudy.img && (
+          <>
+            <hr className="w-full my-4 text-primary/20 h-px" />
+            <div className="grid grid-cols-2 sm:grid-cols-3 w-full py-4 h-full">
+              {caseStudy.img.map((photo, index) => (
+                <div key={index}>
+                  <img
+                    src={photo}
+                    alt={`${caseStudy.client} images`}
+                    className="w-full max-h-70 h-full object-cover object-center"
+                  />
+                </div>
+              ))}
+            </div>
+            <hr className="w-full my-4 text-primary/20 h-px" />
+          </>
+        )}
 
         {caseStudy.quote && (
           <blockquote className="bg-cyan-50/50 border-l-4 border-secondary/80 pl-6 py-6 rounded-r-lg">

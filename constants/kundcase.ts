@@ -20,7 +20,8 @@ export type kundcaseResult = {
 export type Kundcase = {
   slug: string;
   client: string;
-  logo?:string;
+  img?: string[];
+  logo?: string;
   tagline: string;
   description: string;
   summary: string;
@@ -85,7 +86,7 @@ export const KUNDCASE_LIST: Kundcase[] = [
   },
   {
   slug: "posted-productions",
-  client: "Posted productions",
+  client: "Posted Productions",
   logo: "https://www.posted-productions.com/posted3.png",
   tagline: "Where vision meets reality",
   description:
@@ -102,6 +103,7 @@ export const KUNDCASE_LIST: Kundcase[] = [
     "Vi implementerade även en skalbar struktur som gör det enkelt för teamet att uppdatera innehåll, lägga till nya case och fortsätta utveckla sin digitala närvaro i takt med verksamheten.",
     "Resultatet blev en webbplats som tydligt kommunicerar Posted-productions identitet, stärker deras varumärke och fungerar som ett kraftfullt verktyg för att attrahera nya kunder och samarbeten.",
   ],
+  img:["/posted-screenshots/p-landing.png","/posted-screenshots/p-work.png","/posted-screenshots/p-services.png","/posted-screenshots/p-team.png","/posted-screenshots/p-about.png","/posted-screenshots/p-contact.png"],
   quote: {
   text: "The work on our new website exceeded our expectations. They truly managed to capture our identity and translate it into a digital experience that feels both modern and authentic. The result reflects not just what we do, but who we are as a team. We've already seen how it strengthens our brand and how we present ourselves to clients.",
     author: "Keith Park",

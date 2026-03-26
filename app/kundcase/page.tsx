@@ -30,14 +30,14 @@ export default function KundcasePage() {
             >
               <img
                 src={caseStudy.logo}
-                className="max-h-16 md:max-h-20 max-w-32 w-auto absolute top-4 right-4  ease-in-out duration-300"
+                className="h-fit md:max-h-20 max-w-26 md:max-w-32 w-auto absolute top-6 md:top-4 right-4  ease-in-out duration-300"
                 alt=""
               />
-              <p className="text-sm font-semibold uppercase tracking-widest max-w-55 text-secondary/80 mb-2">
+              <p className="text-sm font-semibold uppercase tracking-widest max-w-50 md:max-w-90 text-secondary/80 mb-2">
                 {caseStudy.tagline}
               </p>
 
-              <h2 className="text-2xl font-bold mb-8 text-secondary max-w-70 group-hover:text-secondary/90">
+              <h2 className="text-2xl font-bold mb-8 text-secondary max-w-50 md:max-w-90 group-hover:text-secondary/90">
                 {caseStudy.client}
               </h2>
               <p className="text-foreground/70 mb-4 line-clamp-2">
