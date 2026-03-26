@@ -174,12 +174,11 @@ const Navbar = () => {
               onClick={() => setMobileMenuOpen(false)}
               className="text-black flex items-center justify-center mb-20 transition-opacity shrink-0"
             >
-              {/* <h1 className=" pb-10 text-[#333333] font-logo text-5xl font-semibold flex items-center justify-center">
-                HENRI{" "}
-                <span className="h-2.5 w-2.5 bg-primary rounded-full -mt-2 mx-1 inline-block" />{" "}
-                BRAUN
-              </h1> */}
-              <img src="/HENRIBRAUN1_line.svg" className="h-8 " />
+              <img
+                src="/HENRIBRAUN1_line.svg"
+                alt="Henribraun icon photo"
+                className="h-8 "
+              />
             </Link>
             <button
               onClick={() => setMobileTjansterOpen(!mobileTjansterOpen)}

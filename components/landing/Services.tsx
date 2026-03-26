@@ -49,13 +49,13 @@ const Services = () => {
       id="services"
       className="min-h-screen py-10 md:py-20 px-4 relative flex flex-col items-center justify-center text-foreground"
     >
-      <h1 className="text-3xl text-center sm:text-5xl md:text-6xl  pb-4 font-black px-4">
+      <h2 className="text-3xl text-center sm:text-5xl md:text-6xl  pb-4 font-black px-4">
         Hur kan vi hjälpa dig?
-      </h1>
-      <h2 className=" md:text-3xl text-center font-light px-5">
+      </h2>
+      <h3 className=" md:text-3xl text-center font-light px-5">
         Vi erbjuder skräddarsydda tjänster inom digital marknadsföring, <br />
         från strategi och analys till annonsering och webbutveckling.
-      </h2>
+      </h3>
       <div className="px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 py-10 md:py-20">
         {TJANSTER_LIST.slice(0, 6).map((service) => {
           const Icon = ICON_MAP[service.iconKey];

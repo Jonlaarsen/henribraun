@@ -9,9 +9,9 @@ const Contact = () => {
     >
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 size-full  max-w-6xl lg:items-stretch">
         <div className="flex relative flex-col min-h-80 md:min-h-160  space-y-10 size-full order-1 lg:flex-1 ">
-          <h1 className="text-5xl lg:text-6xl xl:text-7xl h-full md:h-80 w-full font-black items-center justify-center md:items-end md:justify-start  inline-flex  pb-5 text-center md:text-start">
+          <h2 className="text-5xl lg:text-6xl xl:text-7xl h-full md:h-80 w-full font-black items-center justify-center md:items-end md:justify-start  inline-flex  pb-5 text-center md:text-start">
             Låt oss <br /> hjälpa dig <br /> att växa <br /> digitalt idag!
-          </h1>
+          </h2>
           <div className="flex flex-col h-50  gap-5  ">
             <a
               href="mailto:kontakt@henribraun.se"
@@ -45,11 +45,11 @@ const Contact = () => {
             <img
               src="https://fullfocus.co/wp-content/uploads/2016/08/iStock_69554855_MEDIUM-1.jpg"
               className="object-cover h-full md:h-fit object-center opacity-40 group-hover:opacity-50 group-hover:scale-105 duration-300 ease-in-out "
-              alt=""
+              alt="meeting photo"
             />
-            <h1 className=" z-10 absolute  text-white text-4xl md:text-6xl font-black group-hover:scale-110 duration-300 ease-in-out">
+            <h2 className=" z-10 absolute  text-white text-4xl md:text-6xl font-black group-hover:scale-110 duration-300 ease-in-out">
               Boka ett möte
-            </h1>
+            </h2>
           </Link>
           <Link
             href="/kontakt?tab=form"
@@ -58,11 +58,11 @@ const Contact = () => {
             <img
               src="https://blog.slido.com/wp-content/uploads/2018/04/slido-blog-how-to-host-better-q-and-a-sessions-on-all-hands-meetings-header.jpg"
               className="object-cover  object-center opacity-40 group-hover:opacity-50 group-hover:scale-105 duration-300 ease-in-out "
-              alt=""
+              alt="Q&A photo"
             />
-            <h1 className=" z-10 absolute text-white text-4xl md:text-6xl font-bold group-hover:scale-110 duration-300 ease-in-out">
+            <h2 className=" z-10 absolute text-white text-4xl md:text-6xl font-bold group-hover:scale-110 duration-300 ease-in-out">
               Ställ en fråga
-            </h1>
+            </h2>
           </Link>
         </div>
       </div>
