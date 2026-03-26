@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { KUNDCASE_BY_SLUG } from "@/constants/kundcase";
+import Image from "next/image";
 
 export default async function KundcaseDetailPage({
   params,
@@ -70,10 +71,12 @@ export default async function KundcaseDetailPage({
             <div className="grid grid-cols-2 sm:grid-cols-3 w-full py-4 h-full">
               {caseStudy.img.map((photo, index) => (
                 <div key={index}>
-                  <img
+                  <Image
+                    width={500}
+                    height={500}
                     src={photo}
                     alt={`${caseStudy.client} images`}
-                    className="w-full max-h-70 h-full object-cover object-center"
+                    className="w-full max-h-70 h-full bg-primary/50 object-cover object-center"
                   />
                 </div>
               ))}

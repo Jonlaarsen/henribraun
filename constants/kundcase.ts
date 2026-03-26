@@ -103,7 +103,7 @@ export const KUNDCASE_LIST: Kundcase[] = [
     "Vi implementerade även en skalbar struktur som gör det enkelt för teamet att uppdatera innehåll, lägga till nya case och fortsätta utveckla sin digitala närvaro i takt med verksamheten.",
     "Resultatet blev en webbplats som tydligt kommunicerar Posted-productions identitet, stärker deras varumärke och fungerar som ett kraftfullt verktyg för att attrahera nya kunder och samarbeten.",
   ],
-  img:["/posted-screenshots/p-landing.png","/posted-screenshots/p-work.png","/posted-screenshots/p-services.png","/posted-screenshots/p-team.png","/posted-screenshots/p-about.png","/posted-screenshots/p-contact.png"],
+  img:["https://res.cloudinary.com/dwlkxymu0/image/upload/v1774512704/p-landing_hy7czx.png","https://res.cloudinary.com/dwlkxymu0/image/upload/v1774512698/p-work_j66bne.png","https://res.cloudinary.com/dwlkxymu0/image/upload/v1774512697/p-team_k7xgh2.png","https://res.cloudinary.com/dwlkxymu0/image/upload/v1774512696/p-services_wsbxxk.png","https://res.cloudinary.com/dwlkxymu0/image/upload/v1774512695/p-about_gqhrmf.png","https://res.cloudinary.com/dwlkxymu0/image/upload/v1774512696/p-contact_mcc5cm.png"],
   quote: {
   text: "The work on our new website exceeded our expectations. They truly managed to capture our identity and translate it into a digital experience that feels both modern and authentic. The result reflects not just what we do, but who we are as a team. We've already seen how it strengthens our brand and how we present ourselves to clients.",
     author: "Keith Park",
