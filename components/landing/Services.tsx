@@ -67,7 +67,7 @@ const Services = () => {
               <h2 className="text-2xl lg:text-3xl h-22 font-stretch-125% translate-y-2 font-bold">
                 {service.title}
               </h2>
-              <p className="line-clamp-3 px-2 text-sm md:text-base">
+              <p className="line-clamp-3  text-sm md:text-base">
                 {service.fullText}
               </p>
               <div className="absolute bottom-2 right-4 opacity-80">
