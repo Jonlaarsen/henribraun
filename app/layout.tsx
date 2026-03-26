@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat, Roboto } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/nav/Navbar";
 import Footer from "@/components/landing/Footer";
@@ -8,18 +8,6 @@ const roboto = Roboto({
   variable: "--font-sans-roboto",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
-
-// const notoSans = Noto_Sans({
-//   variable: "--font-noto-sans",
-//   subsets: ["latin"],
-//   weight: ["400"],
-// });
-
-// const dmSerif = DM_Serif_Display({
-//   variable: "--font-serif-stack",
-//   subsets: ["latin"],
-//   weight: ["400"],
-// });
 
 export const metadata: Metadata = {
   title: "HENRI BRAUN | Din Partner Inom Digital Marknadsföring",
@@ -34,9 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="sv">
-      <head>
+      <head suppressHydrationWarning>
         {/* Google Tag Manager */}
         <script
+          suppressHydrationWarning
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
