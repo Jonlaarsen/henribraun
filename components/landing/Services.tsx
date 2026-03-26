@@ -77,7 +77,7 @@ const Services = () => {
                 href={`/tjanster/${service.slug}`}
                 className="underline underline-offset-2 font-semibold absolute bottom-6 left-4 hover:scale-y-120 duration-300 ease-in-out"
               >
-                Learn more
+                Se mer
               </Link>
             </div>
           );
