@@ -105,7 +105,7 @@ const HeroTwo = () => {
         alt=""
       /> */}
       {/* <div className="absolute -bottom-40 -right-40 z-10 h-100 w-100 border-80 md:h-72 md:w-72 rounded-full md:border-200 border-secondary md:block lg:-bottom-50 lg:-right-50 lg:h-100 lg:w-100"></div> */}
-      <div className="absolute -bottom-80 -right-80 z-10 hidden md:h-152 md:w-152 rounded-full border-200 border-secondary lg:block xl:-bottom-120 xl:-right-120 xl:h-240 xl:w-240"></div>
+      <div className="absolute md:-bottom-80 md:-right-80 -bottom-50 -right-50 z-10 border-100 h-100 w-100 md:h-152 md:w-152 rounded-full md:border-200 border-secondary lg:block xl:-bottom-120 xl:-right-120 xl:h-240 xl:w-240"></div>
       {/* <div className="border-100 border-secondary z-10 h-340 w-340 rounded-full absolute -bottom-170 -right-170"></div> */}
     </section>
   );
