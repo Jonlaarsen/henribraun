@@ -10,7 +10,7 @@ const DEFAULT_IMAGES = [
 
 const GridPhotos = () => {
   return (
-    <div className="w-full h-50 grid grid-cols-3 md:grid-cols-6 px-5 gap-5">
+    <div className="w-full h-50 grid grid-cols-3 md:grid-cols-6 px-4 sm:px-6 md:px-10 lg:px-30 xl:px-40 gap-5">
       {DEFAULT_IMAGES.map((photos, index) => (
         <div key={index} className="flex items-center justify-center">
           <img src={photos} alt={photos} />

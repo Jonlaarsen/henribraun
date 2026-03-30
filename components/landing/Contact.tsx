@@ -5,9 +5,9 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="flex flex-col  size-full items-center justify-center pb-20 pt-10 px-6  bg-linear-to-t from-primary/30 via-primary/10 to-transparent text-foreground overflow-x-hidden"
+      className="flex flex-col  size-full items-center justify-center pb-20 pt-10 px-4 sm:px-6 md:px-10 lg:px-30 xl:px-40 bg-white text-foreground overflow-x-hidden"
     >
-      <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 size-full  max-w-6xl lg:items-stretch">
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 size-full  max-w-7xl lg:items-stretch">
         <div className="flex relative flex-col min-h-80 md:min-h-160  space-y-10 size-full order-1 lg:flex-1 ">
           <h2 className="text-5xl lg:text-6xl xl:text-7xl h-full md:h-80 w-full font-black items-center justify-center md:items-end md:justify-start  inline-flex  pb-5 text-center md:text-start">
             Låt oss <br /> hjälpa dig <br /> att växa <br /> digitalt idag!

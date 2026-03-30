@@ -109,7 +109,7 @@ const Navbar = () => {
       </Link>
       <Link
         href="/kontakt"
-        className="text-foreground font-semibold hover:text-black"
+        className="font-semibold bg-primary p-3 rounded-lg text-white hover:scale-x-105 transition-all duration-300 ease-in-out"
         onClick={() => setMobileMenuOpen(false)}
       >
         Kontakta oss
@@ -120,7 +120,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className="z-100 navbar fixed top-3 left-3 right-3 md:top-5 md:left-10 md:right-10 border py-2 rounded-3xl px-4 md:py-8 md:px-10 bg-white/40 backdrop-blur-md border-secondary/60 flex justify-between shadow-lg items-center transition-transform duration-300 ease-out"
+        className="z-100 navbar fixed top-0 left-0 right-0 bg-white border-b border-primary/20 py-2  px-4 md:py-6 md:px-40 flex justify-between items-center transition-transform duration-300 ease-out"
         style={{
           transform: navbarVisible ? "translateY(0)" : "translateY(-150%)",
         }}
@@ -136,7 +136,7 @@ const Navbar = () => {
           </h1> */}
           <img src="/HENRIBRAUN1_line.svg" className="h-5 md:h-8 " />
         </Link>
-        <div className="hidden md:flex items-center space-x-5 text-lg z-100 font-light">
+        <div className="hidden md:flex items-center space-x-10 text-lg z-100 font-light">
           <NavLinks />
         </div>
         <button

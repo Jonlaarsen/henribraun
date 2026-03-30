@@ -21,7 +21,7 @@ const Intro = () => {
     });
   }, []);
   return (
-    <div className="intro-container min-h-[60vh] md:min-h-[80vh]  pt-10 md:pt-0 py-2 md:py-20 px-4 md:px-20 relative overflow-hidden   size-full flex flex-col-reverse space-y-4 md:space-y-0 md:flex-row items-center justify-center  ">
+    <div className="intro-container min-h-[60vh] md:min-h-[80vh] pt-10  py-2 md:py-20 px-4 sm:px-6 md:px-10 lg:px-30 xl:px-40 relative overflow-hidden size-full flex flex-col-reverse space-y-4 md:space-y-0 md:flex-row items-center justify-center">
       <div className=" z-50 flex flex-col items-center text-center justify-center px-6 lg:pl-10 space-y-4 size-full order-2 lg:order-1">
         <h2 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl z-50">
           En digital marknadsföringsbyrå <br />
@@ -35,7 +35,7 @@ const Intro = () => {
       <div className="px-4 relative flex flex-col items-center text-center justify-center space-y-4 size-full order-1 lg:order-2">
         <div className="w-full max-w-md h-60 lg:w-120 lg:h-160 aspect-3/4 lg:aspect-auto bg-cyan-900/20 overflow-hidden rounded-sm">
           <img
-            src="https://www.cleancluster.dk/wp-content/uploads/2026/02/Ocean-Valley-1280x1280.jpeg"
+            src="https://images.pexels.com/photos/13071531/pexels-photo-13071531.jpeg"
             className="size-full object-cover object-center contrast-80 "
             alt="Scenic malmö photo"
           />

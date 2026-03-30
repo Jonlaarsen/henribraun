@@ -28,11 +28,21 @@ const Hero = () => {
     });
   }, []);
   return (
-    <section className=" min-h-screen bg-linear-to-b from-primary/40 via-45% via-white to-white flex flex-col items-center justify-center relative text-foreground overflow-hidden ">
-      <div className="relative z-10 text-center px-2 sm:px-6 max-w-full md:max-w-7xl">
+    <section className=" min-h-screen bg-white flex flex-col items-center justify-center relative text-foreground overflow-hidden px-4 sm:px-6 md:px-10 lg:px-30 xl:px-40">
+      <div className="absolute inset-0 size-full z-50">
+        {/* <video
+          src="https://www.shutterstock.com/shutterstock/videos/1108509779/preview/stock-footage-abstract-d-animation-of-blue-flying-blobs-k-seamless-looped-video-d-illustration.webm"
+          className="h-full w-full"
+        /> */}
+      </div>
+
+      {/* <div className="absolute top-80 right-20 h-60 w-60 bg-primary/20 blur-xl rounded-full"></div>
+      <div className="absolute top-60 right-10 h-20 w-20 bg-primary/20 blur-md rounded-full"></div> */}
+
+      <div className="relative text-center px-2 sm:px-6 max-w-full md:max-w-7xl z-50">
         <h1
           id="title"
-          className="text-5xl md:text-7xl lg:text-8xl font-black mb-4 md:mb-6"
+          className="text-5xl md:text-7xl lg:text-8xl font-black mb-4 md:mb-6 "
         >
           Din partner inom <br className="hidden md:block" /> digital
           marknadsföring
@@ -46,9 +56,9 @@ const Hero = () => {
         <Link
           id="contact-button"
           href="#contact"
-          className="inline-block px-6 py-3 md:px-8 md:py-4 text-sm md:text-base bg-primary/80 text-white font-semibold rounded-lg font-stretch-125% hover:bg-primary transition-colors"
+          className="inline-block px-6 py-3 md:px-8 md:py-4 text-sm md:text-xl bg-primary text-white font-semibold rounded-lg font-stretch-125% hover:bg-primary transition-colors"
         >
-          Kontakta oss
+          Boka möte
         </Link>
       </div>
     </section>

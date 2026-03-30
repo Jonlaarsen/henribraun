@@ -13,6 +13,9 @@
   --foreground: #333333;
   --primary:#4682b4;
   --secondary:#325c80;
+  --accent-foreground:#3e7077;
+  --font-sans-roboto: "Roboto", sans-serif;
+
   
   
 }
@@ -22,6 +25,7 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+  --color-accent-foreground: var(--accent-foreground);
   --font-roboto: var(--font-sans-roboto), ui-sans-serif, system-ui, sans-serif;
   /* --font-serif: var(--font-serif-stack), ui-serif, Georgia, serif; */
   --font-logo: "Myriad Pro Cond", sans-serif;

@@ -23,7 +23,7 @@ export default function ImageCarousel({
   const duplicatedImages = [...images, ...images];
 
   return (
-    <div className="w-full h-20 md:h-50 relative overflow-hidden bg-white py-4">
+    <div className="w-full h-20 md:h-50 relative overflow-hidden bg-white px-4 sm:px-6 md:px-10 lg:px-30 xl:px-40 py-4">
       <div
         className="flex animate-scroll items-center justify-center gap-6"
         style={{
