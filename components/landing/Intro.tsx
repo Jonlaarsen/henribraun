@@ -22,7 +22,7 @@ const Intro = () => {
   }, []);
   return (
     <div className="intro-container min-h-[60vh] bg-accent-foreground/20 my-10  md:min-h-[80vh] py-10  md:py-20 px-4 sm:px-6 md:px-10 lg:px-30 xl:px-40 relative overflow-hidden size-full flex flex-col-reverse space-y-4 md:space-y-0 md:flex-row items-center justify-center">
-      <div className=" z-50 flex flex-col items-center text-center justify-center px-6 lg:pl-10 space-y-4 size-full order-2 lg:order-1">
+      <div className=" z-50 flex flex-col items-center text-start justify-center px-6 lg:pl-10 space-y-4 size-full order-2 lg:order-1">
         <h2 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl z-50">
           En digital marknadsföringsbyrå <br />
           <span className="text-primary">baserad i Malmö.</span>
