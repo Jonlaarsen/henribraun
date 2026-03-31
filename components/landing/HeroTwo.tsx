@@ -108,7 +108,7 @@ const HeroTwo = () => {
             Kundcase
           </Link>
         </div> */}
-        <div className="flex flex-col md:flex-row gap-4 text-lg font-semibold">
+        <div className="flex flex-col md:flex-row gap-4 mt-2 text-lg font-semibold">
           <div className="hover:-translate-y-1 duration-200 ease-in">
             <a
               id="contact-button"
