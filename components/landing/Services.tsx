@@ -47,9 +47,9 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="min-h-screen py-10 md:py-0  px-4 sm:px-16  relative flex flex-col items-center justify-center text-foreground"
+      className="min-h-screen   px-4 sm:px-16  relative flex flex-col items-center justify-center text-foreground"
     >
-      <h2 className="text-3xl text-center sm:text-5xl md:text-6xl  pb-4 font-black px-4">
+      <h2 className="text-[1.9rem] text-center sm:text-5xl md:text-6xl pb-4 font-black px-4">
         Hur kan vi hjälpa dig?
       </h2>
       <h3 className=" md:text-3xl text-center font-light px-5">
@@ -100,7 +100,6 @@ const Services = () => {
           <ArrowBigRight strokeWidth={1.3} className="h-5 w-fit" />
         </a>
       </div> */}
-      <div>review cards</div>
     </div>
   );
 };

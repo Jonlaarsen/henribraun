@@ -120,7 +120,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className="z-100 navbar fixed top-0 left-0 right-0 bg-white backdrop-blur-md  py-2  px-4 md:py-6 md:px-16 flex justify-between items-center transition-transform duration-300 ease-out"
+        className="z-100 navbar fixed top-0 left-0 right-0 bg-white backdrop-blur-md  py-4  px-4 md:py-6 md:px-16 flex justify-between items-center transition-transform duration-300 ease-out"
         style={{
           transform: navbarVisible ? "translateY(0)" : "translateY(-150%)",
         }}
@@ -134,7 +134,7 @@ const Navbar = () => {
             <span className="h-1.5 w-1.5 md:h-2.5 md:w-2.5 bg-primary rounded-full -mt-2 mx-1 inline-block" />{" "}
             BRAUN
           </h1> */}
-          <img src="/HENRIBRAUN1_line.svg" className="h-5 md:h-8 " />
+          <img src="/HENRIBRAUN1_line.svg" className="h-7 md:h-8 " />
         </Link>
         <div className="hidden md:flex items-center space-x-10 text-lg z-100 font-light">
           <NavLinks />

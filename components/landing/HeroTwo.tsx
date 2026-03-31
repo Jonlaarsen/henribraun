@@ -65,16 +65,16 @@ const HeroTwo = () => {
         backgroundImage:
           "url('https://images.unsplash.com/photo-1694434326112-a876d5213047?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
       }}
-      className="relative bg-top-right  flex min-h-screen items-center justify-center overflow-hidden bg-accent-peach/20 px-4 sm:px-6 md:px-5  py-20 text-white "
+      className="relative bg-center md:bg-top-right flex min-h-screen items-center justify-center overflow-hidden bg-accent-peach/20 px-4 sm:px-6 md:px-5  py-20 text-white "
     >
       <div className="absolute top-0 left-0 right-0 bottom-0 ">
         {/* <div className="absolute md:-bottom-80 md:-right-80 -bottom-50 -right-50 z-10 border-100 h-100 w-100 md:h-152 md:w-152 rounded-full md:border-180 border-accent-peach/20 lg:block xl:-bottom-120 xl:-right-120 xl:h-240 xl:w-240"></div> */}
       </div>
 
-      <div className="z-50 w-full pl-10 max-w-8xl text-start">
+      <div className="z-50 w-full md:pl-10 max-w-8xl text-start">
         <h1
           id="title"
-          className="mb-4 text-[2.7rem] leading-tighter font-semibold sm:text-5xl md:mb-6 md:text-6xl  lg:text-7xl xl:text-8xl"
+          className="mb-4 text-[2.8rem] leading-tighter font-bold sm:text-5xl md:mb-6 md:text-6xl lg:text-7xl xl:text-8xl"
         >
           Din partner <br className="block md:hidden" /> inom{" "}
           <br className="hidden md:block" /> digital marknadsföring
@@ -91,7 +91,7 @@ const HeroTwo = () => {
             {rotatingTexts[activeTextIndex]}
           </span>
         </p> */}
-        <hr className="max-w-lg bg-white  mb-10" />
+        <hr className="max-w-lg hidden md:block bg-white  mb-10" />
         {/* <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center">
           <Link
             id="contact-button"
@@ -108,11 +108,11 @@ const HeroTwo = () => {
             Kundcase
           </Link>
         </div> */}
-        <div className="flex gap-4 text-lg font-semibold">
-          <a className="px-10 py-2 rounded-lg bg-accent-orange hover:-translate-y-1 duration-300 ease-in-out ">
+        <div className="flex flex-col md:flex-row gap-4 text-lg font-semibold">
+          <a className="px-10 py-2 text-center rounded-lg bg-accent-orange hover:-translate-y-1 duration-300 ease-in-out ">
             Boka möte
           </a>
-          <a className="px-10 py-2 rounded-lg bg-primary hover:-translate-y-1 duration-300 ease-in-out">
+          <a className="px-10 py-2 text-center rounded-lg bg-primary hover:-translate-y-1 duration-300 ease-in-out">
             Kundcase
           </a>
         </div>
