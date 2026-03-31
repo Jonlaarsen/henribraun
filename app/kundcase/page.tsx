@@ -11,7 +11,7 @@ export default function KundcasePage() {
     });
   }, []);
   return (
-    <div className="section min-h-screen pt-24 bg-linear-to-b from-primary/20 via-transparent to-transparent  md:pt-32 pb-20 px-4 sm:px-6">
+    <div className="section min-h-screen pt-24 bg-white md:pt-32 pb-20 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-black mb-6 pt-10 text-secondary">
           Kundcase
@@ -46,7 +46,7 @@ export default function KundcasePage() {
               <p className="text-sm text-foreground/60 mb-6">
                 {caseStudy.summary}
               </p>
-              <span className="inline-flex items-center gap-2 text-secondary/90 font-semibold group-hover:gap-3 transition-all">
+              <span className="inline-flex items-center gap-2 text-orange-400/80 font-semibold group-hover:gap-3 transition-all">
                 Läs mer om {caseStudy.client}
                 <span className="group-hover:translate-x-1 transition-transform">
                   →

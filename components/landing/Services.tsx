@@ -47,7 +47,7 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="min-h-screen py-10 md:py-0 md:pb-20 px-4 sm:px-6 md:px-10 lg:px-30 xl:px-40 relative flex flex-col items-center justify-center text-foreground"
+      className="min-h-screen py-10 md:py-0  px-4 sm:px-16  relative flex flex-col items-center justify-center text-foreground"
     >
       <h2 className="text-3xl text-center sm:text-5xl md:text-6xl  pb-4 font-black px-4">
         Hur kan vi hjälpa dig?
@@ -56,12 +56,16 @@ const Services = () => {
         Vi erbjuder skräddarsydda tjänster inom digital marknadsföring, <br />
         från strategi och analys till annonsering och webbutveckling.
       </h3>
-      <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 py-10 md:py-20">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-6 md:gap-10 py-10 md:py-20">
         {TJANSTER_LIST.slice(0, 6).map((service) => {
           const Icon = ICON_MAP[service.iconKey];
           return (
             <div
-              className="bg-primary/80 w-full text-white flex-1 max-w-md mx-auto lg:max-w-none lg:w-75 xl:w-85 relative min-h-70 lg:h-80 py-8 md:py-10 px-4 rounded-3xl shadow-primary hover:shadow-lg hover:scale-105 duration-300 ease-in-out translate-all cursor-pointer"
+              className={
+                " w-full text-white " +
+                (service.color || "bg-primary") +
+                " flex-1 max-w-md mx-auto lg:max-w-none lg:w-75 xl:w-full relative min-h-70 lg:h-80 py-8 md:py-10 px-4 rounded-3xl shadow-stone-200  hover:shadow-lg hover:scale-105 duration-300 ease-in-out translate-all cursor-pointer"
+              }
               key={service.slug}
             >
               <h2 className="text-2xl lg:text-3xl h-22 font-stretch-125% translate-y-2 font-bold">
@@ -83,7 +87,7 @@ const Services = () => {
           );
         })}
       </div>
-      <div className="flex flex-col justify-center items-center text-center space-y-6 max-w-4xl mx-4 sm:mx-6 md:mx-10 lg:mx-20 xl:mx-40 bg-slate-300/40 border-2 border-slate-400 backdrop-blur-xs rounded-3xl min-h-50 lg:h-100 size-full px-2 sm:px-10 md:px-20 lg:px-20 py-10 md:py-16  mb-20 lg:mb-30">
+      {/* <div className="flex flex-col justify-center items-center text-center space-y-6 max-w-4xl mx-4 sm:mx-6 md:mx-10 lg:mx-20 xl:mx-40 bg-slate-300/40 border-2 border-slate-400 backdrop-blur-xs rounded-3xl min-h-50 lg:h-100 size-full px-2 sm:px-10 md:px-20 lg:px-20 py-10 md:py-16  mb-20 lg:mb-30">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extralight">
           Vi vill vara med dig när du växer <br /> och hjälper dig ta nästa steg
           på ett sätt som passar just dig
@@ -95,7 +99,8 @@ const Services = () => {
           <p>Börja nu</p>
           <ArrowBigRight strokeWidth={1.3} className="h-5 w-fit" />
         </a>
-      </div>
+      </div> */}
+      <div>review cards</div>
     </div>
   );
 };

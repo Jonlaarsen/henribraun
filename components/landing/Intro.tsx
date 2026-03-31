@@ -21,8 +21,8 @@ const Intro = () => {
     });
   }, []);
   return (
-    <div className="intro-container min-h-[60vh] bg-accent-foreground/20 my-10  md:min-h-[80vh] py-10  md:py-20 px-4 sm:px-6 md:px-10 lg:px-30 xl:px-40 relative overflow-hidden size-full flex flex-col-reverse space-y-4 md:space-y-0 md:flex-row items-center justify-center">
-      <div className=" z-50 flex flex-col items-center text-start justify-center px-6 lg:pl-10 space-y-4 size-full order-2 lg:order-1">
+    <div className="intro-container min-h-[60vh] bg-accent-khaki/20 mb-20  md:min-h-[80vh] py-10  md:py-20 px-4 sm:px-6 md:px-16 relative overflow-hidden size-full flex flex-col-reverse space-y-4 md:space-y-0 md:flex-row items-center justify-center">
+      <div className=" z-50 flex flex-col items-center text-start justify-center  space-y-4 size-full order-2 lg:order-1">
         <h2 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl z-50">
           En digital marknadsföringsbyrå <br />
           <span className="text-primary">baserad i Malmö.</span>
@@ -32,7 +32,7 @@ const Intro = () => {
           efter era mål och resurser.
         </p>
       </div>
-      <div className="px-4 relative flex flex-col items-center text-center justify-center space-y-4 size-full order-1 lg:order-2">
+      <div className=" relative flex flex-col items-center text-center justify-end space-y-4 size-full order-1 lg:order-2">
         <div className="w-full max-w-md h-60 lg:h-120 aspect-3/4 lg:aspect-auto bg-cyan-900/20 overflow-hidden rounded-sm">
           <img
             src="https://images.pexels.com/photos/13071531/pexels-photo-13071531.jpeg"

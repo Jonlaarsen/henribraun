@@ -13,7 +13,13 @@
   --foreground: #333333;
   --primary:#4682b4;
   --secondary:#325c80;
-  --accent-foreground:#3e7077;
+  --accent-orange:#f76a3d;
+  --accent-green:#216c79;
+  --accent-purple:#4a4b4d;
+  --accent-khaki:#85a69e;
+  --accent-sand: #ebd99e;
+  --accent-peach:#e5bf92;
+
   --font-sans-roboto: "Roboto", sans-serif;
 
   
@@ -26,6 +32,12 @@
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-accent-foreground: var(--accent-foreground);
+  --color-accent-orange: var(--accent-orange);
+  --color-accent-green: var(--accent-green);
+  --color-accent-purple: var(--accent-purple);
+  --color-accent-khaki: var(--accent-khaki);
+  --color-accent-sand: var(--accent-sand);
+  --color-accent-peach: var(--accent-peach);
   --font-roboto: var(--font-sans-roboto), ui-sans-serif, system-ui, sans-serif;
   /* --font-serif: var(--font-serif-stack), ui-serif, Georgia, serif; */
   --font-logo: "Myriad Pro Cond", sans-serif;

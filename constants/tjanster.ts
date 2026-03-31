@@ -10,6 +10,7 @@ export type TjansterDetail = {
   sections?: TjansterSection[];
   benefits?: string[];
   process?: string[];
+  color?:string;
 };
 
 export type TjansterListing = TjansterDetail & {
@@ -21,6 +22,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
   {
     slug: "digital-analys",
     title: "Digital Analys",
+    color: "bg-primary/90",
     description: "Här börjar allt. Vi granskar din data grundligt – webbanalys, beteendemönster, konverteringsflöden och konkurrenter – och hittar insikter som hjälper dig ta smarta, databaserade beslut. Du får en tydlig rapport med konkreta rekommendationer, inte bara siffror.",
     iconKey: "BarChart2",
     fullText:
@@ -48,6 +50,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
   {
     slug: "digital-strategi",
     title: "Digital Strategi",
+    color:"bg-accent-orange/90",
     description: "Vi tar fram en tydlig, genomförbar strategi baserat på datadrivna insikter. Vi definierar mål, KPI:er och en roadmap som guidar dig från nu till där du vill vara – med fokus på långsiktig tillväxt och lönsamhet online.",
     iconKey: "Cpu",
     fullText:
@@ -75,6 +78,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
   {
     slug: "konverterings-optimering",
     title: "Konverterings-optimering",
+    color:"bg-accent-green/90",
     description: "Fler konverteringar genom att förbättra varje steg i kundresan. Vi använder A/B-testning, heatmaps och användartester för att hitta var besökare tappas bort – och optimerar sedan landningssidor, formulär och checkoutflöden så att fler blir kunder.",
     iconKey: "CircleFadingArrowUp",
     fullText:
@@ -102,6 +106,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
   {
     slug: "webb-design",
     title: "Webbproduktion",
+    color:"bg-accent-purple/90",
     description: "Vi hjälper dig bygga och förbättra din hemsida med fokus på användarupplevelse och konvertering. Vi skapar moderna, snabba och mobilvänliga webbplatser som är SEO-vänliga från start och bygger på bästa praxis för design och teknik.",
     iconKey: "Code2",
     fullText:
@@ -126,10 +131,11 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
     ],
     process: ["Krav & wireframes", "Design & prototyp", "Utveckling", "Test & lansering"],
   },
-  
+
   {
     slug: "google-ads",
     title: "Google Ads",
+    color:"bg-accent-khaki/90",
     description: "Var med i kundens köpresa från första klicket. Vi skapar kampanjer som fångar upp köpklara kunder via sökannonser, Display och YouTube – med rätt målgrupper, budskap och budgivning så att varje investerad krona ger maximal avkastning.",
     iconKey: "Megaphone",
     fullText:
@@ -157,6 +163,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
   {
     slug: "meta-ads",
     title: "Meta Ads",
+    color:"bg-accent-peach/90",
     description: "Annonser som engagerar och konverterar på Facebook och Instagram. Vi når rätt personer genom datadriven målgruppsstyrning, lookalike-publiker och retargeting – och skapar kreativ som sticker ut i flödet och driver mätbara resultat.",
     iconKey: "Share2",
     fullText:
@@ -184,6 +191,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
   {
     slug: "microsoft-ads",
     title: "Microsoft Ads",
+    color:"bg-secondary/90",
     description: "Syns när kunderna letar efter dina produkter eller tjänster via Bing och Microsofts söknätverk. Vi når en unik målgrupp – ofta B2B-köpbeslutsfattare och professionella användare – med lägre konkurrens och potentiellt lägre kostnad per klick än på Google.",
     iconKey: "Monitor",
     fullText:

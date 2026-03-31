@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/nav/Navbar";
 import Footer from "@/components/landing/Footer";
+import NavbarTwo from "@/components/nav/NavbarTwo";
 
 const roboto = Roboto({
   variable: "--font-sans-roboto",
@@ -13,6 +14,21 @@ export const metadata: Metadata = {
   title: "HENRI BRAUN | Din Partner Inom Digital Marknadsföring",
   description:
     "Henri Braun erbjuder skräddarsydda lösningar inom digital marknadsföring, optimering och webbproduktion som driver din verksamhet framåt. Spetskompetens inom digital handel och marknadsföring. Kontakta oss för professionell rådgivning och support.",
+  openGraph: {
+    title: "HENRI BRAUN | Din Partner Inom Digital Marknadsföring",
+    description:
+      "Henri Braun erbjuder skräddarsydda lösningar inom digital marknadsföring, optimering och webbproduktion som driver din verksamhet framåt. Spetskompetens inom digital handel och marknadsföring. Kontakta oss för professionell rådgivning och support.",
+    url: "https://www.henribraun.se/",
+    siteName: "Henri Braun",
+    images: [
+      {
+        url: "https://www.henribraun.se/HENRIBRAUN1_line.svg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({

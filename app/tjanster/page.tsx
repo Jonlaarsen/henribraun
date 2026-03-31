@@ -52,15 +52,16 @@ export default function TjansterPage() {
                   <h2 className="text-2xl font-bold mb-2 text-primary">
                     {service.title}
                   </h2>{" "}
-                  {Icon && <Icon className="text-secondary h-15 w-15" />}
+                  {Icon && <Icon className="text-orange-400/50 h-15 w-15" />}
                 </div>
 
-                <div className="w-full relative text-secondary flex items-center justify-center h-40">
-                  <div className="z-20">
+                <div className="w-full relative text-secondary flex flex-col items-start justify-center h-40">
+                  <div className="z-20 mb-5">
                     <p className="text-foreground line-clamp-3">
                       {service.description}
                     </p>
                   </div>
+                  <p className=" text-primary -mb-10">läs mer..</p>
                 </div>
               </Link>
             );

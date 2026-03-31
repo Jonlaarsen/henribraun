@@ -40,7 +40,7 @@ export default async function KundcaseDetailPage({
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-secondary/80 font-medium hover:text-secondary underline underline-offset-4"
+                className="text-orange-400/70 font-medium hover:text-secondary underline underline-offset-4"
               >
                 {link.label} →
               </a>

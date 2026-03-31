@@ -28,7 +28,7 @@ const Hero = () => {
     });
   }, []);
   return (
-    <section className=" min-h-screen bg-white flex flex-col items-center justify-center relative text-foreground overflow-hidden px-4 sm:px-6 md:px-10 lg:px-30 xl:px-40">
+    <section className=" min-h-screen bg-white flex flex-col items-center justify-center relative text-foreground overflow-hidden px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40">
       <div className="absolute inset-0 size-full z-50">
         {/* <video
           src="https://www.shutterstock.com/shutterstock/videos/1108509779/preview/stock-footage-abstract-d-animation-of-blue-flying-blobs-k-seamless-looped-video-d-illustration.webm"

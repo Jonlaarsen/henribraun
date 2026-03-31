@@ -3,12 +3,12 @@
 import Image from "next/image";
 
 const DEFAULT_IMAGES = [
-  "https://www.breadcrumb.ai/blog/images/breadcrumb-ga-cover.png",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Google_Analytics_Logo_2015.png/1280px-Google_Analytics_Logo_2015.png",
+  "https://upload.wikimedia.org/wikipedia/commons/9/9a/Vercel_logo_2025.svg",
   "https://company.boxoffice.com/wp-content/uploads/2021/06/ads-logo-horizontal.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/1280px-Shopify_logo_2018.svg.png",
-  "https://miro.medium.com/v2/resize:fit:1400/0*U_ilPWHF6oxyi42p.jpg",
-  "https://find-model.jp/insta-lab/wp-content/uploads/2021/10/meta-logo-16-9.png",
-  "https://diplo-media.s3.eu-central-1.amazonaws.com/2025/07/microsoft-azure-365-AI-Cloud-earnings-Nadella.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
+  "https://logos-world.net/wp-content/uploads/2023/08/React-Symbol.png",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/3840px-Microsoft_logo_%282012%29.svg.png",
 ];
 
 interface ImageCarouselProps {
@@ -23,9 +23,9 @@ export default function ImageCarousel({
   const duplicatedImages = [...images, ...images];
 
   return (
-    <div className="w-full h-20 md:h-50 relative overflow-hidden bg-white px-4 sm:px-6 md:px-10 lg:px-30 xl:px-40 py-4">
+    <div className="w-full h-20 md:h-30 relative overflow-hidden  px-4 sm:px-6 md:px-10 lg:px-10 xl:px-40 my-8">
       <div
-        className="flex animate-scroll items-center justify-center gap-6"
+        className="flex animate-scroll gap-5"
         style={{
           width: "max-content",
           animationDuration: `${images.length * 4}s`,
@@ -34,12 +34,12 @@ export default function ImageCarousel({
         {duplicatedImages.map((src, i) => (
           <div
             key={i}
-            className="flex h-10 md:h-50 w-fit items-center justify-center"
+            className="flex h-10 md:h-30 w-fit items-center justify-center"
           >
             <img
               src={src}
               alt={`Carousel image ${i + 1}`}
-              className="object-cover object-center w-40 md:w-70 "
+              className=" object-cover w-35 object-center brightness-0 invert "
             />
           </div>
         ))}

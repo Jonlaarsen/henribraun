@@ -109,7 +109,7 @@ const Navbar = () => {
       </Link>
       <Link
         href="/kontakt"
-        className="font-semibold bg-primary p-3 rounded-lg text-white hover:scale-x-105 transition-all duration-300 ease-in-out"
+        className="font-semibold bg-primary px-3 py-2 rounded-lg text-white hover:scale-x-105 transition-all duration-300 ease-in-out"
         onClick={() => setMobileMenuOpen(false)}
       >
         Kontakta oss
@@ -120,7 +120,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className="z-100 navbar fixed top-0 left-0 right-0 bg-white border-b border-primary/20 py-2  px-4 md:py-6 md:px-40 flex justify-between items-center transition-transform duration-300 ease-out"
+        className="z-100 navbar fixed top-0 left-0 right-0 bg-white backdrop-blur-md  py-2  px-4 md:py-6 md:px-16 flex justify-between items-center transition-transform duration-300 ease-out"
         style={{
           transform: navbarVisible ? "translateY(0)" : "translateY(-150%)",
         }}
@@ -154,7 +154,7 @@ const Navbar = () => {
 
       {/* Mobile menu overlay */}
       <div
-        className={`fixed inset-0 z-100 bg-white/95 backdrop-blur-lg md:hidden transition-opacity overflow-scroll duration-300 ${
+        className={`fixed inset-0 z-100 bg-white backdrop-blur-lg md:hidden transition-opacity overflow-scroll duration-300 ${
           mobileMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
