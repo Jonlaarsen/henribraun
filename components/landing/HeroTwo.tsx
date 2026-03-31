@@ -74,7 +74,7 @@ const HeroTwo = () => {
       <div className="z-50 w-full md:pl-10 max-w-8xl text-start">
         <h1
           id="title"
-          className="mb-4 text-[2.8rem] leading-tighter font-bold sm:text-5xl md:mb-6 md:text-6xl lg:text-7xl xl:text-8xl"
+          className="mb-4 text-[2.8rem] leading-12 md:leading-25 tracking-tight font-bold sm:text-5xl md:mb-6 md:text-6xl lg:text-7xl xl:text-8xl"
         >
           Din partner <br className="block md:hidden" /> inom{" "}
           <br className="hidden md:block" /> digital marknadsföring
