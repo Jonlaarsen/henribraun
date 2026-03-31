@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 const DEFAULT_IMAGES = [
   "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Google_Analytics_Logo_2015.png/1280px-Google_Analytics_Logo_2015.png",
   "https://upload.wikimedia.org/wikipedia/commons/9/9a/Vercel_logo_2025.svg",
@@ -20,27 +18,34 @@ export default function ImageCarousel({
   images = DEFAULT_IMAGES,
   height = 240,
 }: ImageCarouselProps) {
-  const duplicatedImages = [...images, ...images];
+  void height;
 
   return (
-    <div className="w-full h-20 md:h-30 relative overflow-hidden  px-4 sm:px-6 md:px-10 lg:px-10 xl:px-40 my-8">
+    <div className="w-full h-20 md:h-30 relative overflow-hidden my-8">
       <div
-        className="flex animate-scroll gap-5"
+        className="flex w-max animate-scroll"
         style={{
-          width: "max-content",
           animationDuration: `${images.length * 4}s`,
         }}
       >
-        {duplicatedImages.map((src, i) => (
+        {[0, 1].map((groupIndex) => (
           <div
-            key={i}
-            className="flex h-10 md:h-30 w-fit items-center justify-center"
+            key={groupIndex}
+            className="flex shrink-0 items-center gap-10 "
+            aria-hidden={groupIndex === 1}
           >
-            <img
-              src={src}
-              alt={`Carousel image ${i + 1}`}
-              className=" object-cover w-35 object-center brightness-0 invert "
-            />
+            {images.map((src, i) => (
+              <div
+                key={`${groupIndex}-${i}`}
+                className="flex h-10 md:h-30 w-fit items-center justify-center"
+              >
+                <img
+                  src={src}
+                  alt={`Carousel image ${i + 1}`}
+                  className="w-35 object-contain object-center brightness-0 invert"
+                />
+              </div>
+            ))}
           </div>
         ))}
       </div>

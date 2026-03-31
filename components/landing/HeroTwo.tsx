@@ -109,12 +109,24 @@ const HeroTwo = () => {
           </Link>
         </div> */}
         <div className="flex flex-col md:flex-row gap-4 text-lg font-semibold">
-          <a className="px-10 py-2 text-center rounded-lg bg-accent-orange hover:-translate-y-1 duration-300 ease-in-out ">
-            Boka möte
-          </a>
-          <a className="px-10 py-2 text-center rounded-lg bg-primary hover:-translate-y-1 duration-300 ease-in-out">
-            Kundcase
-          </a>
+          <div className="hover:-translate-y-1 duration-200 ease-in">
+            <a
+              id="contact-button"
+              href="/kontakt"
+              className="px-10 py-2  text-center rounded-lg bg-accent-orange "
+            >
+              Boka möte
+            </a>
+          </div>
+          <div className="hover:-translate-y-1 duration-200 ease-in">
+            <a
+              id="contact-button"
+              href="/kundcase"
+              className="px-10 py-2  text-center rounded-lg bg-primary"
+            >
+              Kundcase
+            </a>
+          </div>
         </div>
       </div>
       <div className="absolute -bottom-10 left-0 right-0 z-100">
