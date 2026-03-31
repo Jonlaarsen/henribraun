@@ -95,7 +95,7 @@ const HeroTwo = () => {
       }}
       className="relative bg-center md:bg-top-right flex min-h-screen items-center justify-center overflow-hidden bg-accent-peach/20 px-4 sm:px-6 md:px-5  py-20 text-white "
     >
-      <div className="absolute inset-0 bg-linear-to-br from-accent-orange/20 via-65% via-transparent to-transparent "></div>
+      {/* <div className="absolute inset-0 bg-linear-to-br from-accent-orange/20 via-65% via-transparent to-transparent "></div> */}
 
       <div className="z-50 w-full md:pl-10 max-w-8xl text-start">
         <h1
