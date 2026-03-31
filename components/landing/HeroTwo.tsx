@@ -5,8 +5,36 @@ import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/all";
 import gsap from "gsap";
 import ImageCarousel from "./ImageCarousel";
+import LogoLoop from "../LogoLoop";
 
 const rotatingTexts = ["Paid ads", "Konverteringsoptimering", "Webutveckling"];
+
+const IMAGES = [
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Google_Analytics_Logo_2015.png/1280px-Google_Analytics_Logo_2015.png",
+    alt: "Google Analytics logo",
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Vercel_logo_black.svg/960px-Vercel_logo_black.svg.png",
+    alt: "Vercel logo",
+  },
+  {
+    src: "https://www.medicalwebsitesolutions.com.au/wp-content/uploads/2019/06/google-ads-logo.png",
+    alt: "Google Ads logo",
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/960px-Meta_Platforms_Inc._logo.svg.png",
+    alt: "Meta logo",
+  },
+  {
+    src: "https://vectorseek.com/wp-content/uploads/2023/08/Next.js-Wordmark-Logo-Vector.svg-.png",
+    alt: "Next.js logo",
+  },
+  {
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/3840px-Microsoft_logo_%282012%29.svg.png",
+    alt: "Microsoft logo",
+  },
+];
 
 const HeroTwo = () => {
   const [activeTextIndex, setActiveTextIndex] = useState(0);
@@ -67,9 +95,7 @@ const HeroTwo = () => {
       }}
       className="relative bg-center md:bg-top-right flex min-h-screen items-center justify-center overflow-hidden bg-accent-peach/20 px-4 sm:px-6 md:px-5  py-20 text-white "
     >
-      <div className="absolute top-0 left-0 right-0 bottom-0 ">
-        {/* <div className="absolute md:-bottom-80 md:-right-80 -bottom-50 -right-50 z-10 border-100 h-100 w-100 md:h-152 md:w-152 rounded-full md:border-180 border-accent-peach/20 lg:block xl:-bottom-120 xl:-right-120 xl:h-240 xl:w-240"></div> */}
-      </div>
+      <div className="absolute inset-0 bg-linear-to-br from-accent-orange/20 via-65% via-transparent to-transparent "></div>
 
       <div className="z-50 w-full md:pl-10 max-w-8xl text-start">
         <h1
@@ -79,58 +105,35 @@ const HeroTwo = () => {
           Din partner <br className="block md:hidden" /> inom{" "}
           <br className="hidden md:block" /> digital marknadsföring
         </h1>
-        {/* <p
-          id="subtitle"
-          className=" text-lg font-semibold text-stone-100 sm:text-2xl mb-4 lg:text-3xl xl:text-4xl"
-        >
-          Specialister inom{" "}
-          <span
-            ref={rotatingTextRef}
-            className=" text-accent-khaki  font-bold  inline-block will-change-opacity"
-          >
-            {rotatingTexts[activeTextIndex]}
-          </span>
-        </p> */}
-        <hr className="max-w-lg hidden md:block bg-white  mb-10" />
-        {/* <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center">
-          <Link
-            id="contact-button"
-            href="/kontakt"
-            className="inline-flex w-full  items-center justify-center rounded-lg bg-accent-orange/90 backdrop-blur-xs px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-accent-orange sm:w-auto sm:px-10 md:px-14 md:py-4 md:text-base lg:px-20 lg:text-xl"
-          >
-            Boka möte
-          </Link>
-          <Link
-            id="contact-button"
-            href="/kundcase"
-            className="inline-flex w-full items-center justify-center rounded-lg  bg-primary/90 backdrop-blur-xs px-6 py-3 text-sm font-semibold text-stone-100 transition-colors hover:bg-primary hover:text-white sm:w-auto sm:px-10 md:px-14 md:py-4 md:text-base lg:px-20 lg:text-xl"
-          >
-            Kundcase
-          </Link>
-        </div> */}
+
+        <hr className=" bg-white max-w-lg h-0.1 md:h-0.75 mb-5" />
+
         <div className="flex flex-col md:flex-row gap-4 mt-2 text-lg font-semibold">
-          <div className="hover:-translate-y-1 duration-200 ease-in">
-            <a
-              id="contact-button"
-              href="/kontakt"
-              className="px-10 py-2  text-center rounded-lg bg-accent-orange "
-            >
+          <div className="hover:-translate-y-1 duration-200 ease-in py-2 text-center rounded-lg bg-accent-orange w-full md:w-40">
+            <a id="contact-button" href="/kontakt" className=" ">
               Boka möte
             </a>
           </div>
-          <div className="hover:-translate-y-1 duration-200 ease-in">
-            <a
-              id="contact-button"
-              href="/kundcase"
-              className="px-10 py-2  text-center rounded-lg bg-primary"
-            >
+          <div className="hover:-translate-y-1 duration-200 ease-in py-2 text-center rounded-lg bg-primary w-full md:w-40">
+            <a id="contact-button" href="/kundcase">
               Kundcase
             </a>
           </div>
         </div>
       </div>
-      <div className="absolute -bottom-10 left-0 right-0 z-100">
-        <ImageCarousel />
+      <div className="absolute bottom-0 left-0  right-0  z-100">
+        <LogoLoop
+          speed={70}
+          direction="left"
+          logoHeight={35}
+          gap={60}
+          fadeOut
+          fadeOutColor="#ffffff00"
+          hoverSpeed={70}
+          ariaLabel="Technology partners"
+          logos={IMAGES}
+          className="brightness-0 gap-14  invert mb-10"
+        />
       </div>
     </section>
   );

@@ -2,11 +2,11 @@
 
 const DEFAULT_IMAGES = [
   "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Google_Analytics_Logo_2015.png/1280px-Google_Analytics_Logo_2015.png",
-  "https://upload.wikimedia.org/wikipedia/commons/9/9a/Vercel_logo_2025.svg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Vercel_logo_black.svg/960px-Vercel_logo_black.svg.png",
   "https://company.boxoffice.com/wp-content/uploads/2021/06/ads-logo-horizontal.png",
   "https://upload.wikimedia.org/wikipedia/commons/a/ab/Meta-Logo.png",
-  "https://logos-world.net/wp-content/uploads/2023/08/React-Symbol.png",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/3840px-Microsoft_logo_%282012%29.svg.png",
+  "https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/2/nextjs-dqhvgu9iwvacgwnwl8bs25.png/nextjs-ghnqttyc6ffbnqnn8xlrpj.png?_a=DATAiZAAZAA0",
+  "https://static.vecteezy.com/system/resources/thumbnails/019/909/566/small/microsoft-transparent-microsoft-free-free-png.png",
 ];
 
 interface ImageCarouselProps {
