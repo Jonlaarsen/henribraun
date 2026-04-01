@@ -52,7 +52,7 @@ const NavbarTwo = () => {
       <div className=" relative hidden md:block" ref={dropdownRef}>
         <button
           onClick={() => setDropdownOpen(!dropdownOpen)}
-          className="text-secondary font-light hover:text-black flex items-center gap-1"
+          className=" font-light hover:text-black flex items-center gap-1"
         >
           Tjänster{" "}
           <ChevronDown
@@ -65,7 +65,7 @@ const NavbarTwo = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block px-4 py-2.5  text-secondary hover:text-black hover:bg-black/5 transition-colors first:rounded-t-2xl last:rounded-b-2xl"
+                className="block px-4 py-2.5   hover:text-black hover:bg-black/5 transition-colors first:rounded-t-2xl last:rounded-b-2xl"
                 onClick={() => setDropdownOpen(false)}
               >
                 {link.label}
@@ -76,44 +76,41 @@ const NavbarTwo = () => {
       </div>
       <Link
         href="/kundcase"
-        className="text-secondary  font-light hover:text-black"
+        className="  font-light hover:text-black"
         onClick={() => setMobileMenuOpen(false)}
       >
         Kundcase
       </Link>
       <Link
         href="/om-oss"
-        className="text-secondary font-light hover:text-black"
+        className=" font-light hover:text-black"
         onClick={() => setMobileMenuOpen(false)}
       >
         Om oss
       </Link>
-      <Link
+      {/* <Link
         href="/kontakt"
-        className="text-secondary font-light hover:text-black"
+        className=" font-light hover:text-black"
         onClick={() => setMobileMenuOpen(false)}
       >
         Kontakta oss
-      </Link>
+      </Link> */}
     </>
   );
 
   return (
     <>
-      <div className="z-100 navbar absolute top-0 left-0 right-0 py-2   px-4 md:py-8 md:px-20 backdrop-blur-md border-white flex justify-between  items-center">
-        <Link
-          href="/"
-          className="text-black hover:opacity-80 transition-opacity shrink-0"
-        >
+      <div className="z-100 navbar fixed top-4 left-6 right-6 py-2 bg-white/30 backdrop-blur-lg rounded-full text-primary px-4  md:px-20  border-white flex justify-between  items-center">
+        <Link href="/" className="hover:opacity-80 transition-opacity shrink-0">
           {/* <h1 className=" mt-2 text-[#333333] font-logo text-3xl md:text-5xl font-semibold flex items-center justify-center">
             HENRI{" "}
             <span className="h-1.5 w-1.5 md:h-2.5 md:w-2.5 bg-primary rounded-full -mt-2 mx-1 inline-block" />{" "}
             BRAUN
           </h1> */}
           <div
-            className="w-40 h-20"
+            className="w-50 h-20"
             style={{
-              backgroundColor: "",
+              backgroundColor: "primary",
               maskImage: "url(/HENRIBRAUN1_line.svg)",
               maskRepeat: "no-repeat",
               maskPosition: "center",
@@ -128,13 +125,13 @@ const NavbarTwo = () => {
         <div className="hidden md:flex items-center space-x-5 text-lg z-100 font-light">
           <NavLinks />
         </div>
-        <button className="flex bg-secondary text-white rounded-xl items-center text-lg font-light justify-center gap-2 px-3 py-2">
-          <Mail className="h-8 w-8" />
+        <button className="flex text-primary bg-accent-orange/10 border rounded-lg items-center text-lg font-bold justify-center gap-2 px-3 py-2">
+          {/* <Mail className="h-8 w-8" /> */}
           kontakta oss
         </button>
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 text-secondary hover:text-black"
+          className="md:hidden p-2  hover:text-black"
           aria-label="Toggle menu"
         >
           {mobileMenuOpen ? (
@@ -144,7 +141,7 @@ const NavbarTwo = () => {
           )}
         </button>
       </div>
-      <hr className="absolute top-30 left-15 right-15 text-secondary  h-px bg-white z-100" />
+      {/* <hr className="absolute top-30 left-15 right-15 text-primary h-px bg-white z-100" /> */}
 
       {/* Mobile menu overlay */}
       <div
@@ -160,7 +157,7 @@ const NavbarTwo = () => {
             className="absolute top-5 right-5"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            <X className="h-6 w-6 text-secondary" />
+            <X className="h-6 w-6 " />
           </button>
           <div className="border-b border-black/10 pb-4">
             <Link
@@ -177,7 +174,7 @@ const NavbarTwo = () => {
             </Link>
             <button
               onClick={() => setMobileTjansterOpen(!mobileTjansterOpen)}
-              className="flex items-center justify-between w-full text-left text-base font-light uppercase tracking-widest text-secondary mb-3 py-2 hover:text-slate-700"
+              className="flex items-center justify-between w-full text-left text-base font-light uppercase tracking-widest  mb-3 py-2 hover:text-slate-700"
             >
               Tjänster
               <ChevronDown

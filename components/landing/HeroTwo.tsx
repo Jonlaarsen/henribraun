@@ -121,15 +121,15 @@ const HeroTwo = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0  right-0  z-100">
+      <div className="absolute bottom-0 left-0  right-0  z-50">
         <LogoLoop
-          speed={70}
+          speed={40}
           direction="left"
-          logoHeight={35}
+          logoHeight={30}
           gap={60}
           fadeOut
           fadeOutColor="#ffffff00"
-          hoverSpeed={70}
+          hoverSpeed={40}
           ariaLabel="Technology partners"
           logos={IMAGES}
           className="brightness-0 gap-14  invert mb-10"

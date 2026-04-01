@@ -3,7 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/nav/Navbar";
 import Footer from "@/components/landing/Footer";
-import NavbarTwo from "@/components/nav/NavbarTwo";
+// import NavbarTwo from "@/components/nav/NavbarTwo";
 
 const roboto = Roboto({
   variable: "--font-sans-roboto",
