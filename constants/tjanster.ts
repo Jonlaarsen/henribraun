@@ -170,13 +170,14 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
     "content": "Driv fler nedladdningar och öka användningen av din app med automatiserad annonsering i hela Googles nätverk."
   }
     ],
-    benefits: [
+      benefits: [
       "Kampanjer som når köpklara kunder",
-      "Optimerad budgivning och ROI",
-      "Ständig förbättring och optimering",
-      "Tydlig rapportering och insikter",
+      "Maximera avkastningen på din investering",
+      "Löpande optimering för bättre resultat",
+      "Tydlig rapportering",
     ],
-    process: ["Kickoff & målsättning", "Kampanjsetup & strategi", "Lansering", "Optimering & skalning"],
+    process: ["Möte & målsättning", "analys & strategi", "kampanjuppsättning & Lansering", "Optimering & skalning"],
+  
   },
   {
     slug: "meta-ads",
