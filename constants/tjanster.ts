@@ -142,15 +142,33 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
       "Vi skapar kampanjer som fångar upp köpklara kunder och ser till att varje investerad krona ger maximal avkastning. Google Ads är kraftfullt när det används rätt, med rätt målgrupper, budskap och budgivning.",
     sections: [
       {
-        title: "Sökannonser",
-        content:
-          "Vi bygger kampanjer som syns när kunder aktivt söker efter dina produkter eller tjänster. Genom noggrann nyckelordsoptimering, kvalitetsstyrning och budgivning säkerställer vi att era annonser når rätt personer i rätt ögonblick.",
-      },
-      {
-        title: "Display & YouTube",
-        content:
-          "Utöver sökannonser kan vi hjälpa er nå kunder via Display-nätverket och YouTube. Vi skapar kampanjer som bygger varumärkesmedvetenhet och driver konverteringar längs hela kundresan.",
-      },
+    "title": "Performance Max",
+    "content": "Maximera din annonsering med smart AI som optimerar över alla Googles kanaler och levererar bästa möjliga resultat."
+  },
+  {
+    "title": "Search",
+    "content": "Fånga kunder när de söker efter det du erbjuder och syns högst upp i Googles sökresultat."
+  },
+  {
+    "title": "Demand Gen",
+    "content": "Skapa efterfrågan och inspirera nya kunder med visuella annonser i YouTube, Gmail och Discover."
+  },
+  {
+    "title": "Display",
+    "content": "Bygg varumärkeskännedom och nå ut brett på relevanta webbplatser och appar i Googles nätverk."
+  },
+  {
+    "title": "Shopping",
+    "content": "Visa dina produkter med bild, pris och butik direkt i sökresultatet och öka din e handel."
+  },
+  {
+    "title": "Video",
+    "content": "Engagera din målgrupp med kraftfulla videoannonser på YouTube."
+  },
+  {
+    "title": "App",
+    "content": "Driv fler nedladdningar och öka användningen av din app med automatiserad annonsering i hela Googles nätverk."
+  }
     ],
     benefits: [
       "Kampanjer som når köpklara kunder",

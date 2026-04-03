@@ -128,7 +128,7 @@ function CarouselItem({
         round
           ? "items-center justify-center text-center bg-accent-khaki/30 border-0"
           : "items-start justify-between bg-accent-khaki border border-accent-green rounded-xl"
-      } overflow-hidden cursor-grab active:cursor-grabbing`}
+      } overflow-hidden md:cursor-grab active:cursor-grabbing`}
       style={{
         width: itemWidth,
         height: round ? itemWidth : "100%",
@@ -415,7 +415,7 @@ export default function Carousel({
   return (
     <div
       ref={containerRef}
-      className={`relative w-full overflow-hidden p-2 sm:p-4 ${
+      className={`relative w-full overflow-hidden p-4 ${
         round
           ? "rounded-full border border-white"
           : "rounded-[24px] border border-accent-green/50 bg-accent-sand/10"

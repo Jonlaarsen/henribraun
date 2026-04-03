@@ -34,7 +34,7 @@ export default async function ServicePage({
             {service.sections.map((section, i) => (
               <div key={i}>
                 <h2
-                  className={`${i == 0 ? "text-accent-green" : "text-accent-peach"} text-2xl font-bold mb-4 `}
+                  className={`${i == 0 ? "text-accent-green" : "text-accent-khaki"} text-2xl font-bold mb-4 `}
                 >
                   {section.title}
                 </h2>
@@ -48,7 +48,7 @@ export default async function ServicePage({
 
         {service.benefits && service.benefits.length > 0 && (
           <div className="mb-16">
-            <h2 className="text-2xl font-bold mb-6 text-accent-khaki">
+            <h2 className="text-2xl font-bold mb-6 text-accent-peach">
               Vad du får
             </h2>
             <ul className="space-y-3">
