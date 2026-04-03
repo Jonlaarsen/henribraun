@@ -88,7 +88,7 @@ export const KUNDCASE_LIST: Kundcase[] = [
   slug: "posted-productions",
   client: "Posted Productions",
   logo: "https://www.posted-productions.com/posted3.png",
-  tagline: "Where vision meets reality",
+  tagline: "WHERE VISION MEETS REALITY",
   description:
     "Posted-productions är baserat i Seoul, Sydkorea, och erbjuder kreativa helhetslösningar inom produktion. Från ljusdesign och ljuddesign till videografi och fullserviceproduktion. Med ett starkt fokus på storytelling och visuell identitet hjälper de varumärken att förverkliga sina visioner genom innovativ och högkvalitativ produktion.",
   summary:
