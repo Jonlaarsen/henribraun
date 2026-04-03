@@ -30,42 +30,58 @@ export default function TjansterPage() {
     });
   }, []);
   return (
-    <div className="section min-h-screen text-foreground bg-linear-to-bfrom-primary/20 via-transparent to-transparent relative pt-24 md:pt-32 pb-20 px-4 sm:px-6 overflow-hidden">
-      <div className="max-w-6xl px-5  mx-auto">
+    <div className="section min-h-screen pt-24 bg-white md:pt-32 pb-20 px-4 sm:px-16">
+      <div className="max-w-8xl  mx-auto">
         <h1 className="text-5xl md:text-7xl pt-10 font-black mb-6 text-secondary">
           Våra tjänster
         </h1>
-        <p className="text-xl  mb-16">
+        <p className="text-2xl text-foreground font-light mb-16">
           Vi hjälper företag att växa online med datadriven strategi och
           effektiv digital marknadsföring.
         </p>
-        <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {TJANSTER_LIST.map((service) => {
             const Icon = ICON_MAP[service.iconKey];
             return (
               <Link
                 key={service.slug}
                 href={`/tjanster/${service.slug}`}
-                className="block z-10 p-6 rounded-2xl border bg-linear-to-bl from-white via-white via-85% to-primary/10 backdrop-blur-xs border-primary/30 hover:border-primary/60 hover:scale-105 hover:bg-black/2 hover:shadow-xl transition-all duration-300"
+                className={
+                  " w-full text-white " +
+                  (service.color || "bg-primary") +
+                  " flex-1 w-fit mx-auto lg:max-w-none group lg:w-75 xl:w-full relative min-h-70 lg:h-80 py-8 md:py-10 px-4 rounded-3xl shadow-stone-200  hover:shadow-lg hover:scale-105 duration-300 ease-in-out translate-all cursor-pointer"
+                }
               >
-                <div className="w-full flex justify-between items-center">
-                  <h2 className="text-2xl font-bold mb-2 text-primary">
-                    {service.title}
-                  </h2>{" "}
-                  {Icon && <Icon className="text-orange-400/50 h-15 w-15" />}
+                <span
+                  aria-hidden
+                  className={`absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-20 ${service.color ?? "bg-primary/10"}`}
+                />
+                <div className="relative z-10 w-full flex justify-between items-center">
+                  <h2 className="text-4xl font-bold  ">{service.title}</h2>
+                  {Icon && <Icon className=" h-auto w-18 text-white/80 " />}
                 </div>
 
-                <div className="w-full relative text-secondary flex flex-col items-start justify-center h-40">
+                <div className="w-full relative flex flex-col items-start justify-center h-40">
                   <div className="z-20 mb-5">
-                    <p className="text-foreground line-clamp-3">
+                    <p className=" line-clamp-3 text-lg text-stone-100">
                       {service.description}
                     </p>
                   </div>
-                  <p className=" text-primary -mb-10">läs mer..</p>
+                  <p className=" text-white/80 underline underline-offset-2 group-hover:text-white -mb-10">
+                    läs mer..
+                  </p>
                 </div>
               </Link>
             );
           })}
+        </div>
+        <div className="mt-16 pt-12 border-t border-black/10">
+          <Link
+            href="/kontakt?tab=form"
+            className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-secondary transition-colors"
+          >
+            Hur kan vi hjälpa dig? Kontakta oss här{" "}
+          </Link>
         </div>
       </div>
     </div>

@@ -37,7 +37,7 @@ export const KUNDCASE_LIST: Kundcase[] = [
   {
     slug: "sproud",
     client: "Sproud",
-    logo:"https://images.squarespace-cdn.com/content/v1/688ba16ce11dfe11cd5d300f/6e0ab131-cbfb-43b5-8602-6d2771efddf7/1.png?format=1500w",
+    logo:"https://sproudglobal.com/wp-content/uploads/2025/12/Sproud_Website_Logo1-768x257.webp",
     tagline: "THE ALT ALT M*LK",
     description:
       "Sproud är ett Malmöbaserat, innovativt växtbaserat företag grundat 2018 som erbjuder klimatsmarta mejerialternativ baserade på ärtprotein.",
@@ -63,7 +63,7 @@ export const KUNDCASE_LIST: Kundcase[] = [
   {
     slug: "hatthyllan",
     client: "Hatthyllan Malmö AB",
-    logo:"https://images.squarespace-cdn.com/content/v1/688ba16ce11dfe11cd5d300f/c526a6ac-3716-4848-9f83-55ef767bb525/3.png?format=1500w",
+    logo:"https://hatthyllan.se/cdn/shop/files/5acb5718d92a3521aaeab99a_logo-p-500_280x.png?v=1646732030",
     tagline: "Hattar, kepsar & mössor",
     description:
       "Hatthyllan är en anrik butik med e-handel vid Davidshallstorg i Malmö som säljer hattar, kepsar och mössor med fokus på hög kvalitet och personlig service.",
@@ -79,8 +79,8 @@ export const KUNDCASE_LIST: Kundcase[] = [
     result: {
       impressions:"828 101",
       click:"12 842",
-      addToCart:"255",
-      beginCheckout:"327",
+      addToCart:"327",
+      beginCheckout:"255",
       buy:"154"
     }
   },

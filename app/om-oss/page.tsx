@@ -33,7 +33,7 @@ export default function OmOssPage() {
           </h1> */}
           <img
             src="/HENRIBRAUN1_line_black.svg"
-            className="invert h-42  px-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 "
+            className="invert h-30   px-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 "
             alt=""
           />
         </div>
@@ -54,15 +54,9 @@ export default function OmOssPage() {
             Vår filosofi
           </h2>
           <div className="flex flex-col lg:flex-row gap-8 items-start">
-            <div className="relative w-full lg:w-80 shrink-0 aspect-[4/3] rounded-sm overflow-hidden">
-              <Image
-                src="/coffee.webp"
-                alt="Samarbete och teamwork"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 320px"
-              />
-            </div>
+            {/* <div className="relative w-full lg:w-80 shrink-0 aspect-[4/3] rounded-sm overflow-hidden">
+              
+            </div> */}
             <p className="text-lg leading-relaxed">
               Vi tror på ärlighet, enkelhet och resultat. Digital marknadsföring
               ska inte kännas krånglig eller oåtkomlig. Hos oss får du en
@@ -190,7 +184,7 @@ export default function OmOssPage() {
           </ul>
         </section>
 
-        <section className="mb-16">
+        {/* <section className="mb-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
             <div className="relative aspect-square  overflow-hidden">
               <Image
@@ -220,11 +214,11 @@ export default function OmOssPage() {
               />
             </div>
           </div>
-        </section>
+        </section> */}
 
         <div className="pt-8 border-t border-black/10">
           <Link
-            href="/kontakt"
+            href="/kontakt?tab=form"
             className="inline-block px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-secondary transition-colors"
           >
             Kontakta oss

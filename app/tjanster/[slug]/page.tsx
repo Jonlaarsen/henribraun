@@ -33,7 +33,9 @@ export default async function ServicePage({
           <div className="space-y-12 mb-16">
             {service.sections.map((section, i) => (
               <div key={i}>
-                <h2 className="text-2xl font-bold mb-4 text-secondary">
+                <h2
+                  className={`${i == 0 ? "text-accent-green" : "text-accent-peach"} text-2xl font-bold mb-4 `}
+                >
                   {section.title}
                 </h2>
                 <p className="text-black/80 leading-relaxed">
@@ -46,13 +48,13 @@ export default async function ServicePage({
 
         {service.benefits && service.benefits.length > 0 && (
           <div className="mb-16">
-            <h2 className="text-2xl font-bold mb-6 text-secondary">
+            <h2 className="text-2xl font-bold mb-6 text-accent-khaki">
               Vad du får
             </h2>
             <ul className="space-y-3">
               {service.benefits.map((benefit, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span className="text-cyan-600 mt-1">✓</span>
+                  <span className="text-accent-orange  mt-1">✓</span>
                   <span className="text-black/80">{benefit}</span>
                 </li>
               ))}
@@ -68,7 +70,7 @@ export default async function ServicePage({
             <ol className="space-y-4">
               {service.process.map((step, i) => (
                 <li key={i} className="flex items-start gap-4">
-                  <span className="flex shrink-0 w-8 h-8 rounded-full bg-primary text-white font-semibold items-center justify-center text-sm">
+                  <span className="flex shrink-0 w-8 h-8 rounded-full bg-accent-orange text-white font-semibold items-center justify-center text-sm">
                     {i + 1}
                   </span>
                   <span className="text-black/80 pt-0.5">{step}</span>

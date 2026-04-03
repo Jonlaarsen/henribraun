@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { KUNDCASE_BY_SLUG } from "@/constants/kundcase";
 import Image from "next/image";
+import { ArrowBigLeft } from "lucide-react";
 
 export default async function KundcaseDetailPage({
   params,
@@ -24,7 +25,7 @@ export default async function KundcaseDetailPage({
         </Link>
 
         <div className="border-b relative border-black/10 pb-8 mb-8">
-          <p className="text-sm font-semibold uppercase max-w-59 tracking-widest text-primary mb-2">
+          <p className="text-sm md:text-lg font-light uppercase max-w-59 md:max-w-150 tracking-widest text-primary mb-2">
             {caseStudy.tagline}
           </p>
           <h1 className="text-4xl md:text-6xl max-w-59 md:max-w-150  font-bold mb-4 text-secondary">
@@ -40,7 +41,7 @@ export default async function KundcaseDetailPage({
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-orange-400/70 font-medium hover:text-secondary underline underline-offset-4"
+                className="text-accent-orange font-light hover:text-secondary underline underline-offset-4"
               >
                 {link.label} →
               </a>
@@ -49,12 +50,12 @@ export default async function KundcaseDetailPage({
           <img
             src={caseStudy.logo}
             alt={caseStudy.client}
-            className="w-auto h-10 md:h-30 top-4 right-4 absolute"
+            className="w-auto max-w-70 h-10 md:h-30 top-4 right-4 absolute"
           />
         </div>
 
         <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-secondary/80">
+          <h2 className="text-2xl font-bold mb-6 text-accent-green">
             Uppdraget
           </h2>
           <div className="space-y-4">
@@ -86,7 +87,7 @@ export default async function KundcaseDetailPage({
         )}
 
         {caseStudy.quote && (
-          <blockquote className="bg-cyan-50/50 border-l-4 border-secondary/80 pl-6 py-6 rounded-r-lg">
+          <blockquote className="bg-accent-khaki/10 border-l-4 border-accent-khaki/80 pl-6 py-6 rounded-r-lg">
             <p className="text-foreground/80 leading-relaxed mb-4 italic">
               &ldquo;{caseStudy.quote.text}&rdquo;
             </p>
@@ -95,48 +96,57 @@ export default async function KundcaseDetailPage({
                 {caseStudy.quote.author}
               </cite>
               <span className="text-foreground/60">
-                {" "}
                 — {caseStudy.quote.role}
               </span>
             </footer>
           </blockquote>
         )}
         {caseStudy.result && (
-          <div className="bg-secondary text-zinc-50 size-full  py-10 gap-10 flex flex-wrap justify-evenly items-center">
-            <h1 className="text-4xl md:text-5xl font-black text-white">
+          <div className="">
+            <h1 className="text-lg sm:text-xl md:text-3xl font-semibold text-secondary mb-2 sm:mb-8">
               Resultat:
             </h1>
-            <div className="flex items-center justify-center gap-2">
-              <h2 className="text-2xl md:text-3xl font-light">Impressions:</h2>
-              <p className="text-3xl md:text-4xl font-black">
-                {caseStudy.result.impressions}
-              </p>
-            </div>
-            <div className="flex items-center justify-center gap-2">
-              <h2 className="text-2xl md:text-3xl font-light">Clicks:</h2>
-              <p className="text-3xl md:text-4xl font-black">
-                {caseStudy.result.click}
-              </p>
-            </div>
-            <div className="flex items-center justify-center gap-2">
-              <h2 className="text-2xl md:text-3xl font-light">Add to cart:</h2>
-              <p className="text-3xl md:text-4xl font-black">
-                {caseStudy.result.addToCart}
-              </p>
-            </div>
-            <div className="flex items-center justify-center gap-2">
-              <h2 className="text-2xl md:text-3xl font-light">
-                Begin to checkout:
-              </h2>
-              <p className="text-3xl md:text-4xl font-black">
-                {caseStudy.result.beginCheckout}
-              </p>
-            </div>
-            <div className="flex items-center justify-center gap-2">
-              <h2 className="text-2xl md:text-3xl font-light">Purchases:</h2>
-              <p className="text-3xl md:text-4xl font-black">
-                {caseStudy.result.buy}
-              </p>
+            <div className="mb-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 md:mb-8 caseStudys-center justify-caseStudys-center w-full">
+              <div className="rounded-xl border border-accent-green/20 bg-accent-green/20 p-4 w-full">
+                <p className="text-lg uppercase tracking-[0.12em] text-primary">
+                  Impressions:
+                </p>
+                <p className="text-sm sm:text-lg md:text-2xl font-bold text-secondary">
+                  {caseStudy.result.impressions}
+                </p>
+              </div>
+              <div className="rounded-xl border border-accent-green/20 bg-accent-green/20 p-4 w-full">
+                <p className="text-lg uppercase tracking-[0.12em] text-primary">
+                  Clicks:
+                </p>
+                <p className="text-sm sm:text-lg md:text-2xl font-bold text-secondary">
+                  {caseStudy.result.click}
+                </p>
+              </div>
+              <div className="rounded-xl border border-accent-green/20 bg-accent-green/20 p-4 w-full">
+                <p className="text-lg uppercase tracking-[0.12em] text-primary">
+                  Add to cart:
+                </p>
+                <p className="text-sm sm:text-lg md:text-2xl font-bold text-secondary">
+                  {caseStudy.result.addToCart}
+                </p>
+              </div>
+              <div className="rounded-xl border border-accent-green/20 bg-accent-green/20 p-4 w-full">
+                <p className="text-lg uppercase tracking-[0.12em] text-primary">
+                  Checkout:
+                </p>
+                <p className="text-sm sm:text-lg md:text-2xl font-bold text-secondary">
+                  {caseStudy.result.beginCheckout}
+                </p>
+              </div>
+              <div className="rounded-xl border border-accent-green/20 bg-accent-green/20 p-4 w-full">
+                <p className="text-lg uppercase tracking-[0.12em] text-primary">
+                  Purchases:
+                </p>
+                <p className="text-sm sm:text-lg md:text-2xl font-bold text-secondary">
+                  {caseStudy.result.buy}
+                </p>
+              </div>
             </div>
           </div>
         )}
@@ -144,9 +154,9 @@ export default async function KundcaseDetailPage({
         <div className="mt-16 pt-8 border-t border-black/10 flex flex-col sm:flex-row gap-4">
           <Link
             href="/kundcase"
-            className="inline-block px-6 py-3 text-zinc-800 border border-black/20 rounded-lg hover:bg-black/5 transition-colors text-center"
+            className="inline-flex caseStudys-center gap-2 px-6 py-3 border border-accent-green text-accent-green rounded-lg hover:bg-black/5 transition-colors text-center"
           >
-            ← Fler kundcase
+            <ArrowBigLeft className="h-5 w-5" /> Fler kundcase
           </Link>
           <Link
             href="/#contact"

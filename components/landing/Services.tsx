@@ -60,7 +60,8 @@ const Services = () => {
         {TJANSTER_LIST.slice(0, 6).map((service) => {
           const Icon = ICON_MAP[service.iconKey];
           return (
-            <div
+            <a
+              href={`/tjanster/${service.slug}`}
               className={
                 " w-full text-white " +
                 (service.color || "bg-primary") +
@@ -77,13 +78,10 @@ const Services = () => {
               <div className="absolute bottom-2 right-4 opacity-80">
                 {Icon && <Icon className="opacity-10 h-40 w-40" />}
               </div>
-              <Link
-                href={`/tjanster/${service.slug}`}
-                className="underline underline-offset-2 font-semibold absolute bottom-6 left-4 hover:scale-y-120 duration-300 ease-in-out"
-              >
+              <p className="underline underline-offset-2 font-semibold absolute bottom-6 left-4 hover:scale-y-120 duration-300 ease-in-out">
                 Se mer
-              </Link>
-            </div>
+              </p>
+            </a>
           );
         })}
       </div>

@@ -1,4 +1,5 @@
 import CookieBot from "@/components/cookies/CookieBot";
+import Achivements from "@/components/landing/Achivements";
 import Contact from "@/components/landing/Contact";
 // import Hero from "@/components/landing/Hero";
 import HeroTwo from "@/components/landing/HeroTwo";
@@ -11,9 +12,9 @@ export default function Home() {
     <div className="relative ">
       <CookieBot />
       <HeroTwo />
-      {/* <ImageCarousel /> */}
       <Intro />
       <Services />
+      <Achivements />
       <Contact />
     </div>
   );

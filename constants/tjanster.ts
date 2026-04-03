@@ -104,18 +104,18 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
     process: ["Kartläggning & analys", "Hypoteser & testplan", "Implementering", "Mätning & iteration"],
   },
   {
-    slug: "webb-design",
+    slug: "webb-produktion",
     title: "Webbproduktion",
     color:"bg-accent-purple/90",
     description: "Vi hjälper dig bygga och förbättra din hemsida med fokus på användarupplevelse och konvertering. Vi skapar moderna, snabba och mobilvänliga webbplatser som är SEO-vänliga från start och bygger på bästa praxis för design och teknik.",
     iconKey: "Code2",
     fullText:
-      "En bra webbplats är mer än snygg design – den ska konvertera besökare till kunder. Vi skapar moderna, snabba och användarvänliga webbplatser som bygger på tydlig struktur och bästa praxis för SEO och UX.",
+      "En bra webbplats är mer än snygg design, den ska konvertera besökare till kunder. Vi skapar moderna, snabba och användarvänliga webbplatser som bygger på tydlig struktur och bästa praxis för SEO och UX.",
     sections: [
       {
         title: "Design som konverterar",
         content:
-          "Vi designar med fokus på användarupplevelse och konvertering. Varje layout, val av färger och call-to-action är genomtänkt för att leda besökare mot målet – oavsett om det är ett köp, en kontaktförfrågan eller en nyhetsbrevsprenumeration.",
+          "Vi designar med fokus på användarupplevelse och konvertering. Varje layout, val av färger och call-to-action är genomtänkt för att leda besökare mot målet. Oavsett om det är ett köp, en kontaktförfrågan eller en nyhetsbrevsprenumeration.",
       },
       {
         title: "Teknik och utveckling",
@@ -136,10 +136,10 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
     slug: "google-ads",
     title: "Google Ads",
     color:"bg-accent-khaki/90",
-    description: "Var med i kundens köpresa från första klicket. Vi skapar kampanjer som fångar upp köpklara kunder via sökannonser, Display och YouTube – med rätt målgrupper, budskap och budgivning så att varje investerad krona ger maximal avkastning.",
+    description: "Var med i kundens köpresa från första klicket. Vi skapar kampanjer som fångar upp köpklara kunder via sökannonser, Display och YouTube, med rätt målgrupper, budskap och budgivning så att varje investerad krona ger maximal avkastning.",
     iconKey: "Megaphone",
     fullText:
-      "Vi skapar kampanjer som fångar upp köpklara kunder och ser till att varje investerad krona ger maximal avkastning. Google Ads är kraftfullt när det används rätt – med rätt målgrupper, budskap och budgivning.",
+      "Vi skapar kampanjer som fångar upp köpklara kunder och ser till att varje investerad krona ger maximal avkastning. Google Ads är kraftfullt när det används rätt, med rätt målgrupper, budskap och budgivning.",
     sections: [
       {
         title: "Sökannonser",
@@ -172,12 +172,12 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
       {
         title: "Målgruppsstyrning",
         content:
-          "Vi använder Meta:s kraftfulla målgruppsverktyg för att nå rätt personer – baserat på intressen, beteenden och lookalike-publiker. Vi testar och optimerar kontinuerligt för att hitta de mest lönsamma segmenten.",
+          "Vi använder Meta:s kraftfulla målgruppsverktyg för att nå rätt personer, baserat på intressen, beteenden och lookalike-publiker. Vi testar och optimerar kontinuerligt för att hitta de mest lönsamma segmenten.",
       },
       {
         title: "Kreativ och format",
         content:
-          "Vi skapar annonser som sticker ut i flödet. Oavsett om det är video, carousel eller statiska bilder – vi väljer format och budskap som matchar er målgrupp och era mål.",
+          "Vi skapar annonser som sticker ut i flödet. Oavsett om det är video, carousel eller statiska bilder, vi väljer format och budskap som matchar er målgrupp och era mål.",
       },
     ],
     benefits: [
@@ -200,7 +200,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
       {
         title: "Microsoft Search Network",
         content:
-          "Vi bygger kampanjer som syns på Bing, Yahoo och andra Microsoft-partners. Målgruppen skiljer sig från Google – ofta äldre, med högre köpkraft och mer B2B-fokus. Vi optimerar för denna unika publik.",
+          "Vi bygger kampanjer som syns på Bing, Yahoo och andra Microsoft-partners. Målgruppen skiljer sig från Google, ofta äldre, med högre köpkraft och mer B2B-fokus. Vi optimerar för denna unika publik.",
       },
       {
         title: "LinkedIn-integration",
@@ -209,7 +209,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
       },
     ],
     benefits: [
-      "Når en unik målgrupp – ofta B2B",
+      "Når en unik målgrupp, ofta B2B",
       "Lägre konkurrens om många nyckelord",
       "Potentiellt lägre kostnad per klick",
       "Tydlig rapportering och insikter",

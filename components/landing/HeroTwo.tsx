@@ -122,7 +122,7 @@ const HeroTwo = () => {
         </div>
       </div>
       <div className="absolute bottom-0 left-0  right-0  z-50">
-        <LogoLoop
+        {/* <LogoLoop
           speed={40}
           direction="left"
           logoHeight={30}
@@ -133,7 +133,7 @@ const HeroTwo = () => {
           ariaLabel="Technology partners"
           logos={IMAGES}
           className="brightness-0 gap-14  invert mb-10"
-        />
+        /> */}
       </div>
     </section>
   );
