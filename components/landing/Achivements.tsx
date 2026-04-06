@@ -55,7 +55,7 @@ const Achivements = () => {
           onClick={() => carouselRef.current?.goPrev()}
           className="hidden md:flex absolute top-1/2 -translate-y-1/2 left-40 h-20 w-20 rounded-full bg-accent-green/80 text-white items-center justify-center"
         >
-          <ArrowBigLeft className="h-14 w-14" />
+          <ArrowBigLeft className="h-12 w-12" />
         </button>
         <button
           type="button"
@@ -63,7 +63,7 @@ const Achivements = () => {
           onClick={() => carouselRef.current?.goNext()}
           className="hidden md:flex absolute top-1/2 -translate-y-1/2 right-40 h-20 w-20 rounded-full bg-accent-green/80 text-white  items-center justify-center"
         >
-          <ArrowBigRight className="h-14 w-14" />
+          <ArrowBigRight className="h-12 w-12" />
         </button>
       </div>
     </section>

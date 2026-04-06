@@ -19,6 +19,7 @@ export type kundcaseResult = {
 
 export type Kundcase = {
   slug: string;
+  color?: string;
   client: string;
   img?: string[];
   logo?: string;
@@ -36,6 +37,7 @@ export type Kundcase = {
 export const KUNDCASE_LIST: Kundcase[] = [
   {
     slug: "sproud",
+    color: "bg-accent-orange/80",
     client: "Sproud",
     logo:"https://sproudglobal.com/wp-content/uploads/2025/12/Sproud_Website_Logo1-768x257.webp",
     tagline: "THE ALT ALT M*LK",
@@ -62,6 +64,7 @@ export const KUNDCASE_LIST: Kundcase[] = [
   },
   {
     slug: "hatthyllan",
+    color: "bg-accent-green/80",
     client: "Hatthyllan Malmö AB",
     logo:"https://hatthyllan.se/cdn/shop/files/5acb5718d92a3521aaeab99a_logo-p-500_280x.png?v=1646732030",
     tagline: "Hattar, kepsar & mössor",
@@ -86,6 +89,7 @@ export const KUNDCASE_LIST: Kundcase[] = [
   },
   {
   slug: "posted-productions",
+  color: "bg-primary/80",
   client: "Posted Productions",
   logo: "https://www.posted-productions.com/posted3.png",
   tagline: "WHERE VISION MEETS REALITY",

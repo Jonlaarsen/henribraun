@@ -23,7 +23,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
     slug: "digital-analys",
     title: "Digital Analys",
     color: "bg-primary/90",
-    description: "Här börjar allt. Vi granskar din data grundligt – webbanalys, beteendemönster, konverteringsflöden och konkurrenter – och hittar insikter som hjälper dig ta smarta, databaserade beslut. Du får en tydlig rapport med konkreta rekommendationer, inte bara siffror.",
+    description: "Här börjar allt. Vi granskar din data grundligt webbanalys, beteendemönster, konverteringsflöden och konkurrenter och hittar insikter som hjälper dig ta smarta, databaserade beslut. Du får en tydlig rapport med konkreta rekommendationer, inte bara siffror.",
     iconKey: "BarChart2",
     fullText:
       "Vi kartlägger era målgrupper och affärsmål i detalj så att varje insats bygger på tydliga insikter. Genom att analysera din nuvarande digitala närvaro, webbtrafik och konverteringsdata identifierar vi möjligheter och utmaningar som formar grunden för din strategi.",
@@ -36,7 +36,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
       {
         title: "Vad du får",
         content:
-          "En tydlig rapport med konkreta rekommendationer och prioriteringar. Du får inte bara siffror – du får förståelse för vad som fungerar, vad som inte gör det och hur du kan ta nästa steg.",
+          "En tydlig rapport med konkreta rekommendationer och prioriteringar. Du får inte bara siffror du får förståelse för vad som fungerar, vad som inte gör det och hur du kan ta nästa steg.",
       },
     ],
     benefits: [
@@ -45,13 +45,13 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
       "Konkurrentanalys och marknadsinsikter",
       "Datadriven grund för strategibeslut",
     ],
-    process: ["Kickoff & målsättning", "Datainsamling & analys", "Rapport & presentation", "Rekommendationer & nästa steg"],
+    process: ["Möte & målsättning", "Datainsamling & analys", "Rapport & presentation", "Rekommendationer & nästa steg"],
   },
   {
     slug: "digital-strategi",
     title: "Digital Strategi",
     color:"bg-accent-orange/90",
-    description: "Vi tar fram en tydlig, genomförbar strategi baserat på datadrivna insikter. Vi definierar mål, KPI:er och en roadmap som guidar dig från nu till där du vill vara – med fokus på långsiktig tillväxt och lönsamhet online.",
+    description: "Vi tar fram en tydlig, genomförbar strategi baserat på datadrivna insikter. Vi definierar mål, KPI:er och en roadmap som guidar dig från nu till där du vill vara med fokus på långsiktig tillväxt och lönsamhet online.",
     iconKey: "Cpu",
     fullText:
       "Vi hjälper dig att sätta upp en långsiktig plan med målet att bygga ett starkt varumärke och öka din lönsamhet. Strategin bygger på insikter från analysen och är skräddarsydd för era affärsmål och budget.",
@@ -59,7 +59,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
       {
         title: "Strategi som fungerar",
         content:
-          "Vi skapar en plan som inte bara ser bra ut på papper – den är genomförbar och mätbar. Vi definierar tydliga mål, KPI:er och en roadmap som guidar er från nu till där ni vill vara.",
+          "Vi skapar en plan som inte bara ser bra ut på papper den är genomförbar och mätbar. Vi definierar tydliga mål, KPI:er och en roadmap som guidar er från nu till där ni vill vara.",
       },
       {
         title: "Långsiktighet",
@@ -79,7 +79,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
     slug: "konverterings-optimering",
     title: "Konverterings-optimering",
     color:"bg-accent-green/90",
-    description: "Fler konverteringar genom att förbättra varje steg i kundresan. Vi använder A/B-testning, heatmaps och användartester för att hitta var besökare tappas bort – och optimerar sedan landningssidor, formulär och checkoutflöden så att fler blir kunder.",
+    description: "Fler konverteringar genom att förbättra varje steg i kundresan. Vi använder A/B-testning, heatmaps och användartester för att hitta var besökare tappas bort och optimerar sedan landningssidor, formulär och checkoutflöden så att fler blir kunder.",
     iconKey: "CircleFadingArrowUp",
     fullText:
       "Varje steg i kundresan är avgörande. Vi skapar en smidig och användarvänlig köpupplevelse där design, struktur och optimering skapar tillit från kunder och genererar fler konverteringar.",
@@ -92,7 +92,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
       {
         title: "Kontinuerlig förbättring",
         content:
-          "Konverteringsoptimering är inte en engångsinsats – det är en iterativ process. Vi hjälper er att bygga upp rutiner och strukturer för att ständigt förbättra och mäta resultat.",
+          "Konverteringsoptimering är inte en engångsinsats det är en iterativ process. Vi hjälper er att bygga upp rutiner och strukturer för att ständigt förbättra och mäta resultat.",
       },
     ],
     benefits: [
@@ -129,7 +129,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
       "SEO-vänlig struktur från start",
       "Snabb laddning och god prestanda",
     ],
-    process: ["Krav & wireframes", "Design & prototyp", "Utveckling", "Test & lansering"],
+    process: ["Möte & målsättning", "Design & prototyp", "Utveckling", "Test & lansering"],
   },
 
   {
@@ -183,7 +183,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
     slug: "meta-ads",
     title: "Meta Ads",
     color:"bg-accent-peach/90",
-    description: "Annonser som engagerar och konverterar på Facebook och Instagram. Vi når rätt personer genom datadriven målgruppsstyrning, lookalike-publiker och retargeting – och skapar kreativ som sticker ut i flödet och driver mätbara resultat.",
+    description: "Annonser som engagerar och konverterar på Facebook och Instagram. Vi når rätt personer genom datadriven målgruppsstyrning, lookalike-publiker och retargeting och skapar kreativ som sticker ut i flödet och driver mätbara resultat.",
     iconKey: "Share2",
     fullText:
       "Vi hjälper dig nå rätt personer på Facebook och Instagram med annonser som engagerar och konverterar. Genom datadriven målgruppsstyrning och kreativ annonsering ser vi till att dina budskap träffar kunderna i rätt ögonblick.",
@@ -205,27 +205,23 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
       "Retargeting för att fånga upp intresserade besökare",
       "Tydlig rapportering och insikter",
     ],
-    process: ["Kickoff & målsättning", "Målgruppsstrategi", "Kreativ produktion", "Lansering & optimering"],
+    process: ["Möte & målsättning", "Målgruppsstrategi", "Kreativ produktion", "Lansering & optimering"],
   },
   {
     slug: "microsoft-ads",
     title: "Microsoft Ads",
     color:"bg-secondary/90",
-    description: "Syns när kunderna letar efter dina produkter eller tjänster via Bing och Microsofts söknätverk. Vi når en unik målgrupp – ofta B2B-köpbeslutsfattare och professionella användare – med lägre konkurrens och potentiellt lägre kostnad per klick än på Google.",
+    description: "Syns när kunderna letar efter dina produkter eller tjänster via Bing och Microsofts söknätverk. Vi når en unik målgrupp ofta B2B-köpbeslutsfattare och professionella användare med lägre konkurrens och potentiellt lägre kostnad per klick än på Google.",
     iconKey: "Monitor",
     fullText:
-      "Vi hjälper dig nå rätt personer via Microsofts söknätverk med annonser som syns när kunderna aktivt letar efter dina produkter eller tjänster. Microsoft Ads når en unik målgrupp – ofta B2B-köpbeslutsfattare och professionella användare som söker via Bing och Microsoft 365.",
+      "Vi hjälper dig nå rätt personer via Microsofts söknätverk med annonser som syns när kunderna aktivt letar efter dina produkter eller tjänster. Microsoft Ads når en unik målgrupp ofta B2B-köpbeslutsfattare och professionella användare som söker via Bing och Microsoft 365.",
     sections: [
       {
         title: "Microsoft Search Network",
         content:
           "Vi bygger kampanjer som syns på Bing, Yahoo och andra Microsoft-partners. Målgruppen skiljer sig från Google, ofta äldre, med högre köpkraft och mer B2B-fokus. Vi optimerar för denna unika publik.",
       },
-      {
-        title: "LinkedIn-integration",
-        content:
-          "Microsoft Ads kan kombineras med LinkedIn för att nå professionella målgrupper. Vi hjälper er att bygga kampanjer som träffar rätt personer baserat på jobbtitel, bransch och företagsstorlek.",
-      },
+    
     ],
     benefits: [
       "Når en unik målgrupp, ofta B2B",
@@ -233,7 +229,7 @@ const tjänsterData: (TjansterDetail & { slug: string; iconKey: string })[] = [
       "Potentiellt lägre kostnad per klick",
       "Tydlig rapportering och insikter",
     ],
-    process: ["Kickoff & målsättning", "Kampanjsetup", "Lansering", "Optimering & skalning"],
+    process: ["Möte & målsättning", "Kampanjsetup", "Lansering", "Optimering & skalning"],
   },
 ];
 

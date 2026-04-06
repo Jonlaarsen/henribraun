@@ -25,21 +25,21 @@ export default function KundcasePage() {
             <Link
               key={caseStudy.slug}
               href={`/kundcase/${caseStudy.slug}`}
-              className="block p-6 rounded-2xl group border border-accent-green/50 bg-linear-to-br from-accent-khaki/10 via-white via-70% to-white relative hover:border-primary hover:shadow-lg hover:scale-[1.02] transition-all duration-300 group"
+              className="block p-6 rounded-2xl group border border-accent-green/50 bg-white relative hover:border-primary hover:shadow-lg hover:scale-[1.02] transition-all duration-300 group"
             >
               <img
                 src={caseStudy.logo}
                 className="h-fit max-h-15 md:max-h-20 max-w-26 md:max-w-32 w-auto absolute top-6 md:top-4 right-4  ease-in-out duration-300"
                 alt=""
               />
-              <p className="text-sm font-semibold uppercase tracking-widest max-w-50 md:max-w-90 text-secondary/80 mb-2">
+              <p className="text-sm font-semibold  uppercase tracking-widest max-w-50 md:max-w-90 text-secondary/80 mb-2 group-hover:text-foreground">
                 {caseStudy.tagline}
               </p>
 
-              <h2 className="text-2xl font-bold mb-8 text-secondary max-w-50 md:max-w-90 group-hover:text-secondary/90">
+              <h2 className="text-2xl  font-bold mb-8 text-secondary max-w-50 md:max-w-90 group-hover:text-foreground">
                 {caseStudy.client}
               </h2>
-              <p className="text-foreground/8s0 mb-4 line-clamp-2">
+              <p className="text-foreground/80 mb-4 line-clamp-2 group-hover:text-foreground">
                 {caseStudy.description}
               </p>
               <p className="text-sm text-secondary mb-6">{caseStudy.summary}</p>
