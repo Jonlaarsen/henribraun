@@ -53,7 +53,7 @@ const Achivements = () => {
           type="button"
           aria-label="Föregående kundcase"
           onClick={() => carouselRef.current?.goPrev()}
-          className="hidden md:flex absolute top-1/2 -translate-y-1/2 left-40 h-20 w-20 rounded-full bg-accent-green/80 text-white items-center justify-center"
+          className="hidden lg:flex absolute top-1/2 -translate-y-1/2 lg:left-5 xl:left-40 h-20 w-20 rounded-full bg-accent-green/80 text-white items-center justify-center"
         >
           <ArrowBigLeft className="h-12 w-12" />
         </button>
@@ -61,7 +61,7 @@ const Achivements = () => {
           type="button"
           aria-label="Nästa kundcase"
           onClick={() => carouselRef.current?.goNext()}
-          className="hidden md:flex absolute top-1/2 -translate-y-1/2 right-40 h-20 w-20 rounded-full bg-accent-green/80 text-white  items-center justify-center"
+          className="hidden lg:flex absolute top-1/2 -translate-y-1/2 lg:right-5 xl:right-40 h-20 w-20 rounded-full bg-accent-green/80 text-white  items-center justify-center"
         >
           <ArrowBigRight className="h-12 w-12" />
         </button>
