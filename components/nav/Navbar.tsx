@@ -108,7 +108,7 @@ const Navbar = () => {
         Om oss
       </Link>
       <Link
-        href="/kontakt"
+        href="/kontakt?tab=form"
         className="font-semibold bg-primary px-3 py-2 rounded-lg text-white hover:scale-x-105 transition-all duration-300 ease-in-out"
         onClick={() => setMobileMenuOpen(false)}
       >
@@ -219,7 +219,7 @@ const Navbar = () => {
             Om oss
           </Link>
           <Link
-            href="/kontakt"
+            href="/kontakt?tab=form"
             className="text-foreground font-semibold hover:text-black py-2"
             onClick={() => setMobileMenuOpen(false)}
           >

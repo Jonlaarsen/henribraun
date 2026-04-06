@@ -8,12 +8,11 @@ gsap.registerPlugin(ScrollTrigger);
 const Intro = () => {
   useGSAP(() => {
     gsap.from(".intro-container", {
-      opacity: 0,
-      duration: 0.5,
-      y: 200,
+      opacity: 0.5,
+      duration: 1,
       scrollTrigger: {
         trigger: ".intro-container",
-        start: "top 90%",
+        start: "top 60%",
         end: "top 50%", // behövs för att definiera scrollområdet
         scrub: 1,
         once: true,

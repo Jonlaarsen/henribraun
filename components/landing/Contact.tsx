@@ -1,7 +1,23 @@
-import { Mail, Phone, Pin } from "lucide-react";
+"use client";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import Link from "next/link";
 
 const Contact = () => {
+  useGSAP(() => {
+    gsap.from("#contact", {
+      opacity: 0.5,
+      duration: 1,
+
+      scrollTrigger: {
+        trigger: "#services",
+        start: "top 70%",
+        end: "top 50%",
+        scrub: 1,
+        once: true,
+      },
+    });
+  }, []);
   return (
     <div
       id="contact"
@@ -16,35 +32,6 @@ const Contact = () => {
         </p>
       </div>
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-10 size-full  max-w-7xl lg:items-stretch">
-        {/* <div className="flex relative flex-col min-h-80 md:min-h-160  space-y-10 size-full order-1 lg:flex-1 ">
-          <h2 className="text-5xl lg:text-6xl xl:text-7xl h-full md:h-80 w-full font-black items-center justify-center md:items-end md:justify-start  inline-flex  pb-5 text-center md:text-start">
-            Låt oss <br /> hjälpa dig <br /> att växa <br /> digitalt idag!
-          </h2>
-          <div className="flex flex-col h-50  gap-5  ">
-            <a
-              href="mailto:kontakt@henribraun.se"
-              className="h-auto rounded-3xl text-zinc-800 bg-primary/70 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white duration-300 ease-in-out cursor-pointer"
-            >
-              <Mail className="h-10 w-10 sm:h-12 sm:w-12 p-2 rounded-full border-2 shrink-0" />
-              <span className="text-sm sm:text-lg underline underline-offset-4 truncate">
-                kontakt@henribraun.se
-              </span>
-            </a>{" "}
-            {/* <a
-            href="tel:0046760151881"
-            className="h-auto  rounded-full text-zinc-800 bg-primary/50 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white duration-300 ease-in-out cursor-pointer"
-          >
-            <Phone className="h-10 w-10 sm:h-12 sm:w-12 p-2 rounded-full border-2 shrink-0" />
-            <span className="text-sm sm:text-lg underline underline-offset-4">
-              +46-76-0151-881
-            </span>
-          </a> 
-            <div className="h-auto  rounded-3xl text-zinc-800 bg-primary/30 flex items-center justify-between gap-4 px-4 sm:px-6 md:px-8 py-4 hover:bg-secondary hover:text-white  duration-300 ease-in-out cursor-pointer">
-              <Pin className="h-10 w-10 sm:h-12 sm:w-12 p-2 rounded-full border-2 shrink-0" />
-              <span className="text-sm sm:text-lg">Malmö, Sweden</span>
-            </div>
-          </div>
-        </div> */}
         <div className="flex flex-col md:flex-row relative gap-4 items-center justify-center lg:flex-1 ">
           <Link
             href="/kontakt?tab=booking"

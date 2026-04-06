@@ -1,13 +1,8 @@
 "use client";
-import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/all";
 import gsap from "gsap";
-import ImageCarousel from "./ImageCarousel";
 import LogoLoop from "../LogoLoop";
-
-const rotatingTexts = ["Paid ads", "Konverteringsoptimering", "Webutveckling"];
 
 const IMAGES = [
   {
@@ -37,34 +32,6 @@ const IMAGES = [
 ];
 
 const HeroTwo = () => {
-  const [activeTextIndex, setActiveTextIndex] = useState(0);
-  const rotatingTextRef = useRef<HTMLSpanElement | null>(null);
-
-  useEffect(() => {
-    const intervalId = window.setInterval(() => {
-      const el = rotatingTextRef.current;
-      if (!el) return;
-
-      gsap
-        .timeline()
-        .to(el, {
-          opacity: 0,
-          duration: 0.25,
-          ease: "power1.inOut",
-        })
-        .add(() => {
-          setActiveTextIndex((prev) => (prev + 1) % rotatingTexts.length);
-        })
-        .to(el, {
-          opacity: 1,
-          duration: 0.3,
-          ease: "power1.inOut",
-        });
-    }, 2600);
-
-    return () => window.clearInterval(intervalId);
-  }, []);
-
   useGSAP(() => {
     const heroSplit = new SplitText("#title", { type: "chars, words" });
 
@@ -122,7 +89,7 @@ const HeroTwo = () => {
         </div>
       </div>
       <div className="absolute bottom-0 left-0  right-0  z-50">
-        {/* <LogoLoop
+        <LogoLoop
           speed={40}
           direction="left"
           logoHeight={30}
@@ -133,7 +100,7 @@ const HeroTwo = () => {
           ariaLabel="Technology partners"
           logos={IMAGES}
           className="brightness-0 gap-14  invert mb-10"
-        /> */}
+        />
       </div>
     </section>
   );

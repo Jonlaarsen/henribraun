@@ -32,12 +32,12 @@ const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
 const Services = () => {
   useGSAP(() => {
     gsap.from("#services", {
-      opacity: 0,
-      duration: 0.5,
-      y: 200,
+      opacity: 0.8,
+      duration: 1,
+
       scrollTrigger: {
         trigger: "#services",
-        start: "top 90%",
+        start: "top 70%",
         end: "top 50%",
         scrub: 1,
         once: true,

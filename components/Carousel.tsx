@@ -1,4 +1,12 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import {
+  forwardRef,
+  useEffect,
+  useImperativeHandle,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { motion, PanInfo, useMotionValue, useTransform } from "motion/react";
 import React, { JSX } from "react";
 
@@ -55,6 +63,11 @@ export interface CarouselProps {
   loop?: boolean;
   round?: boolean;
 }
+
+export type CarouselHandle = {
+  goPrev: () => void;
+  goNext: () => void;
+};
 
 // const DEFAULT_ITEMS: CarouselItem[] = [
 //   {
@@ -127,7 +140,7 @@ function CarouselItem({
       className={`relative shrink-0 flex flex-col ${
         round
           ? "items-center justify-center text-center bg-accent-khaki/30 border-0"
-          : "items-start justify-between bg-accent-khaki border border-accent-green rounded-xl"
+          : "items-start justify-between bg-accent-khaki rounded-xl"
       } overflow-hidden md:cursor-grab active:cursor-grabbing`}
       style={{
         width: itemWidth,
@@ -228,7 +241,7 @@ function CarouselItem({
         )}
       </div>
       <div className="flex items-center justify-center w-full">
-        <button className="p-3 sm:p-4 mx-3 sm:mx-4 my-2 w-full bg-accent-orange/90 hover:bg-accent-orange duration-300 ease-in-out rounded-lg text-sm sm:text-base text-white">
+        <button className="p-3 sm:p-4 mx-3 sm:mx-4 my-4 w-full bg-accent-orange/90 hover:bg-accent-orange duration-300 ease-in-out rounded-lg text-sm sm:text-base text-white">
           Gå till <br className="block md:hidden" />{" "}
           <span className="font-semibold">{item.client}'s</span> kundcase
         </button>
@@ -237,16 +250,19 @@ function CarouselItem({
   );
 }
 
-export default function Carousel({
-  items = KUNDCASE_LIST,
-  baseWidth = 300,
-  className = "",
-  autoplay = false,
-  autoplayDelay = 3000,
-  pauseOnHover = false,
-  loop = false,
-  round = false,
-}: CarouselProps): JSX.Element {
+const Carousel = forwardRef<CarouselHandle, CarouselProps>(function Carousel(
+  {
+    items = KUNDCASE_LIST,
+    baseWidth = 300,
+    className = "",
+    autoplay = false,
+    autoplayDelay = 3000,
+    pauseOnHover = false,
+    loop = false,
+    round = false,
+  },
+  ref,
+): JSX.Element {
   const containerPadding = 16;
   const [measuredWidth, setMeasuredWidth] = useState(0);
 
@@ -412,13 +428,34 @@ export default function Carousel({
         ? (position - 1 + items.length) % items.length
         : Math.min(position, items.length - 1);
 
+  useImperativeHandle(
+    ref,
+    () => ({
+      goPrev: () => {
+        if (isAnimating || itemsForRender.length <= 1) return;
+        setPosition((prev) => {
+          const next = prev - 1;
+          const max = itemsForRender.length - 1;
+          return Math.max(0, Math.min(next, max));
+        });
+      },
+      goNext: () => {
+        if (isAnimating || itemsForRender.length <= 1) return;
+        setPosition((prev) => {
+          const next = prev + 1;
+          const max = itemsForRender.length - 1;
+          return Math.max(0, Math.min(next, max));
+        });
+      },
+    }),
+    [isAnimating, itemsForRender.length],
+  );
+
   return (
     <div
       ref={containerRef}
       className={`relative w-full overflow-hidden p-4 ${
-        round
-          ? "rounded-full border border-white"
-          : "rounded-[24px] border border-accent-green/50 bg-accent-sand/10"
+        round ? "rounded-full border border-white" : "rounded-[24px] "
       } ${className}`.trim()}
       style={{
         width: round ? undefined : "100%",
@@ -488,4 +525,6 @@ export default function Carousel({
       </div>
     </div>
   );
-}
+});
+
+export default Carousel;
