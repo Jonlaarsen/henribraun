@@ -154,7 +154,7 @@ export default async function KundcaseDetailPage({
         <div className="mt-16 pt-8 border-t border-black/10 flex flex-col sm:flex-row gap-4">
           <Link
             href="/kundcase"
-            className="inline-flex caseStudys-center gap-2 px-6 py-3 border border-accent-green text-accent-green rounded-lg hover:bg-black/5 transition-colors text-center"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-accent-green text-accent-green rounded-lg hover:bg-black/5 transition-colors text-center"
           >
             <ArrowBigLeft className="h-5 w-5" /> Fler kundcase
           </Link>

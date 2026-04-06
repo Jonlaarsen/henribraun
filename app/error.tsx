@@ -15,7 +15,7 @@ export default function Error({
   }, [error]);
 
   return (
-    <main className="min-h-[70vh] px-4 sm:px-6 md:px-10 lg:px-16 xl:px-40 py-16 md:py-24 bg-accent-peach/20 flex items-center justify-center">
+    <main className="min-h-screen px-4 sm:px-6 md:px-10 lg:px-16 xl:px-40 py-16 md:py-24 bg-white flex items-center justify-center">
       <section className="w-full max-w-3xl rounded-2xl bg-accent-khaki p-8 md:p-12 text-center shadow-lg">
         <p className="text-accent-primary font-semibold text-sm md:text-base mb-3">
           Nagot gick fel
