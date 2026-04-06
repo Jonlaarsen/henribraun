@@ -1,8 +1,6 @@
 "use client";
 
-import Link from "next/link";
 import { useRef } from "react";
-import { KUNDCASE_LIST } from "@/constants";
 import Carousel, { type CarouselHandle } from "../Carousel";
 import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
 import { useGSAP } from "@gsap/react";

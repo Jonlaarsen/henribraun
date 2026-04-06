@@ -241,10 +241,13 @@ function CarouselItem({
         )}
       </div>
       <div className="flex items-center justify-center w-full">
-        <button className="p-3 sm:p-4 mx-3 sm:mx-4 my-4 w-full bg-accent-orange/90 hover:bg-accent-orange duration-300 ease-in-out rounded-lg text-sm sm:text-base text-white">
+        <a
+          href={`/kundcase/${item.slug}`}
+          className="p-3 sm:p-4 mx-3 sm:mx-4 my-4 w-full bg-accent-orange/90 hover:bg-accent-orange duration-300 ease-in-out text-center rounded-lg text-sm sm:text-base text-white"
+        >
           Gå till <br className="block md:hidden" />{" "}
           <span className="font-semibold">{item.client}'s</span> kundcase
-        </button>
+        </a>
       </div>
     </motion.div>
   );

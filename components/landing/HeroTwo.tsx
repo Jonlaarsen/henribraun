@@ -67,7 +67,7 @@ const HeroTwo = () => {
       <div className="z-50 w-full md:pl-10 max-w-8xl text-start">
         <h1
           id="title"
-          className="mb-4 text-[2.8rem] leading-12 md:leading-25 tracking-tight font-bold sm:text-5xl md:mb-6 md:text-6xl lg:text-7xl xl:text-8xl"
+          className="mb-4 text-[2.8rem] leading-12 md:leading-25 tracking-normal font-bold sm:text-5xl md:mb-6 md:text-6xl lg:text-7xl xl:text-8xl"
         >
           Din partner <br className="block md:hidden" /> inom{" "}
           <br className="hidden md:block" /> digital marknadsföring
@@ -76,12 +76,12 @@ const HeroTwo = () => {
         <hr className=" bg-white max-w-lg h-0.1 md:h-0.75 mb-5" />
 
         <div className="flex flex-col md:flex-row gap-4 mt-2 text-lg font-semibold">
-          <div className="hover:-translate-y-1 duration-200 ease-in py-2 text-center rounded-lg bg-accent-orange w-full md:w-40">
+          <div className="hover:-translate-y-1 duration-200 ease-in py-2 text-center rounded-lg bg-accent-orange/90 hover:bg-accent-orange w-full md:w-40">
             <a id="contact-button" href="/kontakt" className=" ">
               Boka möte
             </a>
           </div>
-          <div className="hover:-translate-y-1 duration-200 ease-in py-2 text-center rounded-lg bg-primary w-full md:w-40">
+          <div className="hover:-translate-y-1 duration-200 ease-in py-2 text-center rounded-lg bg-primary/90 hover:bg-primary w-full md:w-40">
             <a id="contact-button" href="/kundcase">
               Kundcase
             </a>
