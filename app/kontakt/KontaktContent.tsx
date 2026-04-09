@@ -10,6 +10,7 @@ type Tab = "form" | "booking";
 export default function KontaktContent() {
   const searchParams = useSearchParams();
   const tabParam = searchParams.get("tab");
+  const [isCalendarLoading, setIsCalendarLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<Tab>(() => {
     if (tabParam === "form" || tabParam === "booking") return tabParam;
     return "booking";
@@ -19,6 +20,12 @@ export default function KontaktContent() {
     const tab = searchParams.get("tab");
     if (tab === "form" || tab === "booking") setActiveTab(tab);
   }, [searchParams]);
+
+  useEffect(() => {
+    if (activeTab === "booking") {
+      setIsCalendarLoading(true);
+    }
+  }, [activeTab]);
 
   const formSent = searchParams.get("sent") === "1";
   const formError = searchParams.get("error");
@@ -46,7 +53,7 @@ export default function KontaktContent() {
             onClick={() => setActiveTab("booking")}
             className={`px-6 py-3 font-semibold rounded-t-lg transition-colors ${
               activeTab === "booking"
-                ? "bg-secondary text-white border-b-2 border-cyan-800 -mb-[1px]"
+                ? "bg-secondary text-white border-b-2 border-cyan-800 -mb-px"
                 : "text-black/60 hover:text-black hover:bg-black/5"
             }`}
           >
@@ -56,7 +63,7 @@ export default function KontaktContent() {
             onClick={() => setActiveTab("form")}
             className={`px-6 py-3 font-semibold rounded-t-lg transition-colors ${
               activeTab === "form"
-                ? "bg-secondary text-white border-b-2 border-cyan-800 -mb-[1px]"
+                ? "bg-secondary text-white border-b-2 border-cyan-800 -mb-px"
                 : "text-black/60 hover:text-black hover:bg-black/5"
             }`}
           >
@@ -180,10 +187,19 @@ export default function KontaktContent() {
               Boka ett kostnadsfritt samtal med oss. Välj ett tillgängligt
               tidspunkt nedan.
             </p>
-            <div className="size  rounded-2xl border border-black/10 bg-cyan-50/20 p-8 flex items-center justify-center">
+            <div className="relative size rounded-2xl border border-black/10 bg-cyan-50/20 p-8 flex items-center justify-center">
+              {isCalendarLoading && (
+                <div className="absolute inset-8 z-10 flex flex-col items-center justify-center gap-3 rounded-xl bg-white/85 backdrop-blur-xs">
+                  <span className="h-20 w-20 md:h-30 md:w-30 mb-4 animate-spin rounded-full border-8 border-accent-green/20 border-t-accent-green" />
+                  <p className="text-lg md:text-2xl font-thin text-accent-green ">
+                    Laddar kalender...
+                  </p>
+                </div>
+              )}
               <iframe
                 src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2_YB-G1TxxmzpB9Rzo6esAf7CwpTO8GuBq9QWV5ZJouwwLIsoQSJPUmd4qBJWtRMZHqQ8-XKI8?gv=true"
-                className="min-h-235 size-full"
+                className="min-h-228 size-full"
+                onLoad={() => setIsCalendarLoading(false)}
               ></iframe>
             </div>
             <div className="pt-6 border-t border-black/10 space-y-4">
@@ -192,13 +208,13 @@ export default function KontaktContent() {
               </h3>
               <p className="text-black/80 leading-relaxed">
                 Ett 30-minuters samtal där vi går igenom din situation, era mål
-                och hur vi kan hjälpa. Inga förpliktelser – vi vill bara lära
+                och hur vi kan hjälpa. Inga förpliktelser, vi vill bara lära
                 känna dig och se om vi är rätt match. Du får en bekräftelse per
                 e-post med länk till mötet.
               </p>
               <p className="text-black/70 text-sm">
                 Mötet hålls via Google Meet. Du behöver ingen särskild
-                programvara – länken fungerar i webbläsaren.
+                programvara, länken fungerar i webbläsaren.
               </p>
             </div>
           </div>

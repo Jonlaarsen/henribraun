@@ -15,6 +15,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/kontaktaoss",
+        destination: "/kontakt?tab=form",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
